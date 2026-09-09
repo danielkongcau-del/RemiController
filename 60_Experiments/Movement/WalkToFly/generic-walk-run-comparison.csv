@@ -1,0 +1,7 @@
+﻿Agent/Controller,Walk state,Run state,WalkToRun parameter,parameter hash,transition,exit time,角色配置,特殊 Run 表现
+RemielleOrigin(主),Walk_Loop,RunLoop_01(悬浮),Bool_WalkToRun,218337101,Walk_Loop→Walk_To_RunLoop_01,≈1.0(循环末帧),无(硬编码 2.0s 计时),贴地悬浮滑行 pelvis 方差 0
+RemiellePasSeul,同上(同构),同上,Bool_WalkToRun,218337101(同名同hash),同上,同上,未逐一比对,同族变体
+RemielleRamiel,同上(同构),同上,Bool_WalkToRun,218337101,同上,同上,未逐一比对,同族变体
+RemielleOrigin_AirCombat*,—,—,Bool_WalkToRun(存在),218337101,未提取比对,—,—,空战域独立
+通用其他角色(AnimStatic),WalkLoop,Run/MoveRunLoop/FastRun,IntMoveType/BoolIsWalking 体系,—,IntMoveType 驱动,—,有(MoveSpeedRatio 等),常规跑步(非悬浮)
+未提取 Agent,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN

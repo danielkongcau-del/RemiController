@@ -1,0 +1,4058 @@
+{
+"walkToRunWrites": [
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262455904658,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262481934193,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262493163314,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262547963914,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262577138755,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262609071270,
+"method": "SetBoolID",
+"animator": "0x7002637b640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474462106324,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474472142495,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474482157757,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474489857179,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474505152858,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474530271946,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474562585456,
+"method": "SetBoolID",
+"animator": "0x700fd9f18c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398954235357,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398955238801,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398990203817,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399002894258,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399048354258,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399094964355,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399144045138,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399224516747,
+"method": "SetBoolID",
+"animator": "0x700d75434c0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443384408649,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443402661131,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443432457975,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443504509744,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443539572198,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443568802824,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443576379685,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443588898074,
+"method": "SetBoolID",
+"animator": "0x7009c8efde0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074885872946,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074904611287,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074923908482,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074946945306,
+"method": "SetBoolID",
+"animator": "0x7007311b700",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074958585596,
+"method": "SetBoolID",
+"animator": "0x7007311b700",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074989252656,
+"method": "SetBoolID",
+"animator": "0x70076d3f320",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074996884563,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075001499379,
+"method": "SetBoolID",
+"animator": "0x70076d3f320",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075033583447,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075055688963,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075076820796,
+"method": "SetBoolID",
+"animator": "0x7007311b700",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075077835026,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075089494723,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075090659922,
+"method": "SetBoolID",
+"animator": "0x70076d3f320",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075108688747,
+"method": "SetBoolID",
+"animator": "0x7007ab833a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075109820743,
+"method": "SetBoolID",
+"animator": "0x70076d3f320",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075111682103,
+"method": "SetBoolID",
+"animator": "0x7007311b700",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075119666454,
+"method": "SetBoolID",
+"animator": "0x70076d3f320",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132240591903,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132245935349,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132259255713,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132288761675,
+"method": "SetBoolID",
+"animator": "0x700e0077c00",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132298080687,
+"method": "SetBoolID",
+"animator": "0x700e0077c00",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132317975516,
+"method": "SetBoolID",
+"animator": "0x700e2e574e0",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132318065606,
+"method": "SetBoolID",
+"animator": "0x700e2e574e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132333356407,
+"method": "SetBoolID",
+"animator": "0x700e2e574e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132339640452,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132346975892,
+"method": "SetBoolID",
+"animator": "0x700e2e574e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132370895433,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132376416349,
+"method": "SetBoolID",
+"animator": "0x700da904d20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335805992209,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335811552073,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335834630830,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335850238814,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335879877951,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335927176968,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335931900300,
+"method": "SetBoolID",
+"animator": "0x7009e1c02a0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426543188432,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426551545179,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426558205181,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426574156109,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426603723357,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426641716256,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426710491969,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426725457705,
+"method": "SetBoolID",
+"animator": "0x7002f20a8e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426730707954,
+"method": "SetBoolID",
+"animator": "0x7002f20a8e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426748656744,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426750123663,
+"method": "SetBoolID",
+"animator": "0x7002b5c5d60",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426751570747,
+"method": "SetBoolID",
+"animator": "0x7002b5c5d60",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426774420934,
+"method": "SetBoolID",
+"animator": "0x7002f20a8e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426774697300,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426783615375,
+"method": "SetBoolID",
+"animator": "0x7002b5c5d60",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426784007515,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426785536514,
+"method": "SetBoolID",
+"animator": "0x7002f20a8e0",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426810002988,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426810746354,
+"method": "SetBoolID",
+"animator": "0x7002b5c5d60",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426817309917,
+"method": "SetBoolID",
+"animator": "0x7002b5c5d60",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426831262327,
+"method": "SetBoolID",
+"animator": "0x7002c66bf80",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201461779150,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201486365923,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201486692485,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201493011356,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201513859588,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201523409134,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201547812652,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201601811816,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201607197918,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201667604815,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201747085137,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201748159753,
+"method": "SetBoolID",
+"animator": "0x700b4059640",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750221385294,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750227272683,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750566497898,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750581326902,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750604703134,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 1,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750605195321,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750624064269,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750708601814,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750722930593,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750742776175,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750896506794,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750906789826,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750919053362,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750925247747,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750971653889,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750987786079,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751312548059,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751328520518,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751604702465,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751626736403,
+"method": "SetBoolID",
+"animator": "0x700b56b8e20",
+"remielle": false,
+"value": 0,
+"rva": 392242298,
+"module": "GameAssembly"
+}
+],
+"isMovingWrites": [
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259945655870,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950246766,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950324848,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950599109,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950694609,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950798946,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2259950931870,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260027963877,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260028859715,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260029526870,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260029894770,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260030821643,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260079990882,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260080159747,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260083916389,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2260087528314,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262426849409,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262438492607,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262446655160,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262455668536,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262466854709,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262467084563,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262505486646,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262520908265,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262541153912,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262557698169,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262567183847,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262594861598,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262608108595,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262608884871,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262642810812,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-21484-2259489711066.jsonl",
+"qpc": 2262643670967,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472266024666,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472271554420,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472271729192,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472272064589,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472272270516,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472272396943,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472272513272,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472743843779,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472744167470,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472744895073,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472745320865,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472746532630,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472796100044,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472796780474,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472801300208,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2472803759326,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474450905294,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474453954716,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474461606248,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474463658536,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474470929408,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474471620239,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474473184414,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474481727704,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474486301975,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474496300202,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474501511428,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474518524223,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474526604264,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474550893632,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474554714739,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474555696839,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474556937213,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474562160382,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-25292-2471756363682.jsonl",
+"qpc": 2474571874826,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395774345589,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779044914,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779145855,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779482896,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779602426,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779658757,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395779792641,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395863345865,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395864113039,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395864749441,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395865216383,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395866335882,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395915649079,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395915922998,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395919786913,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2395923167570,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398930168985,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398933635035,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398949765578,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398970661501,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398974921312,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398989969306,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2398995253999,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399027108106,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399039010210,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399039762345,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399041550384,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399072137282,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399087856157,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399123402746,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399124151480,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399124903922,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399133645664,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399140231920,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399143806304,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399204240646,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399211803559,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-32460-2394648724711.jsonl",
+"qpc": 2399224185949,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441548877289,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441554502613,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441554581707,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441554902004,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441555216147,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441555306523,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441555583747,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441672196185,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441672604565,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441673288796,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441673772332,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441675129753,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441724667263,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441724954587,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441728843368,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2441732282803,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443362565293,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443366244639,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443382449311,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443384157369,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443399546461,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443408625249,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443431442170,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443432885600,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443438220414,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443488939594,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443494834322,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443526941424,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443531418032,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443532186542,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443532831932,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443557169165,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443562783276,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443568559057,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443571145183,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443576140438,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443582117958,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443585698082,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-34344-2439285511569.jsonl",
+"qpc": 2443604903972,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236539142301,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236544429749,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236544499481,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236544795977,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236544942846,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236545071613,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236545141625,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236636828290,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236637576527,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236638233484,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236638834115,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236640238944,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236689686156,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236690088244,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236694260854,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-37452-2235887126527.jsonl",
+"qpc": 2236697254607,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071523349184,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071529067279,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071529299759,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071529646720,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071529842453,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071529974124,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071530084490,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071614330075,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071614639943,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071615588607,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071616064028,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071617125368,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071666376631,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071666577572,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071670413993,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2071673979670,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074863449135,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074870150787,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074885521344,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074886854196,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074887819326,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074904181830,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074924844607,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074946613426,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074952120082,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074962702255,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2074988791255,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075004327101,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075018324557,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075033177493,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075045644884,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075055270505,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075071588324,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075073827650,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075076527208,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075077243001,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075077353726,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075090986720,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075091323001,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075091432785,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075098755259,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075101139853,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075108883904,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075109086878,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075109241699,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-42204-2071112373958.jsonl",
+"qpc": 2075113711114,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130977080776,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981333473,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981398295,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981597503,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981696738,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981748115,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2130981803300,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131068957732,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131069316712,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131070180610,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131070552201,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131071608077,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131120892462,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131121202750,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131125061354,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131128560198,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2131154363507,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132220047817,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132228535870,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132250035527,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132250428331,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132250486656,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132279996955,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132283750502,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132288645830,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132297712907,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132318148158,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132318928828,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132322577909,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132326161202,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132333241517,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132350480974,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132382084978,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132398674453,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-47144-2130606727871.jsonl",
+"qpc": 2132399435020,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334567422541,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334574134753,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334574448304,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334574752188,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334574965012,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334575061623,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334575316147,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334651492793,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334651967765,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334652863154,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334653561915,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334655285350,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334705147988,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334705452041,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334709380569,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2334712729079,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335781725791,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335785377111,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335801653753,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335820845663,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335825030191,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335841475640,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335846319086,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335869896737,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335873428573,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335882406241,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335883501690,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335895418647,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335906668788,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335924977556,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335963108834,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2335980184745,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-48264-2334046399812.jsonl",
+"qpc": 2336011646173,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119444048446,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448454522,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448497293,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448693466,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448756592,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448815030,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119448988788,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119544608066,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119545381202,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119546063438,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119546396607,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119547377208,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119596884227,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119597037400,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119600749627,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-48432-2118881649039.jsonl",
+"qpc": 2119604441090,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357034221873,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357038517519,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357038671959,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357038946316,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357039078377,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357039199574,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357039296084,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357214885862,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357215161822,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357216084661,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357216401085,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357217561094,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357267174976,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357267871651,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357272064242,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-50900-2356603788602.jsonl",
+"qpc": 2357274752270,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423192174996,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423197634252,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423197724801,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423197963471,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423198068728,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423198138398,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423198198125,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423278544682,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423278917455,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423279587045,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423280017872,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423281165514,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423330381010,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423330595610,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423334377935,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2423337967241,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426530370265,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426536344523,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426542917978,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426544868263,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426550575987,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426551270360,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426554744850,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426564145685,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426569755475,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426593279112,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426599619603,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426626902696,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426636816129,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426639688643,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426640912842,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426641338929,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426711134304,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426715544110,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426725330037,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426728131688,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426730411089,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426737156492,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426749119331,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426749717934,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426749880775,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426753419568,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426759446615,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426759791851,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426768557610,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426774269857,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426774526903,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426774560315,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426783795743,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426783907733,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426783929942,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426810238513,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426810478825,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426810562316,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426819472982,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426827092088,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426828788180,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9572-2422783392823.jsonl",
+"qpc": 2426831123725,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198656922958,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198662778792,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198662935184,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198663391635,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198663563116,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198663982355,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198664174049,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198745162458,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198745966994,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198746596499,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198746979414,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198748147481,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198797573111,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198797957484,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198801911957,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2198805083215,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201447223211,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201453673475,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201461423585,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201465552035,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201466992827,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201485610187,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201486366786,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201489603806,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201496218658,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201502003496,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201538837524,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201543063410,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201547545702,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201553712980,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201581127201,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201644805418,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201650561452,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201662726613,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201681185342,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201699980761,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201726794655,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201747085663,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201748007410,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-9592-2198270198613.jsonl",
+"qpc": 2201816787531,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750002913972,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750008675213,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750008784389,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750009005521,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750009091675,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750009128201,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750009164541,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750092955952,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750093368855,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750094079929,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750094673944,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750095871298,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750144998137,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750145156324,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750148958480,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750152638430,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750189757747,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750201181882,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750209434995,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750299587860,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750300265454,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750385656758,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750386331992,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750471316296,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750471986894,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750490051388,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750501431174,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750546590872,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750603197257,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750605036690,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750623233536,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750623903973,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750693117894,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750693456835,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750750048754,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750765107049,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750795618659,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750886571603,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750887240810,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750896342321,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750902916995,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750906626207,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750912514605,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750918058876,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750918896185,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750923583598,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750925090018,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750968138652,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750971493847,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750979728436,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750986621330,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1750987629749,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751024157216,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751083581420,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751114384449,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751190201901,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751220505076,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751293533611,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751301451063,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751312396928,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751323660349,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751324164095,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751328360439,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751385011509,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751431684838,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751600318033,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751600485407,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751604541428,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751623032834,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751626575092,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751633447880,
+"remielle": false,
+"value": 0
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751634802928,
+"remielle": false,
+"value": 1
+},
+{
+"file": "animator-writes-38776-1749564230653.jsonl",
+"qpc": 1751696331031,
+"remielle": false,
+"value": 0
+}
+]
+}

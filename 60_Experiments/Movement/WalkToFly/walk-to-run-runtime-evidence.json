@@ -1,0 +1,152 @@
+{
+ "schema": "zcode.walk-to-run-runtime-evidence.v1",
+ "generatedUtc": "2026-09-10",
+ "verdictGrade": "RUNTIME_RECONSTRUCTED（写入函数名不可静态映射；条件与阈值由运行时观察闭环）",
+ "writer": {
+  "callSites": {
+   "GameAssembly+0x1761247a": 119
+  },
+  "callSiteCount": 1,
+  "observedWrites": 119,
+  "valueDistribution": {
+   "false": 108,
+   "true": 11
+  },
+  "sessions": 10,
+  "animators": "每场 1-2 个（主指针=当场 Remielle 控制器；42204 场 0x7007ab833a0 已由前人身份日志钉死）",
+  "functionIdentity": "UNKNOWN——MHY 加密元数据(魔数 'MHY\u0000')阻断 il2cpp 方法映射；DummyDll 无方法表；调用点邻域为 il2cpp icall/thunk 链",
+  "attributionNote": "事件的 attributedToRemielle 均为 false（该标志当轮未生效）；按每场主 animator 归属",
+  "corroboration": "观察控制器参数表快照含 id 218337101（索引 35）"
+ },
+ "threshold": {
+  "metric": "Δt(Bool_IsMoving 0→1 → Bool_WalkToRun 0→1)",
+  "rounds": [
+   {
+    "file": "32460",
+    "animator": "…5434c0",
+    "dt_s": 2.06
+   },
+   {
+    "file": "47144",
+    "animator": "…e574e0",
+    "dt_s": 2.026
+   },
+   {
+    "file": "47144",
+    "animator": "…904d20",
+    "dt_s": 2.054
+   },
+   {
+    "file": "47144",
+    "animator": "…904d20",
+    "dt_s": 2.041
+   },
+   {
+    "file": "48264",
+    "animator": "…1c02a0",
+    "dt_s": 2.062
+   },
+   {
+    "file": "48264",
+    "animator": "…1c02a0",
+    "dt_s": 2.051
+   },
+   {
+    "file": "9592",
+    "animator": "…059640",
+    "dt_s": 2.081
+   },
+   {
+    "file": "9592",
+    "animator": "…059640",
+    "dt_s": 2.068
+   },
+   {
+    "file": "9592",
+    "animator": "…059640",
+    "dt_s": 2.029
+   }
+  ],
+  "stats": {
+   "n": 9,
+   "min": 2.026,
+   "max": 2.081,
+   "mean": 2.052,
+   "median": 2.054,
+   "stdev": 0.018
+  },
+  "interpretation": "T = 2.0s（authored 60Hz 域，等效 ≥120 authored 帧），逐帧检查；观测值恒大于 2.02 的 26-81ms = IsMoving 写入滞后 2-5 帧 + 写入时机在帧边界；无 0.6s 循环量化痕迹（stdev 18ms ≪ 600ms）→ 参数写入不受 Walk 循环相位门控，门控只在 transition exitTime≈1.0",
+  "frameRateSemantics": "E2 未执行（全部场次同一构建）；authored 60fps 证据=全部 clip m_SampleRate=60.0 + GFrame 泵入节奏",
+  "grade": "RUNTIME_OBSERVED"
+ },
+ "reset": {
+  "observedCase": {
+   "file": "9592",
+   "gap_s": 0.413,
+   "dt_from_first_segment": 3.269,
+   "dt_from_new_segment": 2.081,
+   "conclusion": "停止 0.413s → 计时器重置，重新计满 2.0s"
+  },
+  "shortGapBelow413ms": "UNKNOWN（日志无此形态）",
+  "grade": "RUNTIME_OBSERVED（单案例）"
+ },
+ "fallBehavior": {
+  "observation": "WTR→false 与 IsMoving=false 无固定关系（0.015s~124s），为惰性/事件驱动；两次立即下降(0.015/0.033s)疑与受击/状态强制相关",
+  "grade": "RUNTIME_OBSERVED"
+ },
+ "isMovingDelayTruthTable": {
+  "source": "47144 场 463 条写入 × ability 原文交叉",
+  "rows": [
+   {
+    "state": "稳定移动",
+    "IsMoving": 1,
+    "IsMovingDelay": "1（上升滞后 0.035-0.069s ≈ 2-4 帧）"
+   },
+   {
+    "state": "刚停止(<0.1s)",
+    "IsMoving": 0,
+    "IsMovingDelay": "1（宽限保持）"
+   },
+   {
+    "state": "停止 >0.1s",
+    "IsMoving": 0,
+    "IsMovingDelay": "0（下降滞后典型 0.098-0.115s，与 DelayTimer=0.1s 吻合；一次 0.337/2.696s 长尾）"
+   },
+   {
+    "state": "重新移动",
+    "IsMoving": 1,
+    "IsMovingDelay": "1（快速跟随）"
+   }
+  ],
+  "consequence": "RunLoop→Run_End(Bool_IsMovingDelay IfNot) 在持续停止约 0.1s 后成立",
+  "abilityPolarityNote": "上一阶段对 ability JSON Success/Failure 分支的自然语言读法存在极性歧义，本轮以运行时数据裁决：移动→true，停止经 0.1s DelayTimer→false",
+  "grade": "RUNTIME_OBSERVED + STATIC_BYTE（ability）交叉"
+ },
+ "clocking": {
+  "GFrame_param": "0xa13a0703，全局帧计数（每帧变化时写入）",
+  "FrameCount_param": "0x82587b50，状态内帧计数（状态切换时重置——WTR 翻转时刻观测到 34,35→0,1,2 重置，即 Walk_Loop→Walk_To_RunLoop_01 状态切换）",
+  "authoredRate": "60fps",
+  "walkLoopPhase": "m_StopTime=0.600s/38 采样；transition exitTime 0.99999988 = 循环末帧；WTR 写入不依赖该相位"
+ },
+ "crossCharacter": {
+  "remielleFamily": "Origin/PasSeul/Ramiel 主控制器 + AirCombat 变体均含 Bool_WalkToRun（Vault grep 6 文件）",
+  "genericSystem": "AnimStatic（DummyDll Assembly-CSharp 字段证据）：其他角色通用 locomotion 用 IntMoveType/BoolIsWalking/FastRun/MoveSpeedRatio 体系，无 WalkToRun 字段",
+  "otherAgents": "UNKNOWN——其余角色 controller 未提取（zzz_assets 索引中 Avatar controller 条目命名不同，需另行解包比对）"
+ },
+ "experimentMatrixCoverage": {
+  "E1_直线移动": "覆盖（9 回合，阈值稳定）",
+  "E2_帧率": "未执行",
+  "E3_方向变化": "间接——阈值与方向无关的成分未单独验证，UNKNOWN",
+  "E4_短暂归零": "部分（0.413s 重置证实；<0.1s 未知）",
+  "E5_速度幅值": "未执行（ZZZ 移动为数字量输入）",
+  "E6_障碍物": "未执行",
+  "E7_Evade入口": "静态已证（Evade_To_RunLoop_01 无条件入 RunLoop_01，不经 WTR）",
+  "E8_攻击打断": "静态已证（Run 态可直接 Attack_Rush）；计时器存续 UNKNOWN"
+ },
+ "formula": "Bool_WalkToRun = IsMoving && (timeSinceMoveStart >= 2.0s @ authored 60Hz)；逐帧求值；停止 ≥0.413s（观测）重置计时；transition 侧另受 Walk_Loop 循环末帧门控",
+ "dataSources": [
+  "extracted/runtime-animator-writes/*.jsonl (1)",
+  "extracted/runtime-animator-consumers/*.jsonl (12)",
+  "AnimatorWriteObserver p1w-v3/p1au-v7 观测器（前人 2026-08-28~31 采集）"
+ ]
+}
