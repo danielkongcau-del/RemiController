@@ -168,6 +168,7 @@ __pycache__/
 10_Unity/Remielle_Main/Packages/
 
 # 工作区自研脚本与实验/集成原型代码
+!Run-ControllerDemo.ps1
 !70_Automation/**/*.py
 !70_Automation/**/*.ps1
 !70_Automation/**/*.sh
