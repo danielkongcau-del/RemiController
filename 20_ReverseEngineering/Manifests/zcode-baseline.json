@@ -1,0 +1,66 @@
+{
+  "schema": "zcode.workspace-baseline.v1",
+  "establishedUtc": "2026-09-09T14:48:53.793121+00:00",
+  "gitCommit": "8f86e52d32d4f0434517cf3ecc566ecc51b8e4e9",
+  "scope": "ZCode 工作副本（10_Unity/Remielle_Main）",
+  "gate": {
+    "compile": {
+      "result": "pass",
+      "evidence": "batch -quit 全量导入编译，零 error CS；Assembly-CSharp/Editor 全新构建"
+    },
+    "audits": [
+      {
+        "domain": "ControllerRuntime",
+        "method": "NativeMotionCodecAudit.Run",
+        "exit": 0,
+        "pass": true,
+        "extra": "受保护目录 motion-sampling 25 文件前后 SHA-256 一致；输出落位 90_Builds（写隔离实证）"
+      },
+      {
+        "domain": "ControllerIntegration",
+        "method": "Remielle.Controller.Editor.QualifiedIntegrationAudit.Run",
+        "exit": 0,
+        "output": "90_Builds/ControllerDependencies/implementation/unity-source-adapter-verification.json"
+      },
+      {
+        "domain": "RenderingReview",
+        "method": "RemielleNativeMaterialCompileAudit.Run",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "domain": "RuntimeRepair",
+        "method": "RepairAssetAudit.Run",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "domain": "DataAcquisition",
+        "method": "RemielleSourceMipGpuAudit.Run",
+        "exit": 0,
+        "note": "复跑中发现并修复混合 Output 读写缺陷（source-completion-verification.json 读根拆回 A 类）"
+      }
+    ],
+    "playerBuild": {
+      "method": "Remielle.Controller.Editor.SourceControllerBuild.BuildPlayer",
+      "pass": true,
+      "bytes": 1511937109,
+      "errors": 0,
+      "output": "90_Builds/ControllerDependencies/Player/RemielleControllerPreview.exe"
+    }
+  },
+  "manifestMerkleRoots": {
+    "AssetVault-assets": "3321cd46f5e11b46c08e9d0702047812118424afff8b8812c333e863270a4091",
+    "AssetVault-recovered": "09ba62de359659fb176604e8efdb8c51255cfd7f9cc0e961d760ad0c04ee76ee",
+    "AssetVault-metadata": "4758b8edb468fb1219f019683702b8eddeed9e50d4fb98cab9917efd1d437710",
+    "AssetVault-tools": "be5a96dbc1fc825c687b6b2252e0b45b08fe06a1c518aab34bf15b7f3c0c0cc0",
+    "AssetVault-skinning-verification": "8b90b8ab0b1d2a1ab4f26ede907d68778ada492698dfe9f50d47c1b6e951c9d0",
+    "AssetVault-config": "7faf7a53c04b2202dcd513cebf01e5a5006d396521e392e36bfdbf62c94bedf4",
+    "RuntimeRepair": "63f0f8683a6b5e69630c794b40ff65d789a787242d27a103781a057946f2933c",
+    "DataAcquisition": "615467b0f7379e7ea9c968fc020d1a978dd6bac79e40fa9607fbd803808860aa",
+    "RenderingReview": "0f6b6977875bd9dda52f231b1388fbf5f2a22990c31fd9fc558b6588c6c330cf",
+    "Evidence": "896f454e1825a7a99807e08cdc42e28a05575bcb90fce39be1a6e12d088460a0",
+    "Remielle_Main": "9ada54f5b70f81ae5d1a66368496fa6a02a761fdfea40f4f75d10755c4cbfc5f"
+  },
+  "boundaries": "本基线覆盖：编译+五域审计复跑+Player 构建+写隔离实证。未覆盖：原 Run-Checks 全轮等价复刻、PlayMode 长流程验收、视觉对照——后续变更以本基线为对照起点，失败先查原因，不得刷新哈希掩盖。"
+}
