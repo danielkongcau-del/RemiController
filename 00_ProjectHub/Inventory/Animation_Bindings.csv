@@ -1,0 +1,15 @@
+功能/状态,动画名,源身份（source/CAB/pathID）,动作库槽位,工程对象,绑定状态,备注
+冲刺启动,Dash_Start,待登记（B1-v2 按身份回填）,动作库 335 motions 内,RemielleSourceController 状态图,已绑定（1,140 帧验证）,预载
+冲刺循环,Dash_Loop,待登记,动作库内,同上,已绑定,含 Loop_02 变体
+冲刺闪避,Dash_Evade,待登记,动作库内,同上,已绑定,
+冲刺结束,Dash_End,待登记,动作库内,同上,已绑定,
+冲刺攻击,（名称待登记）,待登记,动作库内,同上,已绑定,
+闪避回落,Evade_to_Run_01,待登记,V3 示例集内,同上,已绑定,曾为 Dodge 占位候选
+待机,Idle_Loop / Idle_AFK / MC_Idle_Loop,待登记,V3 示例集内,动画驱动,已绑定,
+跑步,Run_Loop_02 / Run_End,待登记,V3 示例集内,动画驱动,已绑定,
+四段普攻,（四段名称待登记）,待登记,动作库内,状态图+武器事件,已绑定（465 帧）,B1-v2 回填
+特殊技-普通,（待登记）,待登记,动作库内,状态图+能量规则,已绑定,闪光第 8 帧事件已知
+特殊技-强化,（待登记）,待登记,动作库内,同上,已绑定,强化第 14 帧扣费
+空中待机（线索）,Idle_AirState_Front_Loop / Idle_AirState_Back_Loop,待登记,V3 示例集内,未绑定,**walk→fly 取证起点线索**,空中状态动画确实存在
+walk（走路）,（待取证）,待取证,待查,未绑定,WalkToFly 实验卡,
+fly（慢速飞行）,（待取证：候选词 Walk/Move/Fly/Hover/Float/Air）,待取证,待查,未绑定,WalkToFly 实验卡,

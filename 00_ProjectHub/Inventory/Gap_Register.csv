@@ -1,0 +1,21 @@
+id,对象,类别,当前状态,影响功能,最新证据来源,解决路线,优先级
+GAP-001,34 个优化 Animator,数据边界,序列化 JSON 保留；通用反优化需各对象 external Avatar 层级,城市/NPC/Timeline 变体（目标依赖清单待建）,GAPS.md,建清单→沿同源 external 表解析 Avatar→只解目标功能依赖到的对象,低（未进目标链）
+GAP-002,10 个 Timeline 运行时绑定,运行时证据,源序列化值已证 null,时间线演出,GAPS.md + timeline-clip-pptr-final,双轨：工程替代绑定（SetGenericBinding/SetReferenceValue 按引用类型分流）与原作取证分离记录,中
+GAP-003,2 个 WeatherConfig 历史字段,数据解析,原始字节保留；需历史 TypeTree/程序集或运行时对象,环境渲染（影响面待分析）,GAPS.md,先影响分析再定级；禁止盲猜填值,低
+GAP-004,6 网格完整 GPU 几何证据,证据等级,有源/骨骼/材质依据；缺完整 GPU 匹配（HairShadow/Floater 已有归属新证据但≠完整匹配）,Sticker_02_R/HairShadow/Weapon_02_R/03_R/04/Floater_02,GAPS.md,按"何时实际参与渲染"组织补采；登记动作/状态/时间窗/Draw Pass/证据等级,中
+GAP-005,walk→fly 移动切换,功能缺口,未实现；两套 walk 动画身份与触发规则未取证,移动,用户需求 + Design/Remielle_Movement,六层定位取证（动画→变体→状态→过渡→参数→打断）→WalkToFly 原型→并入状态机,高
+GAP-006,普通特殊技闪光颜色,显示链,源 Alpha 指数已核对回写；相机未挂最终 LUT、高亮饱和未校准（爆发峰值 1726）,特殊技观感,implementation README + HDR 诊断,链路定位法：固定条件截特效输出→合成 HDR→后处理→LUT→输出转换五段找偏离点；核对 sRGB/Linear 语义,高
+GAP-007,23 项粒子特效未接入,接入,31 项中 8 项已接入（见 VFX_Index 命名清单）,特效,VFX_Index.md,按技能成组接入（普通特殊技完整链路优先）而非按文件数,高
+GAP-008,alpha/dissolve 与完整原生粒子材质,材质对齐,未解决,特效观感,implementation,与 GAP-006 同链路处置,中
+GAP-009,特殊技/强化特殊技运镜,接入,曲线库有基础（366 条记录）；技能运镜未接,运镜,Camera_Index.md,逐段登记目标对象/坐标空间/开始时刻/混合/退出与打断规则后接入,中高
+GAP-010,原生退出仰角映射/全翼构图/遮挡处理,接入,未做,运镜,Camera_Index.md,待 GAP-009 后,中
+GAP-011,音频整体,领域空白,采集与归纳未启动,完整视听,Audio_Index.md,采集→Raw→归纳→接入,低
+GAP-012,主工程 64 处输出写回冻结基线路径,工程纪律,已审计登记（path-audit.csv）；整改未做,全部工具链,path-audit-summary.md,D1-b：统一路径配置+写前护栏；完成标准=指向 local-only 的 OUTPUT 归零,最高
+GAP-013,AnimCollectionSceneAudit 悬空输出路径,残留缺陷,输出到已删除的 RemielleZcode 目录，运行必抛异常,该审计脚本,path-audit.csv,zcode 署名残留；删除或改指（随 D1-b 裁决）,高（随 D1-b）
+GAP-014,StreamingAssets 3 个 JSON 引用原件绝对路径,工程纪律,binding-profiles/controller-avatar-bindings/index,动作库运行,path-audit-summary.md,挂 A 类路径配置或改指副本（随 D1-b）,高（随 D1-b）
+GAP-015,受击方动作/原生数值公式,有意简化,固定伤害/失衡 1、每 2 次普通充能 1 次强化（用户指定）,战斗完整性,Design/Remielle_Combat,用户解除简化前排期,低（有意简化）
+GAP-016,空战条件与空战显隐,功能缺口,原生条件未自动激活（工程内已见 Idle_AirState_* 空中待机动画）,空战,Missing_Content,待 walk→fly 完成后评估,中
+GAP-017,Floater 显隐与挂点,有意跳过,保留源资产,附件,用户指示,用户明示前不动,冻结
+GAP-018,工作副本独立门禁基线,工程纪律,沿用 local-only baseline 不适用副本,验证归属,TODO-D2,副本完成一轮独立验证后建立（不得刷新哈希掩盖差异）,高
+GAP-019,动画名称口径 827 vs 810,索引精度,简单词干去重 827；文档口径 810 需逻辑片名归一,动画索引,catalogs-summary.md,B1-v2 按 ledger 权威分类归一复核,中
+GAP-020,完整游戏渲染还原,证据边界,延迟渲染/环境后处理/战斗动态 tint 未宣称一致,渲染,各渲染报告,长期边界；不宣称完成,长期

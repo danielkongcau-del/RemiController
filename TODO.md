@@ -11,7 +11,7 @@
 ## B. 资产（逆向归纳与接入）
 
 - [x] B1 **逆向资产全量查询归纳（v1）**：机器目录层已生成（`20_ReverseEngineering/Analysis/catalogs/`，829 身份已机器验证）+ SHA-256 全量清单（`20_ReverseEngineering/Manifests/`，云端可复验）。2026-09-09。
-- [ ] B1-v2 名称口径归一（827 简单词干 vs 文档 810）与 locomotion/特效/运镜语义分类；Inventory 人工索引逐项充实。
+- [ ] B1-v2 **按功能域的语义归纳**（不设全量前置，避免整理阻塞开发）：优先 walk→fly 与普通特殊技两域——名称口径归一（827 vs 810）、Animation_Bindings/VFX_Event_Map/Camera_Bindings 三表从骨架补成全量、`Gap_Register`/`Feature_Coverage` 随工作滚动更新。
 - [ ] B2 剩余 23 项粒子特效接入（31 项中已完成 8 项）。
 - [ ] B3 高亮饱和与完整原生粒子材质对齐（HDR 路径）。
 
@@ -22,6 +22,7 @@
 
 ## D. 工作区维护
 
-- [ ] D1 **主工程工具绝对路径审计**：枚举 `Remielle_Main/Assets` 内全部编辑器/构建/审计脚本的硬编码路径，将输出重定向到 `ZCode` 侧目录；原件侧阶段目录停止写入。已登记实例：动作库 `index.json` 的 `profiles.path` 指向 local-only 原件。
+- [ ] D1-b **输出路径整改（当前最高优先）**：审计已完成（100 处命中、64 处疑似输出写回冻结基线，见 `00_ProjectHub/AuditExports/`）。整改 = 统一路径配置类（A 只读原件/B 工作副本/C 输出落 ZCode）+ 写前护栏 + 64 处输出常量迁移，逐脚本真机验证；完成标准 = OUTPUT→local-only 归零。含 GAP-013 悬空路径与 GAP-014 StreamingAssets 三 JSON 处置。
+- [x] D1-a 路径审计与三类政策落档（2026-09-09）。
 - [ ] D2 副本侧门禁基线：冻结原件的 `RemielleHandoff/baseline.json` 不适用副本；在副本完成一轮独立验证后建立 ZCode 侧基线文件（不得直接刷新哈希掩盖差异）。
-- [ ] D3 `Animation_Index` 首批归纳：工程内 `Assets/V3/Animations` 15 个 .anim 为渲染验收示例集，控制器动作取自全量库——先建立"库内真名 → 工程 .anim"映射表。
+- [ ] D3 `Animation_Index` 首批归纳：工程内 `Assets/V3/Animations` 15 个 .anim 为渲染验收示例集，控制器动作取自全量库——先建立"库内真名 → 工程 .anim"映射表。（并入 B1-v2）

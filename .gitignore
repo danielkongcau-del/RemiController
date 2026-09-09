@@ -149,3 +149,33 @@ __pycache__/
 *.resource
 *.db
 *.pdb
+
+# ============================================================
+# 自研代码入库（用户 2026-09-09 决策：不设私有代码仓库，
+# 我们编写的代码直接同步本仓库；第三方内嵌库仍不入库）
+# ============================================================
+# 主工程自研代码（.cs.meta/asmdef.meta 一并入册以保证 Unity GUID 引用完整）
+# 注意：先整体忽略工程内一切文件、再只放行代码扩展名——防止全局白名单把工程内
+# 数据 JSON（最大 73.8MB 的视觉转储等）误放进来。
+!10_Unity/Remielle_Main/
+10_Unity/Remielle_Main/**
+!10_Unity/Remielle_Main/**/
+!10_Unity/Remielle_Main/Assets/**/*.cs
+!10_Unity/Remielle_Main/Assets/**/*.cs.meta
+!10_Unity/Remielle_Main/Assets/**/*.asmdef
+!10_Unity/Remielle_Main/Assets/**/*.asmdef.meta
+10_Unity/Remielle_Main/Assets/ThirdParty/
+10_Unity/Remielle_Main/Packages/
+
+# 工作区自研脚本与实验/集成原型代码
+!70_Automation/**/*.py
+!70_Automation/**/*.ps1
+!70_Automation/**/*.sh
+!60_Experiments/**/*.cs
+!40_Integration/**/*.cs
+
+# ---- 审计导出的机器索引（仅对经筛选目录放行 .jsonl/.ndjson，防全量账本灌库）----
+!00_ProjectHub/AuditExports/**/*.jsonl
+!00_ProjectHub/AuditExports/**/*.ndjson
+!20_ReverseEngineering/Analysis/**/*.jsonl
+!20_ReverseEngineering/Analysis/**/*.ndjson

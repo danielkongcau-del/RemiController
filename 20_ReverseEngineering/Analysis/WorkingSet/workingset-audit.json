@@ -1,0 +1,224 @@
+{
+  "schema": "zcode.workingset-audit.v1",
+  "generatedUtc": "2026-09-09T12:56:25.424095+00:00",
+  "excludedItems": {
+    "note": "原 manifest 保留为溯源数据不动；本表为清理后工作集的机器可读删除登记（依据=manifest note 与 excluded_sources 分类）",
+    "legacyDirs": [
+      {
+        "id": "legacy-remielle-effect-dependency-mb-pptr-closure-p0h3",
+        "files": 2,
+        "bytes": 908383,
+        "manifestNote": "Superseded by remielle_effect_dependency_mb_pptr_closure_p0h3_fullindex3.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-dependency-mb-pptr-closure-p0h3-fullindex",
+        "files": 2,
+        "bytes": 1059081,
+        "manifestNote": "Superseded by the fullindex3 correction.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-dependency-mb-pptr-closure-p0h3-fullindex2",
+        "files": 3,
+        "bytes": 1062686,
+        "manifestNote": "Superseded by the fullindex3 correction.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-dependency-mb-typed-p0h",
+        "files": 728,
+        "bytes": 13712312,
+        "manifestNote": "Superseded by remielle_effect_dependency_mb_typed_p0h3.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-napsim-pptr-closure-p0f",
+        "files": 2,
+        "bytes": 202197823,
+        "manifestNote": "Superseded by remielle_effect_napsim_pptr_closure_p0g2.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-napsim-pptr-closure-p0f2",
+        "files": 2,
+        "bytes": 164894088,
+        "manifestNote": "Superseded by remielle_effect_napsim_pptr_closure_p0g2.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-napsim-pptr-closure-p0f3",
+        "files": 2,
+        "bytes": 168682154,
+        "manifestNote": "Superseded by remielle_effect_napsim_pptr_closure_p0g2.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-napsim-typed-p0e",
+        "files": 23397,
+        "bytes": 102288612,
+        "manifestNote": "Superseded by the corrected p0g2 typed corpus.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-napsim-typed-p0g1-regression",
+        "files": 23398,
+        "bytes": 101592874,
+        "manifestNote": "Regression comparison retained at source; p0g2 is the vault authority.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-typed-components",
+        "files": 2,
+        "bytes": 8428,
+        "manifestNote": "Superseded by remielle_effect_typed_components_p0d4.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-typed-components-p0d2",
+        "files": 1,
+        "bytes": 632,
+        "manifestNote": "Superseded by p0d4.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-effect-typed-components-p0d3",
+        "files": 1,
+        "bytes": 659,
+        "manifestNote": "Superseded by p0d4.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-mesh-identity-sources-v1",
+        "files": 2,
+        "bytes": 1389982,
+        "manifestNote": "Superseded by remielle_mesh_identity_sources_all_v1.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-pptr-closure-p0h5",
+        "files": 3,
+        "bytes": 38305,
+        "manifestNote": "Superseded by p0h14-final.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-pptr-closure-p0h5-fullindex",
+        "files": 3,
+        "bytes": 37730,
+        "manifestNote": "Superseded by p0h14-final.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-typed-p0h11d",
+        "files": 29,
+        "bytes": 84941,
+        "manifestNote": "Superseded by p0h11e.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-typed-p0h4",
+        "files": 17,
+        "bytes": 52534,
+        "manifestNote": "Superseded by p0h11e.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-typed-p0h5",
+        "files": 29,
+        "bytes": 84941,
+        "manifestNote": "Superseded by p0h11e.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-clip-mb-typed-p0h7-exact",
+        "files": 29,
+        "bytes": 84941,
+        "manifestNote": "Superseded by p0h11e.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-weather-mb-typed-p0h6",
+        "files": 1,
+        "bytes": 1641,
+        "manifestNote": "Superseded by p0h15.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-weather-mb-typed-p0h7-exact",
+        "files": 1,
+        "bytes": 1641,
+        "manifestNote": "Superseded by p0h15.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      },
+      {
+        "id": "legacy-remielle-timeline-weather-mb-typed-p0h9",
+        "files": 1,
+        "bytes": 1641,
+        "manifestNote": "Superseded by p0h15.",
+        "excludedSourcesClassification": null,
+        "removedFromCopy": true,
+        "retainedInOriginal": true
+      }
+    ],
+    "mechanicalJunk": {
+      "pycacheDirs": 6,
+      "junkFiles": 78,
+      "detail": "见 AssetVault-Cleanup-Report.md"
+    },
+    "retainedPendingReview": [
+      "effect-p0c1-legacy（未点名后继，保守保留）",
+      "controllers/work（注册在案的解析索引）"
+    ]
+  },
+  "dependencyScan": {
+    "scope": "副本内文本类文件对已删 legacy-remielle-* 目录名的引用",
+    "exemptions": [
+      "metadata/{manifest.json,CATALOG.md,coverage.json}（来源注册/目录文档，引用 22 个来源 id 属预期）"
+    ],
+    "referenceHits": [],
+    "verdict": "PASS（无未豁免引用）"
+  }
+}
