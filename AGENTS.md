@@ -17,6 +17,8 @@
 
 ## 硬性红线（继承自 E:\ZZZ\AGENTS.md，全部继续有效）
 
+- **资产检索唯一标准 = `20_ReverseEngineering/ASSET_LOOKUP.md`**：身份检索（source block + CAB + pathID）为权威口径，名字仅是线索、同名不证明同资产；四级查找链（工作区逆向层 → extracted → 补充解包/深度静态逆向 → 运行时注入）顺序不可跳级；宣布"资产不存在"必须满足该文件的裁决口径并留检索轨迹；每一跳的产出必须按回流纪律归位并重生成清单。
+
 - 原始资产、提取数据与本地工具保持本地，不上传；原始文件不改写。资产身份 = source block + CAB + pathID，external 表按 source block + CAB 查找。
 - `E:\ZZZ\local-only\` 下全部既有目录是**已验收基线，一律只读**。新工作只落 `ZCode/`。
 - `E:\ZZZ\local-only\RemielleHoyoToon` 是**冻结原始工程**：不再用编辑器打开、不再改动、不再往其阶段目录写产物。日常开发一律在 `10_Unity/Remielle_Main`（2026-09-09 复制生成的工作副本）。
