@@ -50,6 +50,13 @@
 !.editorconfig
 !.gitkeep
 
+# ---- Vault 资产副本：仅内部文档(.md)入库，其余数据整体排除 ----
+# （副本含 10 万+ JSON/二进制数据文件；解读与索引沉淀在 Analysis 与 Inventory，
+#   经策展后入库，而非原始数据海。）
+20_ReverseEngineering/AssetVault/**
+!20_ReverseEngineering/AssetVault/**/
+!20_ReverseEngineering/AssetVault/**/*.md
+
 # ---- Unity 工程（显式整体忽略）----
 10_Unity/Remielle_Main/
 10_Unity/TestProjects/

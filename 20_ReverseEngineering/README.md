@@ -7,12 +7,12 @@
 - `Analysis/`：分析归纳产物——Animation_Mapping（动画映射）、VFX_Mapping（特效归属）、Skill_Timeline（技能时间线）、Camera_Mapping（运镜）、Parameter_Research（参数研究，如 walk→fly 触发条件）。
 - `Tools/`：本层使用的新工具（既有工具指针见 `../70_Automation`）。
 
-## 重要：权威库不在这里
+## 重要：Vault 副本已物理入库（2026-09-09 边界变更）
 
-已验收的逆向资产库在 `E:\ZZZ\local-only\RemielleAssetVault`（19G，含 664 完整分层 ACL 等），连同各证据目录一并**原地只读**（指针表见 `../WORKSPACE_MAP.md`）。理由：其取证链以绝对路径互相引用，搬动会打断已验收链。
+`AssetVault/` 是原 `RemielleAssetVault` 的**清理后工作副本**：262,280 文件全量复制（18.109 GB，零失败）后，清除 22 个 manifest 判定过时的 legacy 迭代目录（47,655 文件）、机制垃圾与备份残片，余 214,611 文件。详见 [AssetVault-Cleanup-Report.md](AssetVault-Cleanup-Report.md)；按域查找见 [VAULT_GUIDE.md](VAULT_GUIDE.md)。
 
-本层职责：**新的**采集、**新的**分析归纳，以及把权威库的结论沉淀为索引（`../00_ProjectHub/Inventory`）。
+- **原件**（`E:\ZZZ\local-only\RemielleAssetVault`）：只读权威、完整注册集与回归对照；需要 legacy 对照或全库验证时查原件。
+- **副本**（本目录 `AssetVault/`）：日常检索与后续加工的工作集；git 仅入库其 `.md` 文档。
+- 副本内数据同样**只读**（身份完整性）；衍生物走 `../50_AssetPipeline`。
 
-## 当前最大任务
-
-对既有逆向资产做一次**完整查询归纳**（TODO-B1）：动画 829 源身份、粒子 31 项、运镜曲线、材质，产出各索引文档。
+本层其余职责不变：`Raw/` 承接新采集，`Analysis/` 承接解读归纳，结论沉淀进 `../00_ProjectHub/Inventory`。当前最大任务仍是对资产做**完整查询归纳**（TODO-B1，现在有了物理基座）。

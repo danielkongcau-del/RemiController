@@ -7,7 +7,7 @@
 
 - `00_ProjectHub` 知识层：先读后写。开工前读 `CURRENT_STATUS.md`/`TODO.md`/`Inventory`；收工时回写状态与索引。
 - `10_Unity/Remielle_Main` 唯一权威主工程：保持可运行。第三方完整仓库**不得**直接拖入，一律先进 `30_ExternalRepos` 与 `40_Integration`。
-- `20_ReverseEngineering`：`Raw/` 只增不改；分析与归纳产物落 `Analysis/`；既有权威逆向库在 local-only（指针见 `WORKSPACE_MAP.md`），只读。
+- `20_ReverseEngineering`：`AssetVault/` 为逆向资产库**清理后副本**（数据只读，身份 = source block + CAB + pathID；衍生物走 50_AssetPipeline；全库验证与 legacy 回归对照查 local-only 原件）；`Raw/` 只增不改；分析与归纳产物落 `Analysis/`；其余既有取证目录（指针见 `WORKSPACE_MAP.md`）只读。
 - `30_ExternalRepos` 上游第三方仓库：除非用户明确要求，不修改、不提交。
 - `40_Integration` 架构移植实验室：候选控制器/系统在此做适配原型与架构验证，验证通过才合并主工程。
 - `50_AssetPipeline` 资产中转：按 Incoming → Converted → Cleaned → Retargeted → UnityReady 流转，被拒项进 Rejected 并记录原因。
