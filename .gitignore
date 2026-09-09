@@ -1,0 +1,131 @@
+# ============================================================
+# ZCode 工作区仓库 — 忽略策略（白名单制）
+#
+# 入库：文档、对资产的解读/审计/报告、可解算（文本/结构化）的数据
+# 不入库：Unity 工程、工具（脚本/程序）、压缩包、可执行文件、二进制资产
+#
+# 实现方式：先默认忽略一切文件 → 放行目录遍历 → 按扩展名白名单放行
+#           → 显式忽略重资产区与工具/压缩包/可执行文件（兜底声明）。
+# 未列入白名单的任何新格式默认不入库，需入库时在白名单中显式添加。
+# ============================================================
+
+# ---- 默认忽略一切文件 ----
+*
+
+# ---- 放行目录遍历（使白名单可作用于子目录内容）----
+!*/
+
+# ---- 文档与报告 ----
+!*.md
+!*.markdown
+!*.txt
+!*.log
+!*.patch
+!*.diff
+
+# ---- 可解算数据（结构化文本）----
+!*.json
+!*.jsonc
+!*.json5
+!*.csv
+!*.tsv
+!*.yaml
+!*.yml
+!*.toml
+!*.ini
+!*.cfg
+!*.xml
+!*.html
+!*.htm
+!*.css
+
+# ---- 可解算资产（文本格式的资产表示）----
+!*.gltf
+!*.obj
+!*.svg
+
+# ---- 仓库自身文件 ----
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.gitkeep
+
+# ---- Unity 工程（显式整体忽略）----
+10_Unity/Remielle_Main/
+10_Unity/TestProjects/
+# 任意位置出现的 Unity 工程特征目录（沙盒/半成品工程防漏）
+**/Library/
+**/Temp/
+**/obj/
+**/Logs/
+**/UserSettings/
+**/Assets/
+**/ProjectSettings/
+*.unitypackage
+*.csproj
+*.sln
+*.slnx
+*.meta
+
+# ---- 工具：脚本与程序一律不入库 ----
+*.py
+*.pyc
+__pycache__/
+*.ps1
+*.sh
+*.bat
+*.cmd
+*.cs
+*.js
+*.ts
+*.cpp
+*.hpp
+*.h
+*.c
+
+# ---- 压缩包 ----
+*.zip
+*.7z
+*.rar
+*.tar
+*.tgz
+*.gz
+*.bz2
+*.xz
+
+# ---- 可执行与库文件 ----
+*.exe
+*.dll
+*.so
+*.dylib
+*.msi
+*.apk
+*.jar
+
+# ---- 二进制资产/媒体（兜底声明；白名单机制本身已排除）----
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tga
+*.dds
+*.exr
+*.hdr
+*.psd
+*.webp
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.fbx
+*.glb
+*.bin
+*.resS
+*.resource
+*.db
+*.pdb
