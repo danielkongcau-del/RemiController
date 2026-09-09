@@ -50,12 +50,23 @@
 !.editorconfig
 !.gitkeep
 
-# ---- Vault 资产副本：仅内部文档(.md)入库，其余数据整体排除 ----
-# （副本含 10 万+ JSON/二进制数据文件；解读与索引沉淀在 Analysis 与 Inventory，
-#   经策展后入库，而非原始数据海。）
+# ---- 逆向层资产副本（Vault/Repair/Acquisition/Review/Evidence）：仅内部文档(.md)入库，其余数据整体排除 ----
+# （副本含数十万 JSON/二进制数据文件；解读与索引经策展沉淀在 Analysis 与 Inventory 后入库。）
 20_ReverseEngineering/AssetVault/**
 !20_ReverseEngineering/AssetVault/**/
 !20_ReverseEngineering/AssetVault/**/*.md
+20_ReverseEngineering/RuntimeRepair/**
+!20_ReverseEngineering/RuntimeRepair/**/
+!20_ReverseEngineering/RuntimeRepair/**/*.md
+20_ReverseEngineering/DataAcquisition/**
+!20_ReverseEngineering/DataAcquisition/**/
+!20_ReverseEngineering/DataAcquisition/**/*.md
+20_ReverseEngineering/RenderingReview/**
+!20_ReverseEngineering/RenderingReview/**/
+!20_ReverseEngineering/RenderingReview/**/*.md
+20_ReverseEngineering/Evidence/**
+!20_ReverseEngineering/Evidence/**/
+!20_ReverseEngineering/Evidence/**/*.md
 
 # ---- Unity 工程（显式整体忽略）----
 10_Unity/Remielle_Main/
@@ -75,6 +86,8 @@
 *.meta
 
 # ---- 工具：脚本与程序一律不入库 ----
+# 随副本带入的内嵌 git 克隆（gitlink），按工具处理整体排除
+20_ReverseEngineering/DataAcquisition/20260904/tools/XXMI-Libs-Package
 *.py
 *.pyc
 __pycache__/

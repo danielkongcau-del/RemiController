@@ -23,5 +23,5 @@
 ## 工作区状态
 
 - 主工程工作副本已建立（2026-09-09 复制）；冻结原件与全部 local-only 基线保持只读。
-- 逆向资产库副本已入库并清理（2026-09-09：262,280→214,611 文件，删除 22 个过时 legacy 迭代 + 垃圾；原件无损），按域导航见 `20_ReverseEngineering/VAULT_GUIDE.md`。
+- 逆向资产已全部物理入库（2026-09-09）：Vault 清理副本（214,611 文件）+ RuntimeRepair/DataAcquisition/RenderingReview/Evidence 四组扩充（约 31G），按域导航见 `20_ReverseEngineering/README.md` 与 `VAULT_GUIDE.md`；原件全部留 local-only 只读。
 - 副本内编辑器工具的绝对路径审计未做（见 TODO-Workspace-1）。

@@ -7,12 +7,18 @@
 - `Analysis/`：分析归纳产物——Animation_Mapping（动画映射）、VFX_Mapping（特效归属）、Skill_Timeline（技能时间线）、Camera_Mapping（运镜）、Parameter_Research（参数研究，如 walk→fly 触发条件）。
 - `Tools/`：本层使用的新工具（既有工具指针见 `../70_Automation`）。
 
-## 重要：Vault 副本已物理入库（2026-09-09 边界变更）
+## 目录构成（2026-09-09 扩充：全量资产物理入库）
 
-`AssetVault/` 是原 `RemielleAssetVault` 的**清理后工作副本**：262,280 文件全量复制（18.109 GB，零失败）后，清除 22 个 manifest 判定过时的 legacy 迭代目录（47,655 文件）、机制垃圾与备份残片，余 214,611 文件。详见 [AssetVault-Cleanup-Report.md](AssetVault-Cleanup-Report.md)；按域查找见 [VAULT_GUIDE.md](VAULT_GUIDE.md)。
+**资产副本五组**（数据只读、衍生物走 `../50_AssetPipeline`、git 仅入库其 `.md`）：
 
-- **原件**（`E:\ZZZ\local-only\RemielleAssetVault`）：只读权威、完整注册集与回归对照；需要 legacy 对照或全库验证时查原件。
-- **副本**（本目录 `AssetVault/`）：日常检索与后续加工的工作集；git 仅入库其 `.md` 文档。
-- 副本内数据同样**只读**（身份完整性）；衍生物走 `../50_AssetPipeline`。
+| 目录 | 内容 | 说明 |
+|---|---|---|
+| `AssetVault/` | 逆向资产库清理后副本 | 见 [VAULT_GUIDE.md](VAULT_GUIDE.md) 与 [AssetVault-Cleanup-Report.md](AssetVault-Cleanup-Report.md) |
+| `RuntimeRepair/` | 运行时来源选择与修复产物 | 含 `runtime-source-selection.json`（当前来源选择身份链）、acl-native-source、动画目录、effect-bone 修复与验证 |
+| `DataAcquisition/` | 官方采集库 | 帧分析、基础模型材质/渲染器/绑骨/贴图绑定导出、artifact-manifest |
+| `RenderingReview/` | 渲染对照与原生回放基建 | NativePlayer、Replay 工程（cpp/shader）、对比页面与捕获 |
+| `Evidence/` | 取证证据组（13 目录） | RemielleModelReadiness（模型验收+正式 Player）、SceneLit*、Frame*、CharacterShaderEvidence、MaterialRawDump、visual-acquisition |
 
-本层其余职责不变：`Raw/` 承接新采集，`Analysis/` 承接解读归纳，结论沉淀进 `../00_ProjectHub/Inventory`。当前最大任务仍是对资产做**完整查询归纳**（TODO-B1，现在有了物理基座）。
+**工作区**：`Raw/` 新采集（只增不改）、`Remielle/` Remielle 分类、`Analysis/` 解读归纳、`Tools/` 本层工具。
+
+原件全部留在 `local-only` 只读（指针见 `../WORKSPACE_MAP.md`）；需要回归对照或全库验证时查原件。当前最大任务仍是对资产做**完整查询归纳**（TODO-B1）。
