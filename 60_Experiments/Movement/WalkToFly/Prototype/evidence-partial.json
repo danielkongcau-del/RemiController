@@ -1,0 +1,379 @@
+{
+ "controller": "Avatar_Female_Size02_RemielleOrigin",
+ "source": {
+  "blk": "2906705493.blk",
+  "cab": "CAB-6aab2f6c6669bc40ee99344581bca4ee",
+  "pathID": 4142399184088792046
+ },
+ "parameters": {
+  "NormalizedTime": {
+   "id": 4169965185,
+   "type": "float"
+  },
+  "FrameCount": {
+   "id": 2186836816,
+   "type": "int"
+  },
+  "Float_TimeScaleRatio": {
+   "id": 3848617964,
+   "type": "float"
+  },
+  "Float_MoveSpeedRatio": {
+   "id": 3207433431,
+   "type": "float"
+  },
+  "Trigger_PressAttackA": {
+   "id": 846691047,
+   "type": "bool/trigger"
+  },
+  "Trigger_ReleaseAttackA": {
+   "id": 678291020,
+   "type": "bool/trigger"
+  },
+  "Trigger_PressAttackB": {
+   "id": 2877172573,
+   "type": "bool/trigger"
+  },
+  "Trigger_ReleaseAttackB": {
+   "id": 2976167926,
+   "type": "bool/trigger"
+  },
+  "Trigger_PressEvade": {
+   "id": 2827754765,
+   "type": "bool/trigger"
+  },
+  "Trigger_ReleaseEvade": {
+   "id": 1513530482,
+   "type": "bool/trigger"
+  },
+  "Trigger_PressExQTE": {
+   "id": 2282789269,
+   "type": "bool/trigger"
+  },
+  "Trigger_PressAid": {
+   "id": 330614531,
+   "type": "bool/trigger"
+  },
+  "Trigger_ReleaseAid": {
+   "id": 2813218475,
+   "type": "bool/trigger"
+  },
+  "Trigger_TurnBack": {
+   "id": 3463494232,
+   "type": "bool/trigger"
+  },
+  "Trigger_Die": {
+   "id": 2207446094,
+   "type": "bool/trigger"
+  },
+  "Trigger_Hit": {
+   "id": 3761778136,
+   "type": "bool/trigger"
+  },
+  "Trigger_Hit_Shake": {
+   "id": 1690206915,
+   "type": "bool/trigger"
+  },
+  "Trigger_PerfectEvade": {
+   "id": 2650403961,
+   "type": "bool/trigger"
+  },
+  "Trigger_Parry_L": {
+   "id": 2866354134,
+   "type": "bool/trigger"
+  },
+  "Trigger_ReflectBullet": {
+   "id": 1671641858,
+   "type": "bool/trigger"
+  },
+  "Trigger_Parry_H": {
+   "id": 2914309071,
+   "type": "bool/trigger"
+  },
+  "Trigger_Switch_In": {
+   "id": 4157381177,
+   "type": "bool/trigger"
+  },
+  "Trigger_Switch_Out": {
+   "id": 1998825746,
+   "type": "bool/trigger"
+  },
+  "Trigger_AFK": {
+   "id": 1267925767,
+   "type": "bool/trigger"
+  },
+  "Trigger_Idle": {
+   "id": 1431139582,
+   "type": "bool/trigger"
+  },
+  "Trigger_Revive": {
+   "id": 3137134708,
+   "type": "bool/trigger"
+  },
+  "Trigger_QuestStart": {
+   "id": 229315790,
+   "type": "bool/trigger"
+  },
+  "Trigger_InstantOut": {
+   "id": 520887662,
+   "type": "bool/trigger"
+  },
+  "Trigger_LevelSwitch": {
+   "id": 1472492746,
+   "type": "bool/trigger"
+  },
+  "Trigger_Action_Start": {
+   "id": 2662045518,
+   "type": "bool/trigger"
+  },
+  "Trigger_Action_End": {
+   "id": 91707837,
+   "type": "bool/trigger"
+  },
+  "Bool_IsAlive": {
+   "id": 971082838,
+   "type": "type4"
+  },
+  "Bool_IsFrozen": {
+   "id": 345835900,
+   "type": "type4"
+  },
+  "Bool_IsOperating": {
+   "id": 4277740481,
+   "type": "type4"
+  },
+  "Bool_IsPartnerAvatar": {
+   "id": 2002288071,
+   "type": "type4"
+  },
+  "Bool_HoldAttackA": {
+   "id": 3253315955,
+   "type": "type4"
+  },
+  "Bool_HoldEvade": {
+   "id": 135374204,
+   "type": "type4"
+  },
+  "Bool_HoldAttackB": {
+   "id": 1491138761,
+   "type": "type4"
+  },
+  "Bool_HoldAid": {
+   "id": 2607066888,
+   "type": "type4"
+  },
+  "Bool_WalkToRun": {
+   "id": 218337101,
+   "type": "type4"
+  },
+  "Bool_AssaultAid_Enable": {
+   "id": 1913358007,
+   "type": "type4"
+  },
+  "Bool_EasyAssaultAid": {
+   "id": 407967361,
+   "type": "type4"
+  },
+  "Bool_ForcedDodge": {
+   "id": 293306230,
+   "type": "type4"
+  },
+  "Bool_TarotCard_CounterCombo": {
+   "id": 4209272189,
+   "type": "type4"
+  },
+  "Int_HitEffect": {
+   "id": 1076643251,
+   "type": "int"
+  },
+  "Int_HitForwardType": {
+   "id": 1983426821,
+   "type": "int"
+  },
+  "Int_GroundHitIndex": {
+   "id": 3500772757,
+   "type": "int"
+  },
+  "Int_AirHitIndex": {
+   "id": 262816852,
+   "type": "int"
+  },
+  "Int_BranchIndex": {
+   "id": 859230337,
+   "type": "int"
+  },
+  "Int_SwitchType_In": {
+   "id": 2783360037,
+   "type": "int"
+  },
+  "Int_SwitchType_Out": {
+   "id": 1668341619,
+   "type": "int"
+  },
+  "Int_BackStageSkill": {
+   "id": 893554737,
+   "type": "int"
+  },
+  "Float_HitDirX": {
+   "id": 2625669514,
+   "type": "float"
+  },
+  "Float_HitDirY": {
+   "id": 3951540508,
+   "type": "float"
+  },
+  "Trigger_Dying": {
+   "id": 3831028170,
+   "type": "bool/trigger"
+  },
+  "Bool_PerfectCombo": {
+   "id": 2908620499,
+   "type": "type4"
+  },
+  "Bool_QTESolo": {
+   "id": 2126793265,
+   "type": "type4"
+  },
+  "Trigger_PressQTESolo": {
+   "id": 250290287,
+   "type": "bool/trigger"
+  },
+  "Trigger_Revive_Multiplayer": {
+   "id": 1249712436,
+   "type": "bool/trigger"
+  },
+  "Bool_BeInEnhance": {
+   "id": 1657944317,
+   "type": "type4"
+  },
+  "Bool_LoopTimeLimit": {
+   "id": 3464093108,
+   "type": "type4"
+  },
+  "Bool_EnableLucia_S3": {
+   "id": 1147593920,
+   "type": "type4"
+  },
+  "Trigger_EtherEyes": {
+   "id": 2706081887,
+   "type": "bool/trigger"
+  },
+  "Trigger_AirMode_BackStage_Out": {
+   "id": 2818297597,
+   "type": "bool/trigger"
+  },
+  "Bool_BurstEx": {
+   "id": 2161608676,
+   "type": "type4"
+  },
+  "Bool_BurstExMax": {
+   "id": 1738888558,
+   "type": "type4"
+  },
+  "Float_JoyStickDir_Temp": {
+   "id": 4098887742,
+   "type": "float"
+  },
+  "Int_MoveType": {
+   "id": 3365111727,
+   "type": "int"
+  },
+  "Int_AIMoveType": {
+   "id": 1264924649,
+   "type": "int"
+  },
+  "Bool_IsFinishEx": {
+   "id": 2422556736,
+   "type": "type4"
+  },
+  "Trigger_ChangeRunType": {
+   "id": 2174700319,
+   "type": "bool/trigger"
+  },
+  "Bool_IsInAir": {
+   "id": 3679425309,
+   "type": "type4"
+  },
+  "Bool_IsMoving": {
+   "id": 1332989663,
+   "type": "type4"
+  },
+  "Bool_IsMovingDelay": {
+   "id": 3476708321,
+   "type": "type4"
+  },
+  "Float_JoyStickDir": {
+   "id": 1968499626,
+   "type": "float"
+  },
+  "Bool_IsLocalAvatar": {
+   "id": 2886219865,
+   "type": "type4"
+  },
+  "Float_JoyStickDir_CameraX": {
+   "id": 3759221308,
+   "type": "float"
+  },
+  "Float_JoyStickDir_CameraY": {
+   "id": 2534808234,
+   "type": "float"
+  },
+  "Float_JoyStickDir_CameraVectorX": {
+   "id": 28778695,
+   "type": "float"
+  },
+  "Float_JoyStickDir_CameraVectorY": {
+   "id": 1991250001,
+   "type": "float"
+  },
+  "Trigger_TimeSlowAttack": {
+   "id": 3073027432,
+   "type": "bool/trigger"
+  },
+  "Bool_ChangeBackState": {
+   "id": 3239568674,
+   "type": "type4"
+  },
+  "Trigger_SupportAttack_MainStory": {
+   "id": 1055857393,
+   "type": "bool/trigger"
+  },
+  "Bool_MuteFinishExAir": {
+   "id": 3478537981,
+   "type": "type4"
+  },
+  "Bool_ChangeBackStageStun": {
+   "id": 2599816523,
+   "type": "type4"
+  },
+  "Trigger_PressMultiParryQTE": {
+   "id": 3903792136,
+   "type": "bool/trigger"
+  },
+  "Bool_BeInBattle": {
+   "id": 1148042109,
+   "type": "type4"
+  }
+ },
+ "boolWalkToRunConsumers": [
+  {
+   "layer": "Base Layer",
+   "from": "Base Layer.Sub_Move.Walk_Loop",
+   "to": "Walk_To_RunLoop_01",
+   "duration": 0.20000000298023224,
+   "exitTime": 0.9999998807907104,
+   "hasExitTime": 1,
+   "hasFixedDuration": 1,
+   "offset": 0.0,
+   "interruptionSource": 2,
+   "condition": {
+    "param": "Bool_WalkToRun",
+    "paramHash": "0xd038f4d",
+    "mode": 1,
+    "modeStr": "If",
+    "threshold": 0.0,
+    "exitTimeField": 0.0
+   }
+  }
+ ]
+}

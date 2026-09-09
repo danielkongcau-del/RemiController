@@ -1,0 +1,50 @@
+{
+ "Walk_Loop": {
+  "pelvis_std": 0.0038,
+  "pelvis_range": 0.0178,
+  "foot_range": 0.1846,
+  "foot_std": 0.0395
+ },
+ "Run_Loop_01": {
+  "pelvis_std": 0.0,
+  "pelvis_range": 0.0,
+  "foot_range": 0.1917,
+  "foot_std": 0.0519
+ },
+ "Run_Loop_02": {
+  "pelvis_std": 0.0,
+  "pelvis_range": 0.0,
+  "foot_range": 0.2375,
+  "foot_std": 0.0645
+ },
+ "Run_Transform_01": {
+  "pelvis_std": 0.0,
+  "pelvis_range": 0.0,
+  "foot_range": 0.2882,
+  "foot_std": 0.0725
+ },
+ "Walk_to_Run_01": {
+  "pelvis_std": 0.07561,
+  "pelvis_range": 0.3523,
+  "foot_range": 0.2835,
+  "foot_std": 0.0579
+ },
+ "Walk_End": {
+  "pelvis_std": 0.01413,
+  "pelvis_range": 0.1123,
+  "foot_range": 0.195,
+  "foot_std": 0.0465
+ },
+ "Run_End": {
+  "pelvis_std": 0.00314,
+  "pelvis_range": 0.0193,
+  "foot_range": 0.1601,
+  "foot_std": 0.0424
+ },
+ "Evade_to_Run_01": {
+  "pelvis_std": 0.0,
+  "pelvis_range": 0.0,
+  "foot_range": 0.2144,
+  "foot_std": 0.0533
+ }
+}

@@ -3,7 +3,7 @@ GAP-001,34 个优化 Animator,数据边界,序列化 JSON 保留；通用反优�
 GAP-002,10 个 Timeline 运行时绑定,运行时证据,源序列化值已证 null,时间线演出,GAPS.md + timeline-clip-pptr-final,双轨：工程替代绑定（SetGenericBinding/SetReferenceValue 按引用类型分流）与原作取证分离记录,中
 GAP-003,2 个 WeatherConfig 历史字段,数据解析,原始字节保留；需历史 TypeTree/程序集或运行时对象,环境渲染（影响面待分析）,GAPS.md,先影响分析再定级；禁止盲猜填值,低
 GAP-004,6 网格完整 GPU 几何证据,证据等级,有源/骨骼/材质依据；缺完整 GPU 匹配（HairShadow/Floater 已有归属新证据但≠完整匹配）,Sticker_02_R/HairShadow/Weapon_02_R/03_R/04/Floater_02,GAPS.md,"按""何时实际参与渲染""组织补采；登记动作/状态/时间窗/Draw Pass/证据等级",中
-GAP-005,walk→fly 移动切换,功能缺口,未实现；两套 walk 动画身份与触发规则未取证,移动,用户需求 + Design/Remielle_Movement,六层定位取证（动画→变体→状态→过渡→参数→打断）→WalkToFly 原型→并入状态机,高
+GAP-005,walk→fly 移动切换,功能缺口,取证完成（FORENSIC_REPORT.md）：机制与形态已复原（悬浮滑行+起飞+闪避捷径，RunLoop 01/02=随机变体）；残留=Bool_WalkToRun 写入者原生未落网，精确阈值待运行时取证,移动,用户需求 + Design/Remielle_Movement,六层定位取证（动画→变体→状态→过渡→参数→打断）→WalkToFly 原型→并入状态机,实现层待用户指令；运行时取证列为后续
 GAP-006,普通特殊技闪光颜色,显示链,源 Alpha 指数已核对回写；相机未挂最终 LUT、高亮饱和未校准（爆发峰值 1726）,特殊技观感,implementation README + HDR 诊断,链路定位法：固定条件截特效输出→合成 HDR→后处理→LUT→输出转换五段找偏离点；核对 sRGB/Linear 语义,高
 GAP-007,23 项粒子特效未接入,接入,31 项中 8 项已接入（见 VFX_Index 命名清单）,特效,VFX_Index.md,按技能成组接入（普通特殊技完整链路优先）而非按文件数,高
 GAP-008,alpha/dissolve 与完整原生粒子材质,材质对齐,未解决,特效观感,implementation,与 GAP-006 同链路处置,中

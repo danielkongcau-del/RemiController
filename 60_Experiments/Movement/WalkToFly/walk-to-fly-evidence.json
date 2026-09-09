@@ -1,0 +1,225 @@
+{
+ "schema": "zcode.walk-to-fly-forensic.v1",
+ "generatedUtc": "2026-09-10T00:00:00Z",
+ "task": "普通 locomotion 的 Walk→Run/Fly 自动切换取证（不含 Dash/Sprint 飞行与特殊技 Flight Stance）",
+ "controller": {
+  "file": "AssetVault/assets/gameplay/controllers/Avatar_Female_Size02_RemielleOrigin.controller.json",
+  "identity": {
+   "blk": "2906705493.blk",
+   "cab": "CAB-6aab2f6c6669bc40ee99344581bca4ee",
+   "pathID": 4142399184088792046
+  },
+  "motionBinding": "controllers-v2-corrected（v1 绑定已知错位，v2 为权威）"
+ },
+ "boolWalkToRun": {
+  "paramId": 218337101,
+  "type": "bool",
+  "consumers": [
+   {
+    "from": "Base Layer.Sub_Move.Walk_Loop",
+    "to": "Base Layer.Sub_Move.Walk_To_RunLoop_01",
+    "mode": "If(true)",
+    "duration": 0.2,
+    "hasExitTime": true,
+    "exitTime": 0.9999998807907104,
+    "hasFixedDuration": true,
+    "interruptionSource": 2
+   }
+  ],
+  "consumerCountInWholeController": 1,
+  "dashOrEvadeReuse": false,
+  "writer": {
+   "verdict": "NOT_FOUND_IN_STATIC_DATA",
+   "exhausted": [
+    "51 个 ability JSON（ability-native/game 两侧集合一致）",
+    "character-script-raw/MonoBehaviour/Avatar_Female_Size02_RemielleOrigin.dat（ASCII 名与 u32 参数哈希双扫描均零命中）",
+    "39 个 DummyDll 反编译程序集（'WalkToRun' 零命中）",
+    "behavior-tree-raw / battle-assets 二进制扫描",
+    "condition-semantics.md / state-contract(20260908) / RuntimeRepair 目录"
+   ],
+   "conclusion": "写入者位于游戏原生代码（与泵 Bool_IsMoving / FrameCount 的 locomotion 组件同层），精确阈值需运行时取证（ASSET_LOOKUP 第④站）"
+  },
+  "replicaCurrent": "RemielleSourceController.TickInput(runHeld) 将其固定为 false——复刻占位，非原作逻辑"
+ },
+ "paramWritersDecoded": {
+  "Bool_IsMovingDelay": {
+   "ability": "RemielleOrigin_IsMovingDelay",
+   "logic": "ThinkInterval 0.02s：IsMoving==true→挂 DelayTimer 修饰器(0.1s)；IsMoving==false→立即置 true 并移除计时器；DelayTimer 到期且 IsMoving==true→置 false。即停止移动有 0.1s 宽限（防瞬时归零掉出 Run）"
+  },
+  "Trigger_ChangeRunType": {
+   "ability": "RemielleOrigin_ChangeRunType",
+   "logic": "AttachStateWithModifierMixin 挂在 RunLoop_01/RunLoop_02 状态；ChangeRunTypeTimerModifier 每 1s ThinkInterval 以 25% 概率(AS_ChangeRunType_Odds) SetTrigger；specials: MaxTime=8/MinTime=5",
+   "meaning": "RunLoop_01/02 为同一悬浮移动的两个随机变体，非速度分级"
+  },
+  "FrameCount": {
+   "type": "int 参数（游戏泵入的状态内帧计数器）",
+   "clock": "authored 60fps（全部 clip m_SampleRate=60.0）",
+   "usage": "Walk_Start 快放门 <12f；Run_End 重启窗 <20f/mode9 20f；桥接出口 mode9 166f/162f；AirCombat 各处 50/60/70f"
+  }
+ },
+ "stateGraph": {
+  "note": "全字段原始表见 Prototype/family-states-raw.json；主链摘要如下",
+  "entry": {
+   "walk": "Walk_Start → Walk_Loop（exitTime .9167）；快放：FrameCount<12 且 !IsMoving → Walk_Start_End",
+   "run_a": "Walk_Loop --Bool_WalkToRun==true 且走完循环(exitTime≈1.0, 38f/0.6s 粒度), 0.2s--> Walk_To_RunLoop_01 --exitTime .9227--> RunLoop_01",
+   "run_b": "闪避路径：Evade 家族 → Evade_To_RunLoop_01 --exitTime .9227 无条件--> RunLoop_01（不经 Bool_WalkToRun）"
+  },
+  "loop": {
+   "RunLoop_01 <-> RunLoop_02": "Trigger_ChangeRunType → *_To_0x 桥接（桥内 mode9 FrameCount 166/162 出口）"
+  },
+  "exit": {
+   "stop": "RunLoop_*/桥 --Bool_IsMovingDelay==false, 0.1s--> Run_End --FrameCount mode9 20 且 IsMoving 重启窗 / 无条件收尾--> 退出口",
+   "walk_stop": "Walk_Loop --Bool_IsMoving==false--> Walk_End",
+   "back_to_walk": "Run 态 Trigger_EtherEyes --0.2s--> Walk_Loop"
+  },
+  "interrupts": "全族：Trigger_Hit(0.0s)、Trigger_PressEvade→Evade_Front_02(0.1s)、Trigger_PressAttackA→Attack_Rush(0.1s)、Trigger_PressAttackB/Bool_HoldAttackB/Trigger_PressExQTE/Trigger_Switch_Out→Exit(选择器路由)；Walk_To_RunLoop_01 内 PressEvade 且 FrameCount<6 走特例"
+ },
+ "animationIdentity": {
+  "binding": "controllers-v2-corrected/Avatar_Female_Size02_RemielleOrigin.controller.json（每态两变体：Origin_Ani_* 与 Origin_Default_Ani_*，同 CAB）",
+  "table": [
+   {
+    "state": "Walk_Loop",
+    "clip": "Avatar_Female_Size02_Remielle_Origin_Ani_Walk_Loop",
+    "pathID": -2893577299971434832,
+    "cab": "CAB-37a2e82010a74c1af5e91ce696540eff",
+    "frames": 38,
+    "dur": 0.6,
+    "loop": true
+   },
+   {
+    "state": "Walk_Start",
+    "clip": "...Ani_Walk_Start",
+    "pathID": -1678135712426977003,
+    "cab": "CAB-fabacafb7ce5f06e408db5593b92e275",
+    "frames": 88,
+    "dur": 1.43,
+    "loop": false
+   },
+   {
+    "state": "Walk_Start_End",
+    "clip": "...Ani_Walk_Start_End",
+    "pathID": -7674882666090462320,
+    "cab": "CAB-cca7ec1a1760f2b5e43e4a6dd96a039",
+    "frames": null,
+    "dur": null,
+    "loop": false
+   },
+   {
+    "state": "Walk_End",
+    "clip": "...Ani_Walk_End",
+    "pathID": 8521723471483421154,
+    "cab": "CAB-cbb7d42202fed0705ac0e2c67b6d5c0f",
+    "frames": 352,
+    "dur": 5.83,
+    "loop": false
+   },
+   {
+    "state": "Walk_To_RunLoop_01",
+    "clip": "...Ani_Walk_to_Run_01",
+    "pathID": 8206013166952976172,
+    "cab": "CAB-c6ee2dec9eabf10ad92f7ab9a0e8aeca",
+    "frames": 176,
+    "dur": 2.9,
+    "loop": false
+   },
+   {
+    "state": "RunLoop_01",
+    "clip": "...Ani_Run_Loop_01",
+    "pathID": 7376968608536389763,
+    "cab": "CAB-c720eff5f67f57471d95a36c2b0e34a",
+    "frames": 212,
+    "dur": 3.5,
+    "loop": true
+   },
+   {
+    "state": "RunLoop_02",
+    "clip": "...Ani_Run_Loop_02",
+    "pathID": -3374308206746047625,
+    "cab": "CAB-ad03df6b944ebc6d94cf80f4263e0a1a",
+    "frames": 212,
+    "dur": 3.5,
+    "loop": true
+   },
+   {
+    "state": "RunLoop_01_To_02",
+    "clip": "...Ani_Run_Transform_01",
+    "pathID": -3494025788189807306,
+    "cab": "CAB-8e2d5bcc52165bda45bd205f2cb80332",
+    "frames": 174,
+    "dur": 2.87,
+    "loop": false
+   },
+   {
+    "state": "RunLoop_02_To_01",
+    "clip": "...Ani_Run_Transform_02",
+    "pathID": 5764822136149515564,
+    "cab": "CAB-7220c2a47b6cff41a6a8a13e697a01d",
+    "frames": null,
+    "dur": null,
+    "loop": false
+   },
+   {
+    "state": "Run_End",
+    "clip": "...Ani_Run_End",
+    "pathID": -4712315809483842211,
+    "cab": "CAB-7895f618aaad46f2a08c94deed1a53c",
+    "frames": 362,
+    "dur": 6.0,
+    "loop": false
+   },
+   {
+    "state": "Evade_To_RunLoop_01",
+    "clip": "...Ani_Evade_to_Run_01",
+    "pathID": 9167602165747736858,
+    "cab": "CAB-c22c2d1c569babc263568faa2cfb0a0e",
+    "frames": 212,
+    "dur": 3.5,
+    "loop": false
+   }
+  ],
+  "note": " CAB 前 18 位；完整值见 v2 JSON。npz 解码文件名 = pathID.npz"
+ },
+ "postureEvidence": {
+  "method": "npz transforms(帧×n*10: pos3/quat4/scale3) + binding-profiles pathHash 骨骼映射 + 骨架 FK → 世界空间髖部(Pelvis)/双足(L/R Foot) 高度",
+  "key": {
+   "pelvis_std": {
+    "Walk_Loop": 0.0038,
+    "Run_Loop_01": 0.0,
+    "Run_Loop_02": 0.0,
+    "Run_Transform_01": 0.0,
+    "Evade_to_Run_01": 0.0,
+    "Walk_to_Run_01": 0.0756,
+    "Walk_End": 0.0141,
+    "Run_End": 0.0031
+   },
+   "pelvis_height": {
+    "walk_family": "≈1.43",
+    "run_family": "≈1.43（与 walk 同高）"
+   },
+   "walk_to_run_takeoff": "pelvisY 曲线 1.426→1.702(+0.28)→1.426：转换前段一次垂直起飞机动后回落至悬浮高度",
+   "feet": "Run 族双足 Y min 0.69-0.86（高位）、foot_range 0.19-0.29 轻摆；Walk_Loop 双足交替下探 min 0.76-0.77（步态）"
+  },
+  "verdict": "RunLoop 为无步态起伏的悬浮/滑行移动（pelvis 方差数学零），非跑步；髖部高度与 Walk 相同（贴地滑行式悬浮，非高空飞行）",
+  "caveat": "绝对高度含根偏移，判读基于相对量；建议录像逐帧终验"
+ },
+ "hypotheses": {
+  "H1_time_threshold": "UNPROVEN——结构上仅知 Bool 置位后须等 Walk_Loop 循环末帧（38f/0.6s 粒度）才切换",
+  "H2_distance": "无证据",
+  "H3_speed": "无证据（clips 无 root motion，stopX/startX=0；速度由游戏运动系统驱动）",
+  "H4_input_runHeld": "复刻占位实现；原作无证据（无 Shift/Run 键位痕迹）",
+  "H5_combo": "UNKNOWN；已证存在第二条独立进入路径：闪避→Evade_To_RunLoop_01→RunLoop_01（不经 Bool_WalkToRun）",
+  "multi_path": true
+ },
+ "threeMechanisms": {
+  "locomotion_run": "本报告对象：Sub_Move 内 Walk→RunLoop 悬浮",
+  "dash_sprint_flight": "Dash_Start/Loop/Evade/End 独立链；与 Run 的交点=Evade_To_RunLoop_01（闪避后落回悬浮）",
+  "phase_flow_stance": "AirCombat 控制器（C0 层，Bool_BoostFlying/Bool_ReverseFlying 等）与特殊技；与 WalkToRun 零耦合（全控制器唯一消费者已证）"
+ },
+ "unknowns": [
+  "Bool_WalkToRun 的写入者与精确阈值 T（原生代码，需运行时取证）",
+  "hitstop/受击时计时是否继续",
+  "瞬时速度归零一帧是否清零（IsMovingDelay 0.1s 宽限为设计旁证）",
+  "转向是否重置（过渡条件无方向参数，但写入者层面 UNKNOWN）",
+  "Walk_End/Run_End 时长异常长（5.8/6.0s）的用途细节"
+ ]
+}

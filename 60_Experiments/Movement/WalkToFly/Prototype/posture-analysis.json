@@ -1,0 +1,182 @@
+{
+ "Walk_Loop": {
+  "frames": 38,
+  "duration": 0.6,
+  "loop": true,
+  "pelvisY": {
+   "min": 1.4175,
+   "mean": 1.4266,
+   "max": 1.4353,
+   "first": 1.4259,
+   "last": 1.4257
+  },
+  "LfootY": {
+   "min": 0.7696,
+   "mean": 0.8511
+  },
+  "RfootY": {
+   "min": 0.7578,
+   "mean": 0.8105
+  }
+ },
+ "Walk_Start": {
+  "frames": 88,
+  "duration": 1.4333334,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.4174,
+   "mean": 1.4267,
+   "max": 1.4354,
+   "first": 1.4259,
+   "last": 1.4257
+  },
+  "LfootY": {
+   "min": 0.7377,
+   "mean": 0.8437
+  },
+  "RfootY": {
+   "min": 0.7453,
+   "mean": 0.7984
+  }
+ },
+ "Walk_End": {
+  "frames": 352,
+  "duration": 5.8333335,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.3909,
+   "mean": 1.4266,
+   "max": 1.5032,
+   "first": 1.4252,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.8217,
+   "mean": 0.869
+  },
+  "RfootY": {
+   "min": 0.7514,
+   "mean": 0.7845
+  }
+ },
+ "Walk_to_Run_01": {
+  "frames": 176,
+  "duration": 2.9,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.4145,
+   "mean": 1.4476,
+   "max": 1.7668,
+   "first": 1.4261,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.7224,
+   "mean": 0.8753
+  },
+  "RfootY": {
+   "min": 0.7463,
+   "mean": 0.798
+  }
+ },
+ "Run_Loop_01": {
+  "frames": 212,
+  "duration": 3.5000002,
+  "loop": true,
+  "pelvisY": {
+   "min": 1.4259,
+   "mean": 1.4259,
+   "max": 1.4259,
+   "first": 1.4259,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.8345,
+   "mean": 0.8801
+  },
+  "RfootY": {
+   "min": 0.735,
+   "mean": 0.7897
+  }
+ },
+ "Run_Loop_02": {
+  "frames": 212,
+  "duration": 3.5000002,
+  "loop": true,
+  "pelvisY": {
+   "min": 1.4259,
+   "mean": 1.4259,
+   "max": 1.4259,
+   "first": 1.4259,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.8592,
+   "mean": 0.8967
+  },
+  "RfootY": {
+   "min": 0.6929,
+   "mean": 0.7806
+  }
+ },
+ "Run_Transform_01": {
+  "frames": 174,
+  "duration": 2.8666668,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.4259,
+   "mean": 1.4259,
+   "max": 1.4259,
+   "first": 1.4259,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.8604,
+   "mean": 0.8961
+  },
+  "RfootY": {
+   "min": 0.6679,
+   "mean": 0.7735
+  }
+ },
+ "Run_End": {
+  "frames": 362,
+  "duration": 6.0000005,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.4084,
+   "mean": 1.4252,
+   "max": 1.4277,
+   "first": 1.4259,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.7623,
+   "mean": 0.8666
+  },
+  "RfootY": {
+   "min": 0.7452,
+   "mean": 0.7965
+  }
+ },
+ "Evade_to_Run_01": {
+  "frames": 212,
+  "duration": 3.5000002,
+  "loop": false,
+  "pelvisY": {
+   "min": 1.4259,
+   "mean": 1.4259,
+   "max": 1.4259,
+   "first": 1.4259,
+   "last": 1.4259
+  },
+  "LfootY": {
+   "min": 0.7897,
+   "mean": 0.8709
+  },
+  "RfootY": {
+   "min": 0.7336,
+   "mean": 0.799
+  }
+ }
+}
