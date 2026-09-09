@@ -14,8 +14,8 @@ using UnityEngine;
 
 public static class NativeAggregatePoseResourcesAudit
 {
-    const string Out = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/";
-    const string Project = "E:/ZZZ/local-only/RemielleHoyoToon/Assets/";
+    const string Out = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/";
+    const string Project = "E:/ZZZ/ZCode/10_Unity/Remielle_Main/Assets/";
 
     static void Require(bool ok, string why) { if (!ok) throw new Exception(why); }
     static string Hash(string path) { using (var s = File.OpenRead(path)) using (var h = SHA256.Create()) return NativeMotionArchive.Hex(h.ComputeHash(s)); }

@@ -14,7 +14,7 @@ namespace Remielle.Controller.Editor
 {
  public static class SourceHitVisualBuild
  {
-  const string Output="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/";
+  const string Output="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/";
   const string AssetsRoot="Assets/ControllerIntegration/Effects/HitParticles/";
   static readonly List<ParticleSystemVertexStream> Streams=new(){ParticleSystemVertexStream.Position,ParticleSystemVertexStream.Color,
    ParticleSystemVertexStream.UV,ParticleSystemVertexStream.Custom1XYZW,ParticleSystemVertexStream.Custom2XYZW};

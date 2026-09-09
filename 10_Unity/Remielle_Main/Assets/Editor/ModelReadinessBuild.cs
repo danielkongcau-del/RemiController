@@ -11,7 +11,7 @@ using Object=UnityEngine.Object;
 // Checks the currently saved model. Never regenerates meshes, clips or prefabs.
 public static class ModelReadinessBuild
 {
-    const string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904";
     public static void Run()
     {
         Directory.CreateDirectory(Out);

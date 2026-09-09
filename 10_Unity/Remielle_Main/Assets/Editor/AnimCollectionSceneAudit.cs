@@ -16,7 +16,7 @@ using UnityEngine;
 public static class AnimCollectionSceneAudit
 {
     const string ScenePath = "Assets/RenderingReview/AnimCollection/AnimCollection.unity";
-    const string ReportPath = "E:/ZZZ/local-only/RemielleZcode/takeover-smoke/animcollection-runtime-verification.json";
+    const string ReportPath = "E:/ZZZ/ZCode/90_Builds/ControllerIntegration/animcollection-runtime-verification.json";
     const string SessionKey = "zcode.animcollection.audit.active";
 
     static int phase; // 0=entering play, 1=playing frames, 2=leaving play

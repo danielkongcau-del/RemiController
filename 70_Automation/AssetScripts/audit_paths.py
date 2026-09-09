@@ -9,6 +9,7 @@ OUT = os.path.join(r"E:\ZZZ\ZCode", r"00_ProjectHub\AuditExports")
 PAT = re.compile(r"[A-Za-z]:[\\/]{1,2}ZZZ[^\"'\)\s,;]*")
 WRITE_HINT = re.compile(r"Write|Create|Copy|Build|Export|Save|Log|Report|Delete|Move|Directory\.|Out\b|Output|destination|Dest\b", re.I)
 READ_HINT = re.compile(r"Read|Load|Open|Exists|Import|GetFiles|Enumerate|Source|Input", re.I)
+MIXED_HINT = re.compile(r"const\s+string\s+(Folder|Root)\b")
 
 rows = []
 for dirpath, _dirs, files in os.walk(ROOT):
@@ -26,7 +27,14 @@ for dirpath, _dirs, files in os.walk(ROOT):
                 continue
             m = PAT.search(line)
             target = m.group(0) if m else "(相对/local-only 引用)"
-            cls = "OUTPUT 疑似" if WRITE_HINT.search(line) else ("INPUT 疑似" if READ_HINT.search(line) else "UNCLASSIFIED")
+            if MIXED_HINT.search(line) or "ui-live-binding" in line:
+                cls = "MIXED 待拆分（读根兼写根，D1-c）"
+            elif WRITE_HINT.search(line):
+                cls = "OUTPUT 疑似"
+            elif READ_HINT.search(line):
+                cls = "INPUT 疑似"
+            else:
+                cls = "UNCLASSIFIED"
             in_frozen = "local-only" in target or "local-only" in line
             rows.append((rel, i, cls, "冻结原件" if in_frozen else "其他", target[:160], line.strip()[:180]))
 

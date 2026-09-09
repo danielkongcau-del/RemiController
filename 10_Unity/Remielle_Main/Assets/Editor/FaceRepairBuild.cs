@@ -10,7 +10,7 @@ using Object=UnityEngine.Object;
 
 public static class FaceRepairBuild
 {
-    const string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904/face";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904/face";
     public static void Run()
     {
         RemielleImportSettings.ApplyAnimationSettings();

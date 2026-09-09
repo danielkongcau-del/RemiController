@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class NativeControllerAvatarAudit
 {
-    const string Out = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/motion-bindings";
+    const string Out = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/motion-bindings";
 
     public static void Run()
     {

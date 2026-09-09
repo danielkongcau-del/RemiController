@@ -14,7 +14,7 @@ public class NativeMotionPlayProbe : MonoBehaviour
 {
     const string Key="Remielle.MotionPlayProbe";
     const string FullKey="Remielle.MotionPlayProbe.Full";
-    const string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904";
     static double deadline;
     static NativeMotionPlayProbe(){if(SessionState.GetBool(Key,false))Install();}
     public static void StartBatch()

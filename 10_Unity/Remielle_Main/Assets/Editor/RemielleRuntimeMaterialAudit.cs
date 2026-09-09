@@ -9,7 +9,7 @@ using UnityEngine;
 public static class RemielleRuntimeMaterialAudit
 {
     const string ScenePath="Assets/RenderingReview/Remielle_LightingReview.unity";
-    const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905/runtime-material-verification.json";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/runtime-material-verification.json";
     static void Require(bool condition,string message){if(!condition)throw new InvalidDataException(message);}
     static bool Near(float a,float b)=>Mathf.Abs(a-b)<1e-5f;
     static void ColorEquals(Material m,string property,Color expected)

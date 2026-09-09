@@ -5,7 +5,7 @@ using UnityEditor.Build.Reporting;
 using UnityEngine;
 public static class FullPlayerBuild
 {
-    public static void Run() => BuildTo("E:/ZZZ/local-only/RemielleModelReadiness/20260904/Player");
+    public static void Run() => BuildTo("E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904/Player");
     public static void BuildTo(string folder)
     {
         Directory.CreateDirectory(folder);

@@ -8,7 +8,7 @@ using UnityEngine;
 [DefaultExecutionOrder(10000)]
 public class FullPlayerSmoke : MonoBehaviour
 {
-    static string Out { get { var args=Environment.GetCommandLineArgs(); int i=Array.IndexOf(args,"-remielleAuditOutput"); return i>=0&&i+1<args.Length?args[i+1]:"E:/ZZZ/local-only/RemielleModelReadiness/20260904"; } }
+    static string Out { get { var args=Environment.GetCommandLineArgs(); int i=Array.IndexOf(args,"-remielleAuditOutput"); return i>=0&&i+1<args.Length?args[i+1]:"E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904"; } }
     [Serializable] class Result
     {
         public bool pass;

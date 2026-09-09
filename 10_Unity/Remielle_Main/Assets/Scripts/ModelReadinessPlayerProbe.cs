@@ -9,7 +9,7 @@ using UnityEngine;
 [DefaultExecutionOrder(10000)]
 public class ModelReadinessPlayerProbe : MonoBehaviour
 {
-    const string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904";
     [Serializable] class Shot { public string name; public int frame; public float yaw,lightYaw; public bool battle; }
     [Serializable] class Axis { public int rotation,axis,matchingPixels; public Vector3 expected,actual; public float error; }
     [Serializable] class PoseBounds { public string clip,worstRenderer; public float fraction,maxDistanceOutsideBounds; public int vertices; }

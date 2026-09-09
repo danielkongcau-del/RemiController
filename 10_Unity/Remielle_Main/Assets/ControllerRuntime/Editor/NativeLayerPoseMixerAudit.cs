@@ -10,7 +10,7 @@ using static NativeLayerPoseMathAudit;
 
 public static class NativeLayerPoseMixerAudit
 {
-    const string Out="E:/ZZZ/local-only/RemielleControllerImplementation/20260906/";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/";
     static void Require(bool ok,string why){if(!ok)throw new Exception(why);}
     static double Double(JToken t)=>BitConverter.Int64BitsToDouble(unchecked((long)Convert.ToUInt64((string)t,16)));
     static byte[] Bytes(JToken t){string s=(string)t;return Enumerable.Range(0,s.Length/2).Select(i=>Convert.ToByte(s.Substring(i*2,2),16)).ToArray();}

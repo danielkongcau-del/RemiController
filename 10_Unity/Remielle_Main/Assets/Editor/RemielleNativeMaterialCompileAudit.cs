@@ -8,7 +8,7 @@ using UnityEngine;
 public static class RemielleNativeMaterialCompileAudit
 {
     const string ShaderPath="Assets/RenderingReview/Shader/GeneratedNative/CapturedNativeMaterialBodies.shader";
-    const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905/native-material-compile-gate.json";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/native-material-compile-gate.json";
     static string HashFile(string path)
     {
         using(var stream=File.OpenRead(path))using(var sha=SHA256.Create())

@@ -13,7 +13,7 @@ namespace Remielle.Controller.Editor
 {
  public static class PresentationIssueAudit
  {
-  const string Out="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/presentation-issues/";
+  const string Out="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/presentation-issues/";
   static GameObject snapshotRoot;
   static JArray Vec(Vector3 p)=>new JArray(p.x,p.y,p.z);
   public static void Run()

@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 
 public static class RemielleRenderReviewBuild
 {
-    public const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905";
+    public const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905";
     public const string ScenePath="Assets/RenderingReview/Remielle_LightingReview.unity";
     public static void Run()
     {

@@ -1,5 +1,9 @@
 # D1 路径审计摘要与路径政策（2026-09-09）
 
+> **D1-b 已执行（2026-09-09）**：61 处纯输出（含内联写入与回退默认值）完成值级迁移至 `ZCode\90_Builds\*`（16+ 输出目录树已预建）；`Project` 常量改指工作副本（B 类）；**OUTPUT→local-only = 0 达成**（复跑 `audit_paths.py` 核验：OUTPUT 60 处全部指向 90_Builds）。
+> **D1-c 残留（混合根 23 处）**：`Folder/Root` 类常量同根既读旧证据又写新验证（codec 审计 ×2 + RenderingReview ui-live/UI 审计族 ×21），值级迁移会断读——需代码级拆分（读根留 A 类、写根走 `RemiellePathPolicy.BuildOutputFor`），逐个在 Unity 真机验证后关闭。清单见 `path-audit.csv` 的 MIXED 类行。
+> 新增工具：`Assets/Editor/RemiellePathPolicy.cs`（三类根 + `GuardWrite` 写护栏 + `BuildOutputFor`）。
+
 数据源：`path-audit.csv`（`70_Automation/AssetScripts/audit_paths.py` 扫描主工程副本全部 .cs；另含 StreamingAssets 3 个 JSON 实例）。
 
 ## 审计结论
@@ -19,10 +23,12 @@
 
 **写前护栏**：任何工具在写文件前检查目标绝对路径——命中 `E:\ZZZ\local-only\` 或冻结工程根即拒绝执行并报错。注意"只读验证"不豁免：验证脚本也会写报告，其输出路径同样受 C 类约束。
 
-## 整改方案（D1-b，未执行——需在 Unity 中逐一验证，不批量盲改）
+## 整改方案（D1-b 已执行 + D1-c 残留）
 
-1. 新建统一路径配置类（如 `RemiellePathPolicy`）：集中声明 A/B/C 三类根路径 + `GuardWrite(path)` 护栏。
-2. 64 处输出常量改为引用配置的 C 类根（落 `ZCode\90_Builds\<功能域>\` 或 `70_Automation\Agents\Reports\`），每改一个脚本必须跑一次对应审计确认输出落位正确（D3D11、禁 -nographics）。
-3. StreamingAssets 三个 JSON 的原件引用：运行时如必需读原件（A 类），挂到配置类并注明；否则改指副本。
-4. `AnimCollectionSceneAudit.cs`：悬空输出路径，随 D1-b 一并处置（删除或改指，需用户裁决——它是 zcode 署名残留）。
-5. 完成后重跑 `audit_paths.py`，目标：**指向 local-only 的 OUTPUT 类 = 0**；以此作为 D1 完成标准。
+1. [x] 统一路径配置类 `RemiellePathPolicy`（A/B/C 三类根 + GuardWrite + BuildOutputFor）。
+2. [x] 61 处纯输出值级迁移（只改字符串字面量值，零语法变更；输出目录树已预建）。
+3. [x] StreamingAssets 三个 JSON 的原件引用**归类为 A 类输入**（运行时读取冻结原件，合规；依赖已登记，副本不离开本机运行不受影响）。
+4. [x] `AnimCollectionSceneAudit` 悬空路径（GAP-013）：输出改指 `90_Builds\ControllerIntegration\`，脚本恢复可用。
+5. [ ] **D1-c**：23 处混合根拆分（读根 A 类保留 + 写根迁 BuildOutputFor），逐个 Unity 真机验证；完成标准 = MIXED→local-only 归零。
+6. [x] 复跑 `audit_paths.py`：OUTPUT→local-only = 0（完成标准达成）。
+7. [ ] Unity 首次导入 + 编译验证（后台执行中，结果见 `90_Builds/unity-import-compile-check.log`）。

@@ -10,7 +10,7 @@ using Object=UnityEngine.Object;
 
 public static class NativeAnimationBuild
 {
-    const string Out="E:/ZZZ/local-only/RemielleRuntimeRepair/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RuntimeRepair/20260904";
     const string Clips="Assets/V3/Animations";
     public static void Run()
     {

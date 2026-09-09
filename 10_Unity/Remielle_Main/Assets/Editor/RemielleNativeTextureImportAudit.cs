@@ -8,7 +8,7 @@ using UnityEngine.Rendering;
 public static class RemielleNativeTextureImportAudit
 {
     const string Source="E:/ZZZ/local-only/RemielleRenderingReview/20260905/native-material-texture-assets.json";
-    const string Output="E:/ZZZ/local-only/RemielleRenderingReview/20260905/native-material-texture-import.json";
+    const string Output="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/native-material-texture-import.json";
 
     public static void Run()
     {

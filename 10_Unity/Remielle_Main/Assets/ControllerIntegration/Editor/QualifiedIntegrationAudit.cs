@@ -16,7 +16,7 @@ namespace Remielle.Controller.Editor
 {
     public static class QualifiedIntegrationAudit
     {
-        public const string Output = "E:/ZZZ/local-only/RemielleControllerDependencies/implementation";
+        public const string Output = "E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation";
         const string Main = "Avatar_Female_Size02_RemielleOrigin_Controller";
         const string Air = "Avatar_Female_Size02_RemielleOrigin_AirCombat_Controller";
         static readonly NativeTransitionTimingPolicy Timing = new NativeTransitionTimingPolicy(true, false);

@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 using Object=UnityEngine.Object;
 public static class NativeAnimationReview
 {
-    const string Out="E:/ZZZ/local-only/RemielleRuntimeRepair/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RuntimeRepair/20260904";
     public static void Run()
     {
         EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);

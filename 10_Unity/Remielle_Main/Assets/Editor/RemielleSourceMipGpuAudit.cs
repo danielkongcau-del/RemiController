@@ -10,7 +10,7 @@ using UnityEngine.Rendering;
 public static class RemielleSourceMipGpuAudit
 {
     const string Review="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    const string Output="E:/ZZZ/local-only/RemielleDataAcquisition/20260904/source-completion-plan/";
+    const string Output="E:/ZZZ/ZCode/90_Builds/DataAcquisition/20260904/source-completion-plan/";
     public static void Run()
     {
         if(SystemInfo.graphicsDeviceType!=GraphicsDeviceType.Direct3D11)throw new Exception("D3D11 required");

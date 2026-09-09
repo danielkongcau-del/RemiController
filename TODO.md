@@ -22,7 +22,8 @@
 
 ## D. 工作区维护
 
-- [ ] D1-b **输出路径整改（当前最高优先）**：审计已完成（100 处命中、64 处疑似输出写回冻结基线，见 `00_ProjectHub/AuditExports/`）。整改 = 统一路径配置类（A 只读原件/B 工作副本/C 输出落 ZCode）+ 写前护栏 + 64 处输出常量迁移，逐脚本真机验证；完成标准 = OUTPUT→local-only 归零。含 GAP-013 悬空路径与 GAP-014 StreamingAssets 三 JSON 处置。
-- [x] D1-a 路径审计与三类政策落档（2026-09-09）。
-- [ ] D2 副本侧门禁基线：冻结原件的 `RemielleHandoff/baseline.json` 不适用副本；在副本完成一轮独立验证后建立 ZCode 侧基线文件（不得直接刷新哈希掩盖差异）。
+- [x] D1-b **输出路径整改（2026-09-09 完成）**：61 处纯输出迁移至 `90_Builds`（OUTPUT→local-only=0）；`RemiellePathPolicy` 三类根+写护栏落地；GAP-013 悬空路径修复、GAP-014 归类 A 类合规。
+- [ ] D1-c **混合根拆分（23 处，当前最高优先）**：`Folder/Root` 类常量同根读写，需代码级拆分（读根 A 类 + 写根 `BuildOutputFor`），逐个 Unity 真机验证；完成标准 = MIXED→local-only 归零。清单：`path-audit.csv` MIXED 行。
+- [ ] D1-d Unity 首次导入+编译验证收口（后台运行中）；通过后建立副本侧门禁基线（并入 D2）。
+- [ ] D2 副本侧门禁基线：在副本完成一轮独立验证后建立 ZCode 侧基线文件（不得直接刷新哈希掩盖差异）。
 - [ ] D3 `Animation_Index` 首批归纳：工程内 `Assets/V3/Animations` 15 个 .anim 为渲染验收示例集，控制器动作取自全量库——先建立"库内真名 → 工程 .anim"映射表。（并入 B1-v2）

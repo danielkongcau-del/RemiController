@@ -16,7 +16,7 @@ namespace Remielle.Controller.Editor
         public static void BuildPlayer()
         {
             Run();
-            const string destination="E:/ZZZ/local-only/RemielleControllerDependencies/Player/RemielleControllerPreview.exe";
+            const string destination="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/Player/RemielleControllerPreview.exe";
             Directory.CreateDirectory(Path.GetDirectoryName(destination));
             var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{Scene},locationPathName=destination,target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
             File.WriteAllText(QualifiedIntegrationAudit.Output+"/controller-player-build.json",new Newtonsoft.Json.Linq.JObject{

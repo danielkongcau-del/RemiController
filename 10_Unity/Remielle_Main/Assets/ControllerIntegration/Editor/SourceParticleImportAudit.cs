@@ -12,7 +12,7 @@ namespace Remielle.Controller.Editor
     // This audit creates temporary objects only; it does not publish a prefab.
     public static class SourceParticleImportAudit
     {
-        const string Output="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/";
+        const string Output="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/";
         public static void Run()
         { RunFor(Output+"hit-particle-prefix.json",Output); }
         public static void RunSpecialFlash()

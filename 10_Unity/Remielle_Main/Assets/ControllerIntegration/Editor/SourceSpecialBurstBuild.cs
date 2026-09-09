@@ -11,7 +11,7 @@ namespace Remielle.Controller.Editor
 {
  public static class SourceSpecialBurstBuild
  {
-  const string Output="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/skill-burst-sources/";
+  const string Output="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/skill-burst-sources/";
   public static void Run()
   {
    var report=new JObject{["pass"]=false};var cases=new JArray();report["cases"]=cases;

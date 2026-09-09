@@ -10,7 +10,7 @@ using UnityEngine;
 
 public static class NativeBlendTreeAudit
 {
-    const string Out = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/";
+    const string Out = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/";
     const string Bank = "Assets/StreamingAssets/RemielleControllerMotions";
     const string Intervals = "Assets/ControllerRuntime/Data/source-motion-time-ranges.json";
     static void Require(bool ok, string message) { if (!ok) throw new Exception(message); }

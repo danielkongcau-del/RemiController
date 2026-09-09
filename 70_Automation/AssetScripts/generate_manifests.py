@@ -3,10 +3,12 @@
 import hashlib
 import json
 import os
+import sys
 from datetime import datetime, timezone
 
 BASE = r"E:\ZZZ\ZCode"
 OUT = os.path.join(BASE, r"20_ReverseEngineering\Manifests")
+ONLY = sys.argv[1] if len(sys.argv) > 1 else None
 
 # 组名 -> 物理根（相对 ZCode）；AssetVault 按顶层子目录拆分以保证单文件可渲染
 GROUPS = {
@@ -39,6 +41,8 @@ def sha256_file(path):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
+    summary_path = os.path.join(OUT, "summary.json")
+    groups_run = {k: v for k, v in GROUPS.items() if ONLY is None or k == ONLY}
     summary = {
         "schema": "zcode.asset-manifest-summary.v1",
         "generatedUtc": datetime.now(timezone.utc).isoformat(),
@@ -46,7 +50,10 @@ def main():
         "merkleAlgorithm": "对排序后每行构造 'sha256 <path>\\n'，按文件顺序拼接后整体 SHA-256 = merkleRoot",
         "groups": [],
     }
-    for name, rel in GROUPS.items():
+    if ONLY is not None and os.path.exists(summary_path):
+        old = json.load(open(summary_path, encoding="utf-8"))
+        summary["groups"] = [g for g in old.get("groups", []) if g.get("group") not in groups_run]
+    for name, rel in groups_run.items():
         root = os.path.join(BASE, rel)
         rows = []
         for dirpath, dirnames, filenames in os.walk(root):

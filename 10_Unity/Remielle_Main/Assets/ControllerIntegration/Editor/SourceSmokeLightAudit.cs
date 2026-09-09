@@ -11,7 +11,7 @@ namespace Remielle.Controller.Editor
 {
  public static class SourceSmokeLightAudit
  {
-  const string Output="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/skill-smoke-sources/";
+  const string Output="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/skill-smoke-sources/";
   static JObject report;
   static System.Collections.IEnumerator steps;
   public static void Run()

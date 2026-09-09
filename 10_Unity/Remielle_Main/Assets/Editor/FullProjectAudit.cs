@@ -10,7 +10,7 @@ using Object=UnityEngine.Object;
 
 public static class FullProjectAudit
 {
-    static string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904";
+    static string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904";
     static readonly List<string> errors=new();
     static void Require(bool pass,string message){if(!pass)errors.Add(message);}
     public static void Run() => RunChecks();

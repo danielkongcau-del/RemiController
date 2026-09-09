@@ -10,7 +10,7 @@ using UnityEngine;
 
 public static class NativeTransitionGateAudit
 {
-    const string Out = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/";
+    const string Out = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/";
     const string Pack = "Assets/ControllerRuntime/Data/source-controller-pack.json";
 
     static void Require(bool value, string message)

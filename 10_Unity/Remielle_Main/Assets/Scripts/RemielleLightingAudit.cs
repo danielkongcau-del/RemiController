@@ -9,7 +9,7 @@ using UnityEngine.Experimental.Rendering;
 [DefaultExecutionOrder(10000)]
 public class RemielleLightingAudit : MonoBehaviour
 {
-    const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905";
     [Serializable] class Shot {public string name;public int width,height,msaa;}
     [Serializable] class LightCheck {public string profile;public Vector3 expectedDirection,actualDirection,expectedColor,actualColor;public float directionError,colorError;}
     [Serializable] class MaskCheck {public string name;public int width,height,draws,characterPixels,emissionPixels;public long positionChecksum;}

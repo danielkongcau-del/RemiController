@@ -7,7 +7,7 @@ using UnityEngine;
 
 public static class NativeRotationAudit
 {
-    const string Out="E:/ZZZ/local-only/RemielleModelReadiness/20260904";
+    const string Out="E:/ZZZ/ZCode/90_Builds/ModelReadiness/20260904";
     public static void Audit(string file,bool requirePass)
     {
         var manifest=JObject.Parse(File.ReadAllText("Assets/SourceAssets/AnimationInputs/animation_inputs.json"));

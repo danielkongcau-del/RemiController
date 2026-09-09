@@ -11,7 +11,7 @@ namespace Remielle.Controller.Editor
  public static class SourceParticleAlphaBuild
  {
   const string Policy="Assets/ControllerIntegration/Data/source-particle-alpha-policy.json";
-  const string Output="E:/ZZZ/local-only/RemielleControllerDependencies/implementation/skill-native-particle-shader/";
+  const string Output="E:/ZZZ/ZCode/90_Builds/ControllerDependencies/implementation/skill-native-particle-shader/";
   static string Hash(string path){using var h=SHA256.Create();return BitConverter.ToString(h.ComputeHash(File.ReadAllBytes(path))).Replace("-","").ToLowerInvariant();}
   public static void Apply(Material material,JToken source)
   {
