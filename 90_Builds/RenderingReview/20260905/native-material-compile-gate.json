@@ -1,0 +1,245 @@
+{
+  "schema": "remielle-native-material-compile-gate-v1",
+  "pass": true,
+  "shader": "Assets/RenderingReview/Shader/GeneratedNative/CapturedNativeMaterialBodies.shader",
+  "passes": 6,
+  "supported": true,
+  "compilerMessageCount": 28,
+  "compilerMessages": [
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 109
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 110
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 112
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 113
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 116
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 129
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 130
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 132
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 133
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 136
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 109
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 110
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 112
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 113
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 116
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 127
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 128
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 130
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 131
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 134
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 113
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 114
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 116
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 117
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 120
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 102
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 103
+    },
+    {
+      "severity": "Warning",
+      "message": "Literal floating-point value out of unsigned range for conversion: -1.000000",
+      "platform": "D3D",
+      "line": 107
+    }
+  ],
+  "errors": [],
+  "shaderSha256": "b96297b014b71bcceb7fa33f00d21575a98b2e2cec9f3618ed834d66454bd2fd",
+  "verifiedIncludes": [
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativeVS_26214fb5eedfcbdd.hlsl",
+      "sha256": "ed54531a5403cce1d6f9ce624d9d0d7241253b79694a93d1536b61a435bc4e8e"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativeVS_ed2f36604db4b10f.hlsl",
+      "sha256": "5114d71d997ef1bc85499c6fd3fc420bdef5079fa0bca0c90a8c9fc537c8db13"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_9dd6a2a0a6d11117.hlsl",
+      "sha256": "e7de36b6166d1b27bade307011f405a90ca5e9c26fe7d604a50fcf552200c2d8"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_80c34aae4f69f1ff.hlsl",
+      "sha256": "fda107433cf2a623626288c4dd4ea989a8b55ccd44e1925687d2d429f71676ec"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_8fc7e589644cb3c4.hlsl",
+      "sha256": "224fd1890ad3b842a8e351c046edad92047e7a576f39bb81e129e0133e63337b"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_77bdd348772c62c8.hlsl",
+      "sha256": "28cd01fc9b1ab9f26d2c43343e9842cde76989e21c9609d1724647d32562e1b9"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_dff613cbed805284.hlsl",
+      "sha256": "745756b10c25999e1f1c9c1df5903b9c822e624b80ae9643c4da77f5d9935f83"
+    },
+    {
+      "path": "E:\\ZZZ\\local-only\\RemielleHoyoToon\\Assets\\RenderingReview\\Shader\\GeneratedNative\\CapturedNativePS_0c8ddaae78cc096f.hlsl",
+      "sha256": "bdeb76419836c8a627b85b17eddbfec923a1c7d47422e326e7f36edf93d68bb6"
+    }
+  ],
+  "activatedVariants": [
+    {
+      "pass": 0,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 1,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 2,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 3,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 4,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 5,
+      "keyword": "disabled"
+    },
+    {
+      "pass": 3,
+      "keyword": "CAPTURED_S3_HANDLE_B"
+    }
+  ],
+  "boundary": "Two VS and six PS translations, with seven captured sampler binding patterns. Separate original-DXBC GPU tests cover captured constants with three explicit sampler fixtures. Original sampler descriptors, full game-image equivalence and live inputs remain pending."
+}

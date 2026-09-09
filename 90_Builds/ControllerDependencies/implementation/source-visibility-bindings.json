@@ -1,0 +1,250 @@
+{
+  "pass": true,
+  "sourceContractSha256": "0eadd1cd597ace2265109837fc1afb5b455f7f652a6c4e65bea553860994bb07",
+  "bindings": [
+    {
+      "name": "Remielle_Weapon_02_L",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -8954149396010411982,
+      "rendererSourceSha256": "89e9354ef97a5ee893e0209dd8cc01acb061cf44edd523bdb31be3daad98d3d0",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_02_L.glb",
+      "currentImportedGlbSha256": "db6c67ac7909ce791bcefc1cf2ed41f67ec410dee47b39d6b701bcc6e4dc1f58"
+    },
+    {
+      "name": "Remielle_Weapon_02_R",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 979939821508246278,
+      "rendererSourceSha256": "421d05f84a1b9a1dd83a965adf605476ba1b31c569aa16bfbb5c0b2f3c699d8c",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_02_R.glb",
+      "currentImportedGlbSha256": "4c59c1ec7e61635f700937a44e910bc50956731f79aa36abec6f82b859615fe7"
+    },
+    {
+      "name": "Remielle_Weapon_03_L",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -5420258734713655194,
+      "rendererSourceSha256": "9599bc88be3cbfd097c9012df7d6ba079bdb23756db7999c42321ba52811fc08",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_03_L.glb",
+      "currentImportedGlbSha256": "b4e565a1110ed96b038a0f4184ef41d45e74906fd91c23624a7cbb0e1065d02e"
+    },
+    {
+      "name": "Remielle_Weapon_03_R",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 3339103467558348102,
+      "rendererSourceSha256": "0511c1b36ecc317e7397b2b3cbfd0e6ecad79b30b2594d6194e09bf0fb77ba88",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_03_R.glb",
+      "currentImportedGlbSha256": "fee841f984ba914bf63c4d539072fa8e8c2351a192f0d12c8871229c7c734393"
+    },
+    {
+      "name": "Remielle_Weapon_04",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 7681539234396646671,
+      "rendererSourceSha256": "0ddec2c0b81f9ebd76d21c7b2e66d658b5947b5df255715a8f4bddfbe0e2c58b",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_04.glb",
+      "currentImportedGlbSha256": "d031b47703ad5917ef55d2f058454ff7dd77fe733a0a814a63753c9826aafb1d"
+    },
+    {
+      "name": "Remielle_Floater_02",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 6709195539735168788,
+      "rendererSourceSha256": "0e6111abbb8eafada70cdb5935b4e3a795d5aadb5fafda27ce0c05620b24ec3a",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Floater_02.glb",
+      "currentImportedGlbSha256": "381a6689b123344a3761c7e5d12c7b38648e6489cdfa34b17da2904f0dcbc3a1"
+    },
+    {
+      "name": "Remielle_Sticker_02_R",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -8621700557445519561,
+      "rendererSourceSha256": "0dc9325298ac2a92b0063f5077f386540ebebaaf975369ac8bdc7dce85faa47c",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Sticker_02_R.glb",
+      "currentImportedGlbSha256": "28f13f8ad50689f6fecfdf3f9ecac0b1db9ef00aacd34e2a136fac6d6cf528d8"
+    },
+    {
+      "name": "Remielle_Cannon_R_04",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -7649343419898691471,
+      "rendererSourceSha256": "01b41ac87a3ad1c11bddc966ccc225041ae4989a97e62c1269e705a97bdfcff4",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_R_04.glb",
+      "currentImportedGlbSha256": "4cf460efaaf76a6344c2ccd786de65a463ca1313ae99a3feff886b959380293b"
+    },
+    {
+      "name": "Remielle_Face",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -7439177835893778237,
+      "rendererSourceSha256": "c2c9f3a09a2f3b2ac88054f94e5f5cd398fad392a1372d94b86779334121d29f",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Face.glb",
+      "currentImportedGlbSha256": "2054406f26a7ce16f3db0988ad976fc4bc859f9322e7df1add85d8363d75db4c"
+    },
+    {
+      "name": "Remielle_Sticker_02_L",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -7235025668004766520,
+      "rendererSourceSha256": "001c52f166cc61b3ae6ddac0f0cf0de15241f9877016d8b9694c831e7032652e",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Sticker_02_L.glb",
+      "currentImportedGlbSha256": "d9deb983576f46ef8d1d3c5ec2e024ca549d9202b1736c8f0217cd7c47b390fb"
+    },
+    {
+      "name": "Remielle_Weapon_05_L",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -6648766156719535261,
+      "rendererSourceSha256": "d7437c1414fb2faa043a53a5da0a0f8356d72aa6eacac7e61c402b15fc983581",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_05_L.glb",
+      "currentImportedGlbSha256": "1cf0629582e35c19d1db71b36c9c714b24a00168a25875141889d1b73387144a"
+    },
+    {
+      "name": "Remielle_HairShadow",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -5057632963289070313,
+      "rendererSourceSha256": "0e21271a5c054e4a561bc6742f1414cb751dcee6e44cc47e311d26f3e7bb0a0a",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_HairShadow.glb",
+      "currentImportedGlbSha256": "4273631af2c2c0793ccd57e8d7102618319b2d79c0fb83de8f174cba83b61cbd"
+    },
+    {
+      "name": "Remielle_Cannon_L_04",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -4415025529477570995,
+      "rendererSourceSha256": "6cd87cb8e9117999031a4582c49d7c260fc609df5848d26bac5694ec7287f1ea",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_L_04.glb",
+      "currentImportedGlbSha256": "5ef7e978af6656a5b07bd4b459f9a846c644b8df6112d43dafdc2c4d930cc75d"
+    },
+    {
+      "name": "Remielle_Wings",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -2175758165994586734,
+      "rendererSourceSha256": "27f406a8273f578f961416e2999d028e4e29363bc59ff5d249ce0286d016a508",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Wings.glb",
+      "currentImportedGlbSha256": "200c87964cf7a0a775f23477fed86bda2bcc74eb0b22e4cfd6299adb33652c65"
+    },
+    {
+      "name": "Remielle_Cannon_R_01",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -1158087645795597371,
+      "rendererSourceSha256": "8bdda25cc72fb68c9887cacd534f27208022705f0d0905abe45512b34096978a",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_R_01.glb",
+      "currentImportedGlbSha256": "3866877e7a6d4fc1e92c16aaafd612d537142cf51d529e0b1ecbc4a62f2c97a8"
+    },
+    {
+      "name": "Remielle_Cannon_R_03",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": -420565374265623974,
+      "rendererSourceSha256": "d3fd625fa1d54b53869de5487531bed2fb3b3a28db4f8d59f154cbbf6cdef6b5",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_R_03.glb",
+      "currentImportedGlbSha256": "19acd4b61a7711dc72ec2e6cf3b8492c243de44d044c49993818e4fa170ed37a"
+    },
+    {
+      "name": "Remielle_Weapon_01",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 1083608993247375463,
+      "rendererSourceSha256": "a57f3fa75b24b7e9d0427fed66d4cd476c7ba9f9fd2c559e5df9ecbd42175e15",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_01.glb",
+      "currentImportedGlbSha256": "1d866af73271d181656299035c68060e45d2e421922d3cd93e86a7385580d99a"
+    },
+    {
+      "name": "Remielle_Cannon_R_02",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 1122337126600558511,
+      "rendererSourceSha256": "eba4d9633c4f5f9eaba4b3e14ffd19dd69459564ba06eff6aea580e00cd8345a",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_R_02.glb",
+      "currentImportedGlbSha256": "752cc7895ccaa467f5af4307509d4d2cce4031fb2e357608679c4be8afdd81d8"
+    },
+    {
+      "name": "Remielle_Hair",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 1512411770363347944,
+      "rendererSourceSha256": "75329f7ee03702304786f2411218b2767b1c8aca87a18ec4106f3739e596e53d",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Hair.glb",
+      "currentImportedGlbSha256": "4ee8cca3cee341d9a98cd91cda2bbbd7d36b9965eeadfa4bc08a76d313d12045"
+    },
+    {
+      "name": "Remielle_Cannon_L_03",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 1793250827810513158,
+      "rendererSourceSha256": "d1ed6d081e7c4bcf19ccbe8aa5365ac8c94fa4fbcc0c039badf0a80542decbe9",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_L_03.glb",
+      "currentImportedGlbSha256": "8cb618ba709dc30e09a5867a82ced1a278f2ef254cecec59eddc9bf3d58f7e9b"
+    },
+    {
+      "name": "Remielle_Weapon_05_R",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 2556212553230146147,
+      "rendererSourceSha256": "78d574a34849d5c634441dffda414820fbe241f75a9840105f218ac39d95cba6",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Weapon_05_R.glb",
+      "currentImportedGlbSha256": "4c0b833bbf1f082cf0b386f7213dd4513446b11b5438a673e726f889979c2e3e"
+    },
+    {
+      "name": "Remielle_Origin_Body_1",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 3586499500754002266,
+      "rendererSourceSha256": "0c1b1b44f3a76c8b2b4b199ae4cc6074ebfc1a0df53cb8b088b3cc59662748de",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Origin_Body_1.glb",
+      "currentImportedGlbSha256": "3258c2bf91fcd20deef2834736744a5ceea8b1337975352c998603e0f9f98cc5"
+    },
+    {
+      "name": "Remielle_Sticker_01",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 4540598114752989812,
+      "rendererSourceSha256": "4e566384ca3de76bd7ed281806d24ea81dddaa3216f324e90e9f3c5567352b56",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Sticker_01.glb",
+      "currentImportedGlbSha256": "386fe675967329be7d987907f96df2251379753469ebc95caf69610cb2240a0a"
+    },
+    {
+      "name": "Remielle_Cannon_L_02",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 5062926033867015136,
+      "rendererSourceSha256": "68d68978fafaef8106c92d7e9d3927214b61079e4674313a4a3f42086a2c4fd5",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_L_02.glb",
+      "currentImportedGlbSha256": "494ccde1117e065d162e11063311b26cd52e2710b8673af59ccb3621bf106c18"
+    },
+    {
+      "name": "Remielle_Origin_Body_2",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 6325778108661050461,
+      "rendererSourceSha256": "d0fc2dd012bcbd2fb1c75a715f9d111b05f2d2e5e1213c88aaa362ea27b531da",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Origin_Body_2.glb",
+      "currentImportedGlbSha256": "7dd0b8bd1cfbe4e8a6bb3283fda7b2dafda2c4455457ca22dbf5d0676b1d5b41"
+    },
+    {
+      "name": "Remielle_Eyebrow",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 6931357258623867039,
+      "rendererSourceSha256": "09446d2150f6133089c284814b179d7f307a01d0d7a1d34d4eed824638fb16e8",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Eyebrow.glb",
+      "currentImportedGlbSha256": "ffdf5776f7b1d5496d3b1fb04b9781de4735e98700105fcc1ea932c2ce5a839e"
+    },
+    {
+      "name": "Remielle_Cannon_L_01",
+      "sourceBlock": "E:\\ZZZ\\miHoYo Launcher\\games\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\StreamingAssets\\Blocks\\2906705493.blk",
+      "cab": "CAB-a54cb8ece006bf575b732cd3ab36fd55",
+      "rendererPathID": 8716320997657025405,
+      "rendererSourceSha256": "efda05d9a3fdaa61a481a35e5376dc407b0a6bd81a02c4a3971621de92971457",
+      "currentImportedGlb": "Assets/SourceAssets/Meshes/Remielle_Cannon_L_01.glb",
+      "currentImportedGlbSha256": "d036af106bd5424199a70a7e03145e09982774821d805636b50335f40478e682"
+    }
+  ],
+  "scope": "Current canonical presentation mesh references and source renderer identities; no new live Mesh pointer claim"
+}

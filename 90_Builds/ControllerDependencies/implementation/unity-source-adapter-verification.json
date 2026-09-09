@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "checks": [
+    "source FrameCount boundary 89",
+    "source FrameCount boundary 90",
+    "source release target and duration 90",
+    "HFSM explicit source commit 90",
+    "no duplicate lifecycle commit 90",
+    "source FrameCount boundary 91",
+    "source release target and duration 91",
+    "HFSM explicit source commit 91",
+    "no duplicate lifecycle commit 91",
+    "Idle local Hit/Evade preserves source first candidate",
+    "preview does not consume input triggers",
+    "changed parameter snapshot rejected",
+    "Original planner gives Any Die priority over Current Hit/Evade",
+    "preview does not change source state",
+    "source RunLoop attack selects T5 not duplicate T6",
+    "unqualified blend interruption rejected",
+    "external callback requires explicit qualification",
+    "OpenKCC authored delta applied once",
+    "duplicate root sample rejected",
+    "rejected sample did not move actor",
+    "OpenKCC wall blocks authored displacement",
+    "Cinemachine 3.1.7 updates actual Camera"
+  ],
+  "count": 22,
+  "scope": "source decision snapshots, actual HFSM lifecycle, Unity physics motor, camera update",
+  "fullInputGameplayParity": false,
+  "animationAndRootExtractionIntegrated": false,
+  "playModeTested": false,
+  "productionSceneSaved": false
+}

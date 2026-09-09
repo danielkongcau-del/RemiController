@@ -10,7 +10,8 @@ using UnityEngine.Rendering;
 public static class RemielleSourceMipGpuAudit
 {
     const string Review="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    const string Output="E:/ZZZ/ZCode/90_Builds/DataAcquisition/20260904/source-completion-plan/";
+    const string SourcePlan="E:/ZZZ/local-only/RemielleDataAcquisition/20260904/source-completion-plan/"; // A 类读根（D1-e 发现）
+    const string Output="E:/ZZZ/ZCode/90_Builds/DataAcquisition/20260904/source-completion-plan/"; // C 类写根
     public static void Run()
     {
         if(SystemInfo.graphicsDeviceType!=GraphicsDeviceType.Direct3D11)throw new Exception("D3D11 required");
@@ -18,7 +19,7 @@ public static class RemielleSourceMipGpuAudit
         var shader=AssetDatabase.LoadAssetAtPath<ComputeShader>("Assets/Editor/RemielleSourceMipGpuAudit.compute");
         if(!shader)throw new Exception("Missing mip audit compute shader");
         var staging=JObject.Parse(File.ReadAllText(Review+"native-material-texture-assets.json"));
-        var sources=JObject.Parse(File.ReadAllText(Output+"source-completion-verification.json"));
+        var sources=JObject.Parse(File.ReadAllText(SourcePlan+"source-completion-verification.json"));
         var selected=new HashSet<string>();
         foreach(JObject r in (JArray)sources["resources"])if((string)r["status"]=="exact-source-chain-recovered")selected.Add((string)r["payloadSha256"]);
         var result=new JArray();int sampleCount=0,mipCount=0;
