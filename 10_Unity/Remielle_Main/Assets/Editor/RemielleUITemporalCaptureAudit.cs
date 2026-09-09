@@ -11,6 +11,7 @@ using Object=UnityEngine.Object;
 public static class RemielleUITemporalCaptureAudit
 {
     public const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/native-taa/";
+    public const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/native-taa/"; // D1-c 写根（读根保留 A 类）
     public const string Assets="Assets/RenderingReview/NativeUILive/Temporal/";
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     public static Texture Load(JToken row)
@@ -25,7 +26,7 @@ public static class RemielleUITemporalCaptureAudit
     }
     public static void Build()
     {
-        Directory.CreateDirectory(Assets);AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);var m=JObject.Parse(File.ReadAllText(Root+"manifest.json"));RemielleUINativePostBuild.ReadRef(m["shader"]);
+        Directory.CreateDirectory(Assets);AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);var m=JObject.Parse(File.ReadAllText(WriteRoot+"manifest.json"));RemielleUINativePostBuild.ReadRef(m["shader"]);
         foreach(var row in m["cases"])
         {
             string id=(string)row["id"],path=Assets+id+".asset";var p=ScriptableObject.CreateInstance<RemielleNativeUITemporalProfile>();p.profileName=id;p.sourceManifestSha256=RemielleUINativePostBuild.Sha(Root+"manifest.json");p.shader=AssetDatabase.LoadAssetAtPath<Shader>("Assets/RenderingReview/Shader/GeneratedNativeUIReplay/NativeUITemporal.shader");p.constants=RemielleUINativePostBuild.Vectors(RemielleUINativePostBuild.ReadRef(row["constants"]),168);p.name=id;
@@ -36,7 +37,7 @@ public static class RemielleUITemporalCaptureAudit
     public static void RunAll(){Build();Run();}
     public static void Run()
     {
-        Directory.CreateDirectory(Root+"unity");var manifest=JObject.Parse(File.ReadAllText(Root+"manifest.json"));var rows=new JArray();
+        Directory.CreateDirectory(WriteRoot+"unity");var manifest=JObject.Parse(File.ReadAllText(WriteRoot+"manifest.json"));var rows=new JArray();
         foreach(var row in manifest["cases"])
         {
             string id=(string)row["id"];int w=(int)row["width"],h=(int)row["height"];var p=AssetDatabase.LoadAssetAtPath<RemielleNativeUITemporalProfile>(Assets+id+".asset");var material=new Material(p.shader);var inputs=row["inputs"].OrderBy(i=>(int)i["slot"]).Select(Load).ToArray();
@@ -44,14 +45,14 @@ public static class RemielleUITemporalCaptureAudit
             try
             {
                 RemielleNativeUITemporal.Draw(material,p.constants,inputs[0],inputs[1],inputs[2],inputs[3],inputs[4],color,tag,cmd);
-                string a=Root+"unity/"+id+"-o0.raw",b=Root+"unity/"+id+"-o1.raw";File.WriteAllBytes(a,RemielleUINativePostAudit.Read(color,w*h*8));File.WriteAllBytes(b,RemielleUINativePostAudit.Read(tag,w*h));
+                string a=WriteRoot+"unity/"+id+"-o0.raw",b=WriteRoot+"unity/"+id+"-o1.raw";File.WriteAllBytes(a,RemielleUINativePostAudit.Read(color,w*h*8));File.WriteAllBytes(b,RemielleUINativePostAudit.Read(tag,w*h));
                 rows.Add(new JObject{["id"]=id,["color"]=Ref(a),["tag"]=Ref(b),["profile"]=Ref(Assets+id+".asset")});
                 foreach(var e in ShaderUtil.GetShaderMessages(p.shader))if(e.severity.ToString()=="Error")throw new Exception(e.message);
             }
             finally{cmd.Release();RenderTexture.active=null;color.Release();tag.Release();Object.DestroyImmediate(color);Object.DestroyImmediate(tag);Object.DestroyImmediate(material);foreach(var t in inputs){if(t is RenderTexture rt)rt.Release();Object.DestroyImmediate(t);}}
         }
         var files=new JArray();foreach(string path in new[]{"Assets/Editor/RemielleUITemporalCaptureAudit.cs","Assets/RenderingReview/Runtime/RemielleNativeUITemporal.cs","Assets/RenderingReview/Runtime/RemielleNativeUITemporalProfile.cs","Assets/RenderingReview/Shader/GeneratedNativeUIReplay/NativeUITemporal.shader"})files.Add(Ref(path));
-        File.WriteAllText(Root+"unity.json",new JObject{["schema"]="remielle-native-ui-temporal-capture-readback-v1",["cases"]=rows,["manifest"]=Ref(Root+"manifest.json"),["implementationFiles"]=files}.ToString());
+        File.WriteAllText(WriteRoot+"unity.json",new JObject{["schema"]="remielle-native-ui-temporal-capture-readback-v1",["cases"]=rows,["manifest"]=Ref(WriteRoot+"manifest.json"),["implementationFiles"]=files}.ToString());
         Debug.Log("REMIELLE_UI_TEMPORAL_CAPTURE_READBACK "+rows.Count);
     }
 }

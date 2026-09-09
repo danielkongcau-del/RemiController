@@ -13,10 +13,11 @@ using Object=UnityEngine.Object;
 public static class RemielleNativeUIPresentationBuild
 {
     public const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    public const string Out=Root+"ui-live-binding/native-player/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
+    public const string Out = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/native-player/";
     public const string Assets="Assets/RenderingReview/NativeUILive/Presentation/";
     public const string ScenePath="Assets/RenderingReview/Remielle_NativeUIReview.unity";
-    public const string PlayerPath=Root+"NativePlayer/RemielleNativeUI.exe";
+    public const string PlayerPath=WriteRoot+"NativePlayer/RemielleNativeUI.exe";
     public static void BuildProfiles()
     {
         Directory.CreateDirectory(Out);Directory.CreateDirectory(Assets);AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);

@@ -12,7 +12,8 @@ using Object=UnityEngine.Object;
 public static class RemielleUILiveTemporalAudit
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    const string Out=Root+"ui-live-binding/live-temporal/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
+    const string Out = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-temporal/";
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     static string Quote(string p)=>"\""+p.Replace('\\','/')+"\"";
     static byte[] Bytes(Vector4[] a){var b=new byte[a.Length*16];var pin=GCHandle.Alloc(a,GCHandleType.Pinned);try{Marshal.Copy(pin.AddrOfPinnedObject(),b,0,b.Length);}finally{pin.Free();}return b;}

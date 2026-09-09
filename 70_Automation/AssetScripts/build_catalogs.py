@@ -37,10 +37,9 @@ def write_csv(name, header, rows):
 def main():
     result = {"generatedUtc": datetime.now(timezone.utc).isoformat(), "catalogs": {}}
 
-    # 1) 动画：tier/source/CAB/文件 + 身份与名称聚合
-    anim_rows = []
-    identities = set()
-    names = {}
+    # 1) 动画：分两张表——身份表（829 包身份，tier=恢复产品属性）与文件表（全部文件，含解码依赖）
+    anim_rows = []          # 文件级
+    identities = {}         # (source_id, cab, name) -> {tiers, files}
     for tier, root in TIERS.items():
         if not os.path.isdir(root):
             continue
@@ -53,15 +52,37 @@ def main():
                 size = os.path.getsize(os.path.join(dirpath, fn))
                 nm = stem(fn)
                 anim_rows.append((tier, src_id, cab, fn, size))
-                identities.add((tier, src_id, cab, nm))
-                names.setdefault(nm, set()).add(tier)
+                key = (src_id, cab, nm)
+                rec = identities.setdefault(key, {"tiers": set(), "files": 0, "pkgFiles": 0})
+                rec["files"] += 1
+                rec["tiers"].add(tier)
+                if tier in ("highest-quality", "standalone-native") and fn.lower().endswith((".npz", ".anim")):
+                    rec["pkgFiles"] += 1
     n, _ = write_csv("animation-catalog.csv", ("tier", "source_id", "cab", "file", "size"), anim_rows)
+    ident_rows = [
+        (src, cab, nm, "|".join(sorted(rec["tiers"])), rec["files"])
+        for (src, cab, nm), rec in sorted(identities.items())
+    ]
+    ni, _ = write_csv("animation-identities.csv", ("source_id", "cab", "name", "recovery_products", "files"), ident_rows)
+    pkg_rows = [
+        (src, cab, nm, "|".join(sorted(rec["tiers"])))
+        for (src, cab, nm), rec in sorted(identities.items())
+        if rec["pkgFiles"] > 0
+    ]
     result["catalogs"]["animation"] = {
-        "files": n, "distinctIdentities": len(identities), "distinctNames": len(names),
-        "note": "身份=(tier,source,CAB,名称)；对照 RECOVERY_STATUS 声称的 829 身份/810 名称",
+        "fileLevel": {"files": n,
+                      "note": "文件级全枚举（含 scalar-full-source 解码依赖与报告文件；名称列可能是数字词干）"},
+        "identityLevel": {
+            "allIdentities": ni,
+            "packageIdentities": len(pkg_rows),
+            "packageNote": "恢复包身份（highest-quality .npz + standalone .npz/.anim），tier 为恢复产品属性不改身份；"
+                           "对照 RECOVERY_STATUS 声称的 829 身份",
+        },
     }
     write_csv("animation-names.csv", ("name", "tiers", "identity_count"),
-              [(nm, "|".join(sorted(names[nm])), len([i for i in identities if i[3] == nm])) for nm in sorted(names)])
+              [(nm, "|".join(sorted({t for (s, c, n2), rec2 in identities.items() if n2 == nm for t in rec2["tiers"]})),
+                len([1 for (s, c, n2) in identities if n2 == nm]))
+               for nm in sorted({k[2] for k in identities})])
 
     # 2) 网格
     mesh_root = os.path.join(V, r"recovered\meshes\by-source")

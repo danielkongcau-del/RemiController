@@ -1,5 +1,5 @@
 功能/状态,动画名,源身份（source/CAB/pathID）,动作库槽位,工程对象,绑定状态,备注
-冲刺启动,Dash_Start,待登记（B1-v2 按身份回填）,动作库 335 motions 内,RemielleSourceController 状态图,已绑定（1,140 帧验证）,预载
+冲刺启动,Dash_Start,待登记（B1-v2 按身份回填）,动作库 335 motions 内,RemielleSourceController 状态图,已绑定（1,"140 帧验证）,预载"
 冲刺循环,Dash_Loop,待登记,动作库内,同上,已绑定,含 Loop_02 变体
 冲刺闪避,Dash_Evade,待登记,动作库内,同上,已绑定,
 冲刺结束,Dash_End,待登记,动作库内,同上,已绑定,

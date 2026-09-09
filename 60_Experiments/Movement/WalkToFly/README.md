@@ -6,6 +6,12 @@
 
 复刻 Remielle 的二段移动：按住移动键一段时间后，从走路动画**自动切换**为慢速飞行动画（两套独立 walk 动画）。
 
+## 代码线索（2026-09-09 云端审查从已入库代码中发现，优先级高于泛搜）
+
+- `RemielleSourceController.Update()` 正常键盘路径调用 `TickInput()` 时 **`runHeld` 固定传 `false`**，而 `TickInput()` 内 `p.SetBool(p.Hash("Bool_WalkToRun"), runHeld)` ——该参数在正常输入路径被持续写 false。
+- `SourcePreviewMotions` 已预热状态：`Walk_Start / Walk_Loop / Walk_End / Walk_To_RunLoop_01 / RunLoop_01 / RunLoop_02 / RunLoop_01_To_02 / RunLoop_02_To_01` ——移动状态族远不止一条 Walk。
+- **取证优先级**：核对 `Bool_WalkToRun` 被哪些过渡条件读取 → `Walk_To_RunLoop_01` 实际进入什么姿态 → `RunLoop_01/02` 的真实移动表现（**名字叫 Run 不排除实为悬浮移动**）→ 原作在什么条件下更新该参数。数据源：`condition-semantics.md`、原生 97 状态图取证链、游戏录像逐帧。
+
 ## 定位协议（六层定位法，2026-09-09 并入——来自云端审查建议）
 
 "只能走不能飞"可能断在任何一层，取证按序检查，命中哪层修哪层：

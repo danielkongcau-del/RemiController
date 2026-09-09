@@ -1,11 +1,16 @@
 {
-  "generatedUtc": "2026-09-09T11:49:35.877715+00:00",
+  "generatedUtc": "2026-09-09T14:15:59.708292+00:00",
   "catalogs": {
     "animation": {
-      "files": 3821,
-      "distinctIdentities": 3134,
-      "distinctNames": 1478,
-      "note": "身份=(tier,source,CAB,名称)；对照 RECOVERY_STATUS 声称的 829 身份/810 名称"
+      "fileLevel": {
+        "files": 3821,
+        "note": "文件级全枚举（含 scalar-full-source 解码依赖与报告文件；名称列可能是数字词干）"
+      },
+      "identityLevel": {
+        "allIdentities": 2968,
+        "packageIdentities": 829,
+        "packageNote": "恢复包身份（highest-quality .npz + standalone .npz/.anim），tier 为恢复产品属性不改身份；对照 RECOVERY_STATUS 声称的 829 身份"
+      }
     },
     "mesh": {
       "files": 180,

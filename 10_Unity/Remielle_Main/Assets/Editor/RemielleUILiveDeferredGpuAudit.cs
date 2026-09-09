@@ -16,8 +16,9 @@ using Object=UnityEngine.Object;
 public static class RemielleUILiveDeferredGpuAudit
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
     const string Acq="E:/ZZZ/local-only/RemielleDataAcquisition/20260904/";
-    const string Out=Root+"ui-live-binding/live-deferred-gpu/";
+    const string Out = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-deferred-gpu/";
     static string Sha(string p){using var f=File.OpenRead(p);using var h=SHA256.Create();return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
     static JObject Ref(string p)=>new(){["path"]=Path.GetFullPath(p),["sha256"]=Sha(p)};
     static string Quote(string p)=>"\""+p.Replace('\\','/')+"\"";

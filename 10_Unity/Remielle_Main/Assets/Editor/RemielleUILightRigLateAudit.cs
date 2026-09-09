@@ -14,7 +14,7 @@ using Object=UnityEngine.Object;
 
 public static class RemielleUILightRigLateAudit
 {
-    const string Out=RemielleUILiveProfileBuild.Live+"light-rig/late/";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/light-rig/late/";
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     static string Q(string p)=>"\""+p.Replace('\\','/')+"\"";
     static byte[] Bytes<T>(T[] values)where T:struct

@@ -14,7 +14,7 @@ using Object=UnityEngine.Object;
 
 public static class RemielleUILiveLateBodyAudit
 {
-    const string Out=RemielleUILiveProfileBuild.Live+"live-late-body/";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-late-body/";
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     static string Q(string p)=>"\""+p.Replace('\\','/')+"\"";
     static byte[] Bytes<T>(T[] values)where T:struct

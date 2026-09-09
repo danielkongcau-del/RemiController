@@ -12,6 +12,7 @@ using Object = UnityEngine.Object;
 public static class RemielleUILivePoseAudit
 {
     const string Out = "E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/"; // D1-c 写根（读根保留 A 类）
     const string Prefab = "Assets/V3/Remielle_V3_Animated.prefab";
     static string Sha(string path)
     {
@@ -41,7 +42,7 @@ public static class RemielleUILivePoseAudit
         var meshes = new JArray(); var poses = new JArray();
         var bindings = new System.Collections.Generic.Dictionary<string, RemielleNativeUIMeshBinding>();
         var baked = new Mesh { hideFlags = HideFlags.HideAndDontSave };
-        Directory.CreateDirectory(Out + "unity-pose");
+        Directory.CreateDirectory(WriteRoot + "unity-pose");
         try
         {
             driver.ResetSourcePose(); driver.ApplyPose();
@@ -119,7 +120,7 @@ public static class RemielleUILivePoseAudit
                     ["headRight"] = Vec(face.head.TransformDirection(face.headLocalRight).normalized),
                     ["headUp"] = Vec(face.head.TransformDirection(face.headLocalUp).normalized) });
             }
-            File.WriteAllText(Out + "unity-pose-readback.json", new JObject { ["schema"] = "remielle-ui-current-skin-input-v1",
+            File.WriteAllText(WriteRoot + "unity-pose-readback.json", new JObject { ["schema"] = "remielle-ui-current-skin-input-v1",
                 ["pass"] = true, ["meshes"] = meshes, ["poses"] = poses, ["prefab"] = Ref(Prefab),
                 ["meshBindings"] = Ref(Out + "mesh-bindings.json"), ["implementation"] = Ref("Assets/Editor/RemielleUILivePoseAudit.cs"),
                 ["nativeRoots"] = Ref(Out + "native-root-bindings.json"),

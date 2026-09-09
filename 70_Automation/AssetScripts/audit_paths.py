@@ -61,3 +61,32 @@ for dirpath, _d, files in os.walk(extra):
 
 print(f"cs 命中行数: {len(rows)} | 冻结原件相关: {sum(1 for r in rows if r[3]=='冻结原件')} | OUTPUT 疑似: {sum(1 for r in rows if r[2].startswith('OUTPUT'))}")
 print("StreamingAssets 非代码绝对路径实例:", hit_files)
+
+# 用法级检查（2026-09-09 起）：值指向 local-only 的常量若出现在写调用上下文 → 真实写回，DANGER
+wc = re.compile(r"WriteAllText|WriteAllBytes|WriteAllLines|CreateDirectory|File\.Copy|File\.Delete|File\.Move|Directory\.Delete|Directory\.Move|new StreamWriter|File\.Open\(")
+const_decls = {}
+for dirpath, _d, files in os.walk(ROOT):
+    for fn in files:
+        if not fn.endswith(".cs"):
+            continue
+        p = os.path.join(dirpath, fn)
+        for line in open(p, encoding="utf-8", errors="replace"):
+            m = re.search(r'const\s+string\s+(\w+)\s*=\s*"([^"]*local-only[^"]*)"', line)
+            if m:
+                const_decls[(os.path.relpath(p, ROOT).replace("\\", "/"), m.group(1))] = m.group(2)
+danger = []
+EXEMPT = {  # 已核实误报：常量仅作为写入内容的一部分被哈希（读输入），写入目标已迁移
+    ("ControllerIntegration/Editor/SourceVisibilityBuild.cs", "Contract"): "Sha(Root+Contract) 为读输入哈希，写入目标为已迁移的 QualifiedIntegrationAudit.Output",
+}
+for (relp, name), val in const_decls.items():
+    if (relp.replace("\\", "/"), name) in EXEMPT:
+        continue
+    for i, line in enumerate(open(os.path.join(ROOT, relp), encoding="utf-8", errors="replace")):
+        # (?<![.\w]) 排除跨类限定名（Xxx.Root 形式的读引用）；本文件裸常量才计入
+        if wc.search(line) and re.search(r"(?<![.\w])" + name + r"\b", line):
+            danger.append((relp, i + 1, name, val[:80]))
+with open(os.path.join(OUT, "path-audit.csv"), "a", encoding="utf-8", newline="\n") as f:
+    w = csv.writer(f)
+    for relp, ln, name, val in danger:
+        w.writerow((relp, ln, "DANGER 真实写回", "冻结原件", val, "用法级检查"))
+print(f"用法级检查: local-only 常量 {len(const_decls)} 个 | 真实写上下文残留 {len(danger)} 处（目标 0）")

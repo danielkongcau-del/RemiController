@@ -22,10 +22,10 @@
 
 - 云端可复验层已建立（2026-09-09）：SHA-256 全量清单（11 组 + Merkle 根，`20_ReverseEngineering/Manifests/`）+ B1 v1 机器目录（`Analysis/catalogs/`，动画 829 身份已机器验证、主工程动作库 335 motions/456 slots）。资产本体保持本地。
 - 审查建议已落实一批（2026-09-09）：D1 路径审计（100 命中/64 输出写回，三类路径政策+护栏方案）、工作集校验 PASS（22 项 legacy 机器登记+依赖断链零命中）、`Gap_Register`/`Feature_Coverage`/三份绑定级索引骨架、验收双口径固化；**自研代码开始入本仓库**（用户决策，不设私有代码仓）。
-- **D1-b 已完成（2026-09-09）**：61 处纯输出迁移 `90_Builds`，OUTPUT→local-only=0；`RemiellePathPolicy` 落地；GAP-013/014 闭环；残留 D1-c（23 处混合根待拆分）。**Unity 首次导入+编译验证通过**（退出码 0、零 CS 错误、双程序集全新构建）。
+- **D1 全部闭环（2026-09-09）**：D1-b 纯输出迁移 + D1-c 混合根拆分（用法级残留 0）+ 真机实证（审计运行 pass、受保护目录前后哈希一致、输出落位 90_Builds）；`RemiellePathPolicy` v2 登记全部只读根；CSV 双表修复、目录文件级/身份级分表（829 身份精确复现）、工作集检查诚实化命名、walk→fly 参数线索与接入层限制清单已固化入档。剩余：D1-e 抽样复跑与 D2 门禁基线。
 
 ## 工作区状态
 
 - 主工程工作副本已建立（2026-09-09 复制）；冻结原件与全部 local-only 基线保持只读。
 - 逆向资产已全部物理入库（2026-09-09）：Vault 清理副本（214,611 文件）+ RuntimeRepair/DataAcquisition/RenderingReview/Evidence 四组扩充（约 31G），按域导航见 `20_ReverseEngineering/README.md` 与 `VAULT_GUIDE.md`；原件全部留 local-only 只读。
-- 副本内编辑器工具的绝对路径审计未做（见 TODO-Workspace-1）。
+- 副本内编辑器工具路径整改进行中：纯输出已迁移（D1-b 完成）；混合根拆分为 D1-c 在办（见 `00_ProjectHub/AuditExports/path-audit-summary.md` 与 TODO）。

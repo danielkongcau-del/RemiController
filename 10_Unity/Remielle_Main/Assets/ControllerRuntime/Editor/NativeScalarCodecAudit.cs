@@ -12,6 +12,7 @@ using Object = UnityEngine.Object;
 public static class NativeScalarCodecAudit
 {
     const string Folder = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/motion-sampling";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/motion-sampling/"; // D1-c 写根（读根保留 A 类）
 
     public static void Run()
     {
@@ -121,7 +122,7 @@ public static class NativeScalarCodecAudit
         finally
         {
             if (instance) Object.DestroyImmediate(instance);
-            File.WriteAllText(Folder + "/unity-scalar-verification.json", result.ToString());
+            File.WriteAllText(WriteRoot + "/unity-scalar-verification.json", result.ToString());
         }
     }
 

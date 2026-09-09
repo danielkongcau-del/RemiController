@@ -14,6 +14,7 @@ using UnityEngine.Rendering;
 public static class RemielleNativeUIMaterialGpuAudit
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-native-material/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-native-material/"; // D1-c 写根（读根保留 A 类）
     const string ShaderPath="Assets/RenderingReview/Shader/GeneratedNativeUI/CapturedNativeUIMaterial.shader";
     static readonly int[] Counts={204,29,41,119};
     [StructLayout(LayoutKind.Sequential)]struct Entity {public Vector4 a,b,c,d,e,f,g,h;}
@@ -71,7 +72,7 @@ public static class RemielleNativeUIMaterialGpuAudit
         int width=(int)m["width"],height=(int)m["height"];
         var targets=new RenderTexture[4];var ids=new RenderTargetIdentifier[4];RenderTexture depth=null;
         var shader=AssetDatabase.LoadAssetAtPath<Shader>(ShaderPath);if(!shader||!shader.isSupported)throw new Exception("UI native shader unsupported");
-        var results=new JArray();var messages=new JArray();string output=Root+"unity-gpu";Directory.CreateDirectory(output);
+        var results=new JArray();var messages=new JArray();string output=WriteRoot+"unity-gpu";Directory.CreateDirectory(output);
         try
         {
             foreach(JObject tex in m["textures"])
@@ -127,7 +128,7 @@ public static class RemielleNativeUIMaterialGpuAudit
             var files=new JArray(generated["files"].Select(x=>x.DeepClone()));
             foreach(string p in new[]{"Assets/Editor/RemielleNativeUIMaterialGpuAudit.cs"})files.Add(new JObject{{"path",Path.GetFullPath(p)},{"sha256",Sha(p)}});
             foreach(var t in m["textures"]){string asset=(string)t["asset"];if(asset!=null)files.Add(new JObject{{"path",Path.GetFullPath(asset)},{"sha256",Sha(asset)}});}
-            File.WriteAllText(Root+"unity-readback.json",new JObject{
+            File.WriteAllText(WriteRoot+"unity-readback.json",new JObject{
                 ["schema"]="remielle-ui-native-unity-readback-v1",["device"]=SystemInfo.graphicsDeviceName,["api"]=SystemInfo.graphicsDeviceType.ToString(),["reversedZ"]=SystemInfo.usesReversedZBuffer,
                 ["manifestSha256"]=Sha(Root+"manifest.json"),["draws"]=results,["implementationFiles"]=files,["shaderMessages"]=messages,
                 ["boundary"]="Captured display/store base draws only; shared explicit sampler fixtures, one mip0-only red texture. No full UI sequence or dynamic model binding is claimed."

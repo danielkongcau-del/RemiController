@@ -15,6 +15,7 @@ using UnityEngine.Rendering;
 public static class RemielleNativeUISequenceGpuAudit
 {
     const string Root = "E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-full-sequence/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-full-sequence/"; // D1-c 写根（读根保留 A 类）
     const string Shaders = "Assets/RenderingReview/Shader/GeneratedNativeUISequence/";
     [StructLayout(LayoutKind.Sequential)] struct Entity { public Vector4 a, b, c, d, e, f, g, h; }
 
@@ -177,7 +178,7 @@ public static class RemielleNativeUISequenceGpuAudit
         var buffers = new List<RenderTexture>();
         var results = new JArray();
         var messages = new JArray();
-        string output = Root + (sequential ? "unity-sequence-gpu" : "unity-gpu");
+        string output = WriteRoot + (sequential ? "unity-sequence-gpu" : "unity-gpu");
         Directory.CreateDirectory(output);
         int width = (int)manifest["width"], height = (int)manifest["height"];
         string shaderRoot = sequential ? "Assets/RenderingReview/Shader/GeneratedNativeUIReplay/" : Shaders;
@@ -336,7 +337,7 @@ public static class RemielleNativeUISequenceGpuAudit
                 string asset = (string)row["asset"];
                 if (asset != null) files.Add(new JObject { ["path"] = Path.GetFullPath(asset), ["sha256"] = Sha(asset) });
             }
-            File.WriteAllText(Root + (sequential ? "unity-sequence-readback.json" : "unity-readback.json"), new JObject {
+            File.WriteAllText(WriteRoot + (sequential ? "unity-sequence-readback.json" : "unity-readback.json"), new JObject {
                 ["schema"] = sequential ? "remielle-ui-captured-sequence-unity-readback-v1" : "remielle-ui-all-stage-unity-readback-v1", ["device"] = SystemInfo.graphicsDeviceName,
                 ["api"] = SystemInfo.graphicsDeviceType.ToString(), ["reversedZ"] = SystemInfo.usesReversedZBuffer,
                 ["manifestSha256"] = Sha(Root + "manifest.json"), ["draws"] = results,

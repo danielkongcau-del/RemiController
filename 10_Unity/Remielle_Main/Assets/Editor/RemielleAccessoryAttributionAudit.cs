@@ -14,6 +14,7 @@ using Object=UnityEngine.Object;
 public static class RemielleAccessoryAttributionAudit
 {
     const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/accessories/attribution/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/accessories/attribution/"; // D1-c 写根（读根保留 A 类）
     const string Prefab="Assets/V3/Remielle_V3_Animated.prefab";
     const int W=720,H=1024;
     static JArray V(Vector3 v)=>new JArray(v.x,v.y,v.z);
@@ -32,11 +33,11 @@ public static class RemielleAccessoryAttributionAudit
         try
         {
             rt.Create();c.targetTexture=rt;c.Render();RenderTexture.active=rt;t.ReadPixels(new Rect(0,0,W,H),0,0);t.Apply();
-            File.WriteAllBytes(Out+name+".png",t.EncodeToPNG());
+            File.WriteAllBytes(WriteRoot+name+".png",t.EncodeToPNG());
             var pixels=t.GetPixels32();var counts=new int[28];
             if(linear)
             {
-                File.WriteAllBytes(Out+name+".rgba8",t.GetRawTextureData<byte>().ToArray());
+                File.WriteAllBytes(WriteRoot+name+".rgba8",t.GetRawTextureData<byte>().ToArray());
                 foreach(var p in pixels){if(p.g!=0||p.b!=0||p.r>27)throw new Exception("Unexpected ID color");counts[p.r]++;}
             }
             return new JObject{["name"]=name,["png"]=Ref(Out+name+".png"),["countsById"]=new JArray(counts),["linearId"]=linear,["width"]=W,["height"]=H};
@@ -56,7 +57,7 @@ public static class RemielleAccessoryAttributionAudit
     }
     public static void Run()
     {
-        Directory.CreateDirectory(Out);if(SystemInfo.graphicsDeviceType!=GraphicsDeviceType.Direct3D11)throw new Exception("D3D11 required");
+        Directory.CreateDirectory(WriteRoot);if(SystemInfo.graphicsDeviceType!=GraphicsDeviceType.Direct3D11)throw new Exception("D3D11 required");
         var before=Ref(Path.GetFullPath(Prefab));EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
         var root=Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>(Prefab));var driver=root.GetComponent<RemielleNativeAnimation>();
         driver.autoplay=false;driver.nativeAnimation.Stop();var skins=root.GetComponentsInChildren<SkinnedMeshRenderer>(true).Where(s=>s.enabled&&s.gameObject.activeInHierarchy).OrderBy(s=>s.name,StringComparer.Ordinal).ToArray();
@@ -118,7 +119,7 @@ public static class RemielleAccessoryAttributionAudit
             }
             if(curveClips.Count!=15)throw new Exception("Expected 15 existing clips");
             var after=Ref(Path.GetFullPath(Prefab));if((string)before["sha256"]!=(string)after["sha256"])throw new Exception("Source prefab changed");
-            File.WriteAllText(Out+"unity-attribution.json",new JObject{["pass"]=true,["schema"]="remielle-accessory-attribution-v1",["utc"]=DateTime.UtcNow.ToString("O"),["device"]=SystemInfo.graphicsDeviceName,
+            File.WriteAllText(WriteRoot+"unity-attribution.json",new JObject{["pass"]=true,["schema"]="remielle-accessory-attribution-v1",["utc"]=DateTime.UtcNow.ToString("O"),["device"]=SystemInfo.graphicsDeviceName,
                 ["prefabBefore"]=before,["prefabAfter"]=after,["sourceModified"]=false,["poses"]=poses,["scaleCurves"]=curveClips,["imagePurpose"]="ID attribution and illustrative material preview, not a native lighting comparison"}.ToString());
             Debug.Log("REMIELLE_ACCESSORY_ATTRIBUTION_OK");
         }

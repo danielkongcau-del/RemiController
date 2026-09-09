@@ -1,0 +1,13 @@
+{
+  "schema": "remielle-motion-codec-unity-v1",
+  "pass": true,
+  "motions": 335,
+  "samples": 3008,
+  "transformFloat32ValuesBitwiseEqual": 8172080,
+  "invalidTimesRejected": 1005,
+  "continuousDriverTransformApplicationsChecked": 772099,
+  "disposedHandlesRejectedAndDoubleDisposeSafe": 335,
+  "referenceKind": "Direct full-tier evaluation using the same vendored HoYo ACL codec as archive recovery; not the game DLL",
+  "directGameDLLComparison": false,
+  "continuousMorphScalarSamplingVerified": false
+}

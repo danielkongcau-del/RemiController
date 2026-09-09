@@ -11,6 +11,7 @@ using Object=UnityEngine.Object;
 public static class RemielleUINativePostBuild
 {
     public const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/native-post/";
+    public const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/native-post/"; // D1-c 写根（读根保留 A 类）
     public const string Assets="Assets/RenderingReview/NativeUILive/Post/";
     public static string Sha(string p){using var f=File.OpenRead(p);using var h=SHA256.Create();return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
     public static JObject Ref(string p)=>new(){["path"]=Path.GetFullPath(p),["sha256"]=Sha(p)};
@@ -55,7 +56,7 @@ public static class RemielleUINativePostBuild
         AssetDatabase.SaveAssets();
         // Serialize before hashing, because existing profiles may have been updated.
         for(int i=0;i<assets.Count;i++)assets[i]=Ref((string)assets[i]["path"]);
-        File.WriteAllText(Root+"profiles.json",new JObject{["profiles"]=assets,["manifest"]=Ref(Root+"manifest.json"),["builder"]=Ref("Assets/Editor/RemielleUINativePostBuild.cs")}.ToString());
+        File.WriteAllText(WriteRoot+"profiles.json",new JObject{["profiles"]=assets,["manifest"]=Ref(WriteRoot+"manifest.json"),["builder"]=Ref("Assets/Editor/RemielleUINativePostBuild.cs")}.ToString());
         Debug.Log("REMIELLE_NATIVE_UI_POST_PROFILES_READY");
     }
     public static void RunAudit(){Run();RemielleUINativePostAudit.Run();}

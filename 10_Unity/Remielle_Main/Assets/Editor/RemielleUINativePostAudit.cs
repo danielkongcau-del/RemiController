@@ -18,7 +18,7 @@ public static class RemielleUINativePostAudit
     }
     public static void Run()
     {
-        string folder=RemielleUINativePostBuild.Root;Directory.CreateDirectory(folder+"unity");var manifest=JObject.Parse(File.ReadAllText(folder+"manifest.json"));var rows=new JArray();
+        string folder=RemielleUINativePostBuild.WriteRoot;Directory.CreateDirectory(folder+"unity");var manifest=JObject.Parse(File.ReadAllText(folder+"manifest.json"));var rows=new JArray();
         foreach(var row in manifest["cases"])
         {
             string id=(string)row["id"];int w=(int)row["width"],h=(int)row["height"];

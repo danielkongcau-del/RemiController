@@ -10,6 +10,7 @@ using UnityEngine;
 public static class NativeMotionCodecAudit
 {
     const string Folder = "E:/ZZZ/local-only/RemielleControllerImplementation/20260906/motion-sampling";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/ControllerImplementation/20260906/motion-sampling/"; // D1-c 写根（读根保留 A 类）
 
     public static void ConfigurePlugin()
     {
@@ -125,7 +126,7 @@ public static class NativeMotionCodecAudit
         finally
         {
             if (instance) UnityEngine.Object.DestroyImmediate(instance);
-            File.WriteAllText(Folder + "/unity-codec-verification.json", result.ToString());
+            File.WriteAllText(WriteRoot + "/unity-codec-verification.json", result.ToString());
         }
     }
 

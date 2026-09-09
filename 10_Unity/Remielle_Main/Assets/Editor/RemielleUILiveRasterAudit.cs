@@ -13,7 +13,7 @@ using Object=UnityEngine.Object;
 
 public static class RemielleUILiveRasterAudit
 {
-    const string Out=RemielleUILiveProfileBuild.Live+"live-raster/";
+    const string Out="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-raster/";
     static string Sha(string p){using var f=File.OpenRead(p);using var h=SHA256.Create();return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
     static JObject Ref(string p)=>new(){["path"]=Path.GetFullPath(p),["sha256"]=Sha(p)};
     static string Quote(string p)=>"\""+p.Replace('\\','/')+"\"";

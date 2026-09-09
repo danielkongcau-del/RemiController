@@ -11,6 +11,7 @@ public static class RemielleUILiveProfileBuild
 {
     public const string Capture="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-full-sequence/";
     public const string Live="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/";
+    public const string WriteRoot="E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/"; // D1-c 写根
     public const string Assets="Assets/RenderingReview/NativeUILive/";
     static JObject Load(string p)=>JObject.Parse(File.ReadAllText(p));
     static string Sha(string p){using var f=File.OpenRead(p);using var h=SHA256.Create();return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
@@ -88,7 +89,7 @@ public static class RemielleUILiveProfileBuild
             string profilePath=Assets+profileName+".asset";Save(profile,profilePath);outputs.Add(profilePath);
         }
         AssetDatabase.SaveAssets();
-        File.WriteAllText(Live+"runtime-profiles.json",new JObject{["schema"]="remielle-ui-runtime-profiles-v1",["profiles"]=new JArray(outputs.Select(p=>new JObject{["path"]=Path.GetFullPath((string)p),["sha256"]=Sha((string)p)})),["draws"]=48,["sourceMeshes"]=7,["boundary"]="Generated source-qualified runtime data. Original raw sampler descriptors and unobserved lighting behavior remain explicit boundaries."}.ToString());
+        File.WriteAllText(WriteRoot+"runtime-profiles.json",new JObject{["schema"]="remielle-ui-runtime-profiles-v1",["profiles"]=new JArray(outputs.Select(p=>new JObject{["path"]=Path.GetFullPath((string)p),["sha256"]=Sha((string)p)})),["draws"]=48,["sourceMeshes"]=7,["boundary"]="Generated source-qualified runtime data. Original raw sampler descriptors and unobserved lighting behavior remain explicit boundaries."}.ToString());
         Debug.Log("REMIELLE_UI_LIVE_PROFILES_BUILT 2 profiles, 48 draws, 7 meshes");
     }
 }

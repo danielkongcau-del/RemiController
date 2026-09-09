@@ -11,6 +11,7 @@ using Object=UnityEngine.Object;
 public static class RemielleUIDepthHierarchyAudit
 {
     public const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/depth-hierarchy/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/depth-hierarchy/"; // D1-c 写根（读根保留 A 类）
     public const string ShaderPath="Assets/RenderingReview/Shader/GeneratedNativeUIReplay/NativeUIDepthHierarchy.shader";
     static JObject Ref(string path)=>RemielleUINativePostBuild.Ref(path);
     static Texture Load(JToken row)
@@ -35,7 +36,7 @@ public static class RemielleUIDepthHierarchyAudit
     }
     public static void Run()
     {
-        Directory.CreateDirectory(Root+"unity");var manifest=JObject.Parse(File.ReadAllText(Root+"manifest.json"));RemielleUILateBodyBuild.CheckRefs(manifest);
+        Directory.CreateDirectory(WriteRoot+"unity");var manifest=JObject.Parse(File.ReadAllText(WriteRoot+"manifest.json"));RemielleUILateBodyBuild.CheckRefs(manifest);
         var shader=AssetDatabase.LoadAssetAtPath<Shader>(ShaderPath);var rows=new JArray();
         var profile=AssetDatabase.LoadAssetAtPath<RemielleNativeUIProfile>(RemielleUILiveProfileBuild.Assets+"display.asset");
         foreach(var row in manifest["cases"])
@@ -47,10 +48,10 @@ public static class RemielleUIDepthHierarchyAudit
             {
                 hierarchy.Render(depth,normal,constants);int w=hierarchy.Width,h=hierarchy.Height;
                 var outputs=new JArray();var textures=new[]{hierarchy.LinearDepth,hierarchy.NormalAndSample,hierarchy.Range};
-                for(int i=0;i<3;i++){string path=Root+"unity/"+name+"-o"+i+".raw";File.WriteAllBytes(path,RemielleUINativePostAudit.Read(textures[i],w*h*4));outputs.Add(Ref(path));}
-                string mip=Root+"unity/"+name+"-range-mip1.raw";File.WriteAllBytes(mip,ReadMip(hierarchy.Range,1));
+                for(int i=0;i<3;i++){string path=WriteRoot+"unity/"+name+"-o"+i+".raw";File.WriteAllBytes(path,RemielleUINativePostAudit.Read(textures[i],w*h*4));outputs.Add(Ref(path));}
+                string mip=WriteRoot+"unity/"+name+"-range-mip1.raw";File.WriteAllBytes(mip,ReadMip(hierarchy.Range,1));
                 var reader=new Material(profile.depthReaderShader);var rt=new RenderTexture(new RenderTextureDescriptor(w,h,GraphicsFormat.R32G32B32A32_SFloat,GraphicsFormat.None));rt.Create();var cmd=new CommandBuffer();
-                string dep=Root+"unity/"+name+"-depth-stencil.rgba32f";
+                string dep=WriteRoot+"unity/"+name+"-depth-stencil.rgba32f";
                 try{reader.SetTexture("_SeqDepth",hierarchy.Depth,RenderTextureSubElement.Depth);reader.SetTexture("_SeqStencil",hierarchy.Depth,RenderTextureSubElement.Stencil);cmd.SetRenderTarget(rt);cmd.SetViewport(new Rect(0,0,w,h));cmd.DrawProcedural(Matrix4x4.identity,reader,0,MeshTopology.Triangles,3);Graphics.ExecuteCommandBuffer(cmd);File.WriteAllBytes(dep,RemielleUINativePostAudit.Read(rt,w*h*16));}
                 finally{cmd.Release();RenderTexture.active=null;rt.Release();Object.DestroyImmediate(rt);Object.DestroyImmediate(reader);}
                 rows.Add(new JObject{["id"]=name,["width"]=w,["height"]=h,["outputs"]=outputs,["depthStencil"]=Ref(dep),["rangeMip1"]=Ref(mip)});
@@ -59,6 +60,6 @@ public static class RemielleUIDepthHierarchyAudit
             finally{RenderTexture.active=null;if(depth is RenderTexture a)a.Release();if(normal is RenderTexture b)b.Release();Object.DestroyImmediate(depth);Object.DestroyImmediate(normal);}
         }
         var files=new JArray();foreach(string path in new[]{ShaderPath,"Assets/RenderingReview/Runtime/RemielleNativeUIDepthHierarchy.cs","Assets/Editor/RemielleUIDepthHierarchyAudit.cs"})files.Add(Ref(path));
-        File.WriteAllText(Root+"unity.json",new JObject{["schema"]="remielle-ui-depth-hierarchy-unity-capture-v1",["cases"]=rows,["source"]=Ref(Root+"manifest.json"),["implementation"]=files}.ToString());Debug.Log("REMIELLE_UI_DEPTH_HIERARCHY_CAPTURE_READBACK 2");
+        File.WriteAllText(WriteRoot+"unity.json",new JObject{["schema"]="remielle-ui-depth-hierarchy-unity-capture-v1",["cases"]=rows,["source"]=Ref(WriteRoot+"manifest.json"),["implementation"]=files}.ToString());Debug.Log("REMIELLE_UI_DEPTH_HIERARCHY_CAPTURE_READBACK 2");
     }
 }

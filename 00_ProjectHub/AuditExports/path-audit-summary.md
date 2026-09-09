@@ -1,10 +1,10 @@
 # D1 路径审计摘要与路径政策（2026-09-09）
 
-> **D1-b 已执行（2026-09-09）**：61 处纯输出（含内联写入与回退默认值）完成值级迁移至 `ZCode\90_Builds\*`（16+ 输出目录树已预建）；`Project` 常量改指工作副本（B 类）；**OUTPUT→local-only = 0 达成**（复跑 `audit_paths.py` 核验：OUTPUT 60 处全部指向 90_Builds）。
-> **D1-c 残留（混合根 23 处）**：`Folder/Root` 类常量同根既读旧证据又写新验证（codec 审计 ×2 + RenderingReview ui-live/UI 审计族 ×21），值级迁移会断读——需代码级拆分（读根留 A 类、写根走 `RemiellePathPolicy.BuildOutputFor`），逐个在 Unity 真机验证后关闭。清单见 `path-audit.csv` 的 MIXED 类行。
-> 新增工具：`Assets/Editor/RemiellePathPolicy.cs`（三类根 + `GuardWrite` 写护栏 + `BuildOutputFor`）。
+> **D1-c 已完成（2026-09-09）**：21 个混合根文件拆分（读根 A 类保留 + `WriteRoot` 写根迁 `90_Builds`）——43 处写调用点 + 7 处派生输出根 + 4 处中间变量/跨类派生 + 1 处跨类误伤修复；**用法级检查归零**（34 个 local-only 常量全部为读根，写上下文真实残留 0，排除跨类限定名读引用）。
+> **真机实证（审查要求的完成标准）**：`NativeMotionCodecAudit.Run()` 经 Unity batch 真实执行——退出码 0、审计 pass=true（含 transformFloat32 逐位验证）；**受保护目录（local-only motion-sampling，25 文件）运行前后 SHA-256 完全一致**；输出精确落位 `90_Builds\ControllerImplementation\20260906\motion-sampling\`。日志：`90_Builds/codec-audit-run.log`。
+> `RemiellePathPolicy` v2：登记全部只读根（冻结原件 + 五组资产副本 + Manifests），`GuardWrite`/`GuardProjectEdit` 分离 C 类输出与 B 类工程编辑。
 
-数据源：`path-audit.csv`（`70_Automation/AssetScripts/audit_paths.py` 扫描主工程副本全部 .cs；另含 StreamingAssets 3 个 JSON 实例）。
+数据源：`path-audit.csv`（`audit_paths.py` 行级 + **用法级**双检查；另含 StreamingAssets 3 个 JSON 实例，已归类 A 类输入）。
 
 ## 审计结论
 

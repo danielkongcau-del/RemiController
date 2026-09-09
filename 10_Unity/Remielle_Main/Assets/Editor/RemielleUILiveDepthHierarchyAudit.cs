@@ -12,12 +12,13 @@ using Object=UnityEngine.Object;
 public static class RemielleUILiveDepthHierarchyAudit
 {
     const string Out="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/live-depth-hierarchy/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-depth-hierarchy/"; // D1-c 写根（读根保留 A 类）
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     static int Targets()=>Resources.FindObjectsOfTypeAll<RenderTexture>().Count(t=>(t.hideFlags&HideFlags.HideAndDontSave)==HideFlags.HideAndDontSave);
-    static JObject Write(string name,byte[] data){string p=Out+name;File.WriteAllBytes(p,data);return Ref(p);}
+    static JObject Write(string name,byte[] data){string p=WriteRoot+name;File.WriteAllBytes(p,data);return Ref(p);}
     public static void Run()
     {
-        Directory.CreateDirectory(Out);EditorSceneManager.NewScene(NewSceneSetup.EmptyScene);
+        Directory.CreateDirectory(WriteRoot);EditorSceneManager.NewScene(NewSceneSetup.EmptyScene);
         var root=Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/V3/Remielle_V3_Animated.prefab"));var driver=root.GetComponent<RemielleNativeAnimation>();
         var go=new GameObject("Native depth hierarchy input audit");var camera=go.AddComponent<Camera>();camera.enabled=false;
         var cases=new JArray();var lifecycle=new JArray();
@@ -56,7 +57,7 @@ public static class RemielleUILiveDepthHierarchyAudit
                 lifecycle.Add(new JObject{["profile"]=profileName,["before"]=before,["after"]=Targets()});
             }
             var files=new JArray();foreach(string p in new[]{"Assets/Editor/RemielleUILiveDepthHierarchyAudit.cs","Assets/RenderingReview/Runtime/RemielleNativeUIDepthHierarchy.cs","Assets/RenderingReview/Runtime/RemielleNativeUIRenderer.cs","Assets/RenderingReview/Runtime/RemielleNativeUIMeshBinding.cs","Assets/RenderingReview/Runtime/RemielleNativeUIConstants.cs",RemielleUIDepthHierarchyAudit.ShaderPath,"Assets/V3/Remielle_V3_Animated.prefab"})files.Add(Ref(p));
-            File.WriteAllText(Out+"unity.json",new JObject{["schema"]="remielle-ui-live-depth-hierarchy-v1",["cases"]=cases,["lifecycle"]=lifecycle,["implementation"]=files,["boundary"]="Six current skin/camera/jitter/resolution/near-far inputs. The producer is independent of the main HDR chain; auxiliary consumers and the visible Player remain separate."}.ToString());Debug.Log("REMIELLE_UI_LIVE_DEPTH_HIERARCHY 6");
+            File.WriteAllText(WriteRoot+"unity.json",new JObject{["schema"]="remielle-ui-live-depth-hierarchy-v1",["cases"]=cases,["lifecycle"]=lifecycle,["implementation"]=files,["boundary"]="Six current skin/camera/jitter/resolution/near-far inputs. The producer is independent of the main HDR chain; auxiliary consumers and the visible Player remain separate."}.ToString());Debug.Log("REMIELLE_UI_LIVE_DEPTH_HIERARCHY 6");
         }
         finally{Object.DestroyImmediate(go);Object.DestroyImmediate(root);}
     }

@@ -14,6 +14,7 @@ using UnityEngine.Rendering;
 public static class RemielleNativeMaterialGpuAudit
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
     const string Acq="E:/ZZZ/local-only/RemielleDataAcquisition/20260904/";
     const string ShaderPath="Assets/RenderingReview/Shader/GeneratedNative/CapturedNativeMaterialBodies.shader";
     static readonly int[] Counts={209,29,27,41,170};
@@ -80,7 +81,7 @@ public static class RemielleNativeMaterialGpuAudit
         int width=(int)fixture["width"],height=(int)fixture["height"];
         var targets=new RenderTexture[4];var ids=new RenderTargetIdentifier[4];RenderTexture depth=null;
         var shader=AssetDatabase.LoadAssetAtPath<Shader>(ShaderPath);if(!shader||!shader.isSupported)throw new Exception("Native shader unsupported");
-        var result=new JArray();string output=Root+"native-pixel-replay/"+(wrongWinding?"unity-winding-negative":"unity-gpu");Directory.CreateDirectory(output);
+        var result=new JArray();string output=WriteRoot+"native-pixel-replay/"+(wrongWinding?"unity-winding-negative":"unity-gpu");Directory.CreateDirectory(output);
         try
         {
             for(int i=0;i<4;i++)
@@ -142,7 +143,7 @@ public static class RemielleNativeMaterialGpuAudit
             var files=new JArray();foreach(string file in new[]{"Assets/Editor/RemielleNativeMaterialGpuAudit.cs","Assets/Plugins/Editor/x86_64/RemielleUnityStateProbe.dll",ShaderPath})files.Add(new JObject{{"path",Path.GetFullPath(file)},{"sha256",Sha(file)}});
             foreach(var row in compile["vertexShaders"].Concat(compile["pixelShaders"])){string file=(string)row["generatedInclude"];files.Add(new JObject{{"path",file},{"sha256",Sha(file)}});}
             foreach(var row in assets["textures"]){string file=(string)row["asset"];files.Add(new JObject{{"path",Path.GetFullPath(file)},{"sha256",Sha(file)}});}
-            File.WriteAllText(Root+(wrongWinding?"unity-native-material-winding-negative.json":"unity-native-material-readback.json"),new JObject{
+            File.WriteAllText(WriteRoot+(wrongWinding?"unity-native-material-winding-negative.json":"unity-native-material-readback.json"),new JObject{
                 ["schema"]="remielle-unity-native-material-readback-v1",["device"]=SystemInfo.graphicsDeviceName,["api"]=SystemInfo.graphicsDeviceType.ToString(),["reversedZ"]=SystemInfo.usesReversedZBuffer,["uvStartsAtTop"]=SystemInfo.graphicsUVStartsAtTop,
                 ["shaderSha256"]=Sha(ShaderPath),["fixtureManifestSha256"]=Sha(Root+"native-pixel-replay/unity-reference/manifest.json"),["draws"]=result,
                 ["windingNegativeControl"]=wrongWinding,["implementationFiles"]=files,["probeEditorCompatible"]=plugin.GetCompatibleWithEditor(),["probeAnyPlatform"]=plugin.GetCompatibleWithAnyPlatform(),["probeStandaloneWindows64"]=plugin.GetCompatibleWithPlatform(BuildTarget.StandaloneWindows64),

@@ -9,6 +9,7 @@ using Object=UnityEngine.Object;
 public static class RemielleUILateBodyBuild
 {
     public const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/late-body/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/late-body/"; // D1-c 写根（读根保留 A 类）
     public const string Assets="Assets/RenderingReview/NativeUILive/LateBody/";
     static JObject Load(string p)=>JObject.Parse(File.ReadAllText(p));
     public static void CheckRefs(JToken t)
@@ -65,7 +66,7 @@ public static class RemielleUILateBodyBuild
         AssetDatabase.SaveAssets();
         // SaveAssets may update files referenced above; seal after the write.
         foreach(JObject row in records)foreach(string key in new[]{"profile","mesh"})row[key]=RemielleUINativePostBuild.Ref((string)row[key]["path"]);
-        File.WriteAllText(Root+"runtime-profiles.json",new JObject{["profiles"]=records,["source"]=RemielleUINativePostBuild.Ref(Root+"isolated-inputs.json"),["fields"]=RemielleUINativePostBuild.Ref(Root+"unity-shader.json")}.ToString());
+        File.WriteAllText(WriteRoot+"runtime-profiles.json",new JObject{["profiles"]=records,["source"]=RemielleUINativePostBuild.Ref(WriteRoot+"isolated-inputs.json"),["fields"]=RemielleUINativePostBuild.Ref(WriteRoot+"unity-shader.json")}.ToString());
         Debug.Log("REMIELLE_UI_LATE_BODY_PROFILES_BUILT 2");
     }
     public static void RunAll(){Build();RemielleUILateBodyCaptureAudit.Run();RemielleUILiveLateBodyAudit.Run();}

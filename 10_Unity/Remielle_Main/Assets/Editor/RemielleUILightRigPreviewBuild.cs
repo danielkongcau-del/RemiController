@@ -10,12 +10,13 @@ using Object=UnityEngine.Object;
 public static class RemielleUILightRigPreviewBuild
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    const string Out=Root+"ui-live-binding/light-rig/preview/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
+    const string Out = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/light-rig/preview/";
     static JObject Ref(string p)=>RemielleUINativePostBuild.Ref(p);
     public static void RunAll(){RemielleUILightRigAudit.RunAll();Run();}
     public static void Run()
     {
-        Directory.CreateDirectory(Out);var data=JObject.Parse(File.ReadAllText(Root+"captured-deferred-character-ui.json"));var cases=new JArray();
+        Directory.CreateDirectory(Out);var data=JObject.Parse(File.ReadAllText(WriteRoot+"captured-deferred-character-ui.json"));var cases=new JArray();
         EditorSceneManager.NewScene(NewSceneSetup.EmptyScene);var root=Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/V3/Remielle_V3_Animated.prefab"));var driver=root.GetComponent<RemielleNativeAnimation>();
         var go=new GameObject("Native temporal HD review");var camera=go.AddComponent<Camera>();camera.enabled=false;camera.aspect=16f/9;camera.fieldOfView=38;camera.nearClipPlane=.1f;camera.farClipPlane=50;
         try

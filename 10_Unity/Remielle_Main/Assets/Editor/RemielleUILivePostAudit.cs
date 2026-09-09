@@ -12,7 +12,8 @@ using Object=UnityEngine.Object;
 public static class RemielleUILivePostAudit
 {
     const string Root="E:/ZZZ/local-only/RemielleRenderingReview/20260905/";
-    const string Out=Root+"ui-live-binding/live-post/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/"; // D1-c 写根（读根保留 A 类）
+    const string Out = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/live-post/";
     static JObject Ref(string path)=>RemielleUINativePostBuild.Ref(path);
     static string Quote(string p)=>"\""+p.Replace('\\','/')+"\"";
     static byte[] Bytes(Vector4[] a){var b=new byte[a.Length*16];var pin=GCHandle.Alloc(a,GCHandleType.Pinned);try{Marshal.Copy(pin.AddrOfPinnedObject(),b,0,b.Length);}finally{pin.Free();}return b;}
@@ -65,7 +66,7 @@ public static class RemielleUILivePostAudit
             }
             File.WriteAllText(Out+"inputs.txt",lines.ToString(),new UTF8Encoding(false));
             var files=new JArray();foreach(string path in new[]{"Assets/Editor/RemielleUILivePostAudit.cs","Assets/RenderingReview/Runtime/RemielleNativeUIPost.cs","Assets/RenderingReview/Runtime/RemielleNativeUILighting.cs","Assets/RenderingReview/Runtime/RemielleNativeUIRenderer.cs","Assets/RenderingReview/Shader/GeneratedNativeUIReplay/NativeUIFinalPost.shader","Assets/Shaders/CapturedMenuBloom.shader",RemielleUINativePostBuild.Assets+"display.asset",RemielleUINativePostBuild.Assets+"store.asset",Root+"captured-deferred-character-ui.json"})files.Add(Ref(path));
-            File.WriteAllText(Out+"unity.json",new JObject{["schema"]="remielle-native-ui-live-post-readback-v1",["cases"]=cases,["implementationFiles"]=files,["manifest"]=Ref(RemielleUINativePostBuild.Root+"manifest.json"),["inputList"]=Ref(Out+"inputs.txt"),["boundary"]="Live geometry, character Deferred/LUT, native packed Bloom and complete UberPost. Temporal antialiasing, dynamic scene light/auxiliary producers and final Player remain separate work."}.ToString());
+            File.WriteAllText(Out+"unity.json",new JObject{["schema"]="remielle-native-ui-live-post-readback-v1",["cases"]=cases,["implementationFiles"]=files,["manifest"]=Ref(RemielleUINativePostBuild.WriteRoot+"manifest.json"),["inputList"]=Ref(Out+"inputs.txt"),["boundary"]="Live geometry, character Deferred/LUT, native packed Bloom and complete UberPost. Temporal antialiasing, dynamic scene light/auxiliary producers and final Player remain separate work."}.ToString());
             Debug.Log("REMIELLE_NATIVE_UI_LIVE_POST_READBACK "+cases.Count);
         }
         finally{Object.DestroyImmediate(cameraObject);Object.DestroyImmediate(root);}

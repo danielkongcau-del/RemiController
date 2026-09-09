@@ -1,6 +1,6 @@
 {
   "schema": "zcode.workingset-audit.v1",
-  "generatedUtc": "2026-09-09T12:56:25.424095+00:00",
+  "generatedUtc": "2026-09-09T14:21:06.831396+00:00",
   "excludedItems": {
     "note": "原 manifest 保留为溯源数据不动；本表为清理后工作集的机器可读删除登记（依据=manifest note 与 excluded_sources 分类）",
     "legacyDirs": [
@@ -214,11 +214,14 @@
     ]
   },
   "dependencyScan": {
-    "scope": "副本内文本类文件对已删 legacy-remielle-* 目录名的引用",
+    "checkName": "旧目录文本引用检查（NOT 依赖解析闭合验证）",
+    "scopeNote": "本检查仅扫描文本类文件中是否残留已删 legacy-remielle-* 目录名字符串；不解析 source block/CAB/pathID 引用、不验证引用目标存在性。真正的依赖闭合验证（引用解析/目标存在/源 null 分类）是独立的后续检查。",
+    "checkedTextFiles": 66494,
+    "readFailures": 0,
     "exemptions": [
       "metadata/{manifest.json,CATALOG.md,coverage.json}（来源注册/目录文档，引用 22 个来源 id 属预期）"
     ],
     "referenceHits": [],
-    "verdict": "PASS（无未豁免引用）"
+    "verdict": "文本引用检查通过（未发现未豁免引用；不构成依赖闭合证明）"
   }
 }

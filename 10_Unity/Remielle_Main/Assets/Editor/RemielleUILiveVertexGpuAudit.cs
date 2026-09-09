@@ -15,6 +15,7 @@ using Object = UnityEngine.Object;
 public static class RemielleUILiveVertexGpuAudit
 {
     const string Out = "E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-live-binding/";
+    const string WriteRoot = "E:/ZZZ/ZCode/90_Builds/RenderingReview/20260905/ui-live-binding/"; // D1-c 写根（读根保留 A 类）
     const string Capture = "E:/ZZZ/local-only/RemielleRenderingReview/20260905/ui-full-sequence/";
     const string Prefab = "Assets/V3/Remielle_V3_Animated.prefab";
     [StructLayout(LayoutKind.Sequential)] struct Input { public Vector4 a,b,c,d,e,f,g,h,i; }
@@ -71,7 +72,7 @@ public static class RemielleUILiveVertexGpuAudit
         if(SystemInfo.graphicsDeviceType!=GraphicsDeviceType.Direct3D11 || !SystemInfo.supportsComputeShaders)
             throw new Exception("D3D11 compute probe required");
         string outputFolder=vertexStage?"unity-live-vertex-stage":"unity-live-vertex";
-        Directory.CreateDirectory(Out+"live-vertex-inputs");Directory.CreateDirectory(Out+outputFolder);
+        Directory.CreateDirectory(WriteRoot+"live-vertex-inputs");Directory.CreateDirectory(WriteRoot+outputFolder);
         var manifest=Load(Capture+"manifest.json");var sourceBindings=Load(Out+"mesh-bindings.json");var roots=Load(Out+"native-root-bindings.json");
         var contract=Load(Out+"uniform-contract.json")["shaders"].ToDictionary(s=>(string)s["hash"]);
         var shaderSources=manifest["shaders"].ToDictionary(s=>(string)s["hash"]);
@@ -113,7 +114,7 @@ public static class RemielleUILiveVertexGpuAudit
                 {
                     string meshName=bindingNames[(string)draw["id"]],hash=(string)draw["vs"],id=sample.name+"-"+draw["relative"];
                     var binding=bindings[meshName];var input=Inputs(draw,binding);var cbFiles=new JArray();var graphics=new List<GraphicsBuffer>();
-                    string stem=Out+"live-vertex-inputs/"+id,vb=stem+".buf";File.WriteAllBytes(vb,Bytes(input));
+                    string stem=WriteRoot+"live-vertex-inputs/"+id,vb=stem+".buf";File.WriteAllBytes(vb,Bytes(input));
                     var shader=vertexStage?null:AssetDatabase.LoadAssetAtPath<ComputeShader>("Assets/RenderingReview/Shader/NativeUILiveVertexProbe/NativeUIVertex_"+hash+".compute");
                     var gfx=vertexStage?AssetDatabase.LoadAssetAtPath<Shader>("Assets/RenderingReview/Shader/NativeUILiveVertexProbe/NativeUIVertexStage_"+hash+".shader"):null;
                     if(vertexStage?!gfx||!gfx.isSupported:!shader)throw new Exception("Live vertex probe is missing or unsupported");
@@ -161,7 +162,7 @@ public static class RemielleUILiveVertexGpuAudit
                                 if(message.severity.ToString()=="Error")throw new Exception("Live vertex dispatch failed: "+message.message);
                         }
                         var output=new Output[input.Length];ob.GetData(output);
-                        string result=Out+outputFolder+"/"+id+".f32";File.WriteAllBytes(result,Bytes(output));
+                        string result=WriteRoot+outputFolder+"/"+id+".f32";File.WriteAllBytes(result,Bytes(output));
                         cases.Add(new JObject{["id"]=id,["clip"]=sample.name,["time"]=sample.time,["mesh"]=meshName,["vs"]=hash,["vertices"]=input.Length,
                             ["width"]=width,["height"]=height,["cameraYaw"]=yaw,["fieldOfView"]=camera.fieldOfView,["input"]=Ref(vb),["constantBuffers"]=cbFiles,
                             ["entities"]=Ref((string)resource["path"]),["output"]=Ref(result),["objectToWorld"]=Matrix(working*binding.ObjectToWorld),
@@ -175,9 +176,9 @@ public static class RemielleUILiveVertexGpuAudit
                 }
                 foreach(var b in bindings.Values)b.Commit();previous=frame;frameIndex++;
             }
-            File.WriteAllText(Out+"live-vertex-inputs.txt",cases.Count+"\n"+lines,new UTF8Encoding(false));
+            File.WriteAllText(WriteRoot+"live-vertex-inputs.txt",cases.Count+"\n"+lines,new UTF8Encoding(false));
             var files=new JArray{Ref(Prefab),Ref("Assets/Editor/RemielleUILiveVertexGpuAudit.cs"),Ref("Assets/RenderingReview/Runtime/RemielleNativeUIMeshBinding.cs"),Ref("Assets/RenderingReview/Runtime/RemielleNativeUIConstants.cs"),Ref(Out+"uniform-contract.json"),Ref(Out+"native-root-bindings.json"),Ref(Out+"mesh-bindings.json"),Ref(Out+"vertex-probe-shaders.json")};
-            File.WriteAllText(Out+outputFolder+".json",new JObject{["schema"]="remielle-ui-live-vertex-gpu-v1",["executionStage"]=vertexStage?"vertex":"compute",["device"]=SystemInfo.graphicsDeviceName,["api"]=SystemInfo.graphicsDeviceType.ToString(),["cases"]=cases,["implementationFiles"]=files,["inputs"]=Ref(Out+"live-vertex-inputs.txt"),
+            File.WriteAllText(WriteRoot+outputFolder+".json",new JObject{["schema"]="remielle-ui-live-vertex-gpu-v1",["executionStage"]=vertexStage?"vertex":"compute",["device"]=SystemInfo.graphicsDeviceName,["api"]=SystemInfo.graphicsDeviceType.ToString(),["cases"]=cases,["implementationFiles"]=files,["inputs"]=Ref(WriteRoot+"live-vertex-inputs.txt"),
                 ["boundary"]=vertexStage?"Actual Unity vertex-stage execution with nointerpolation point/PS UAV transport of original defined outputs. Current bones, changing camera/resolution, previous-pose inputs. Full live character rasterization and lighting remain separate gates.":"Current saved bones and blendshapes, original root frames, changing camera/resolution and previous-pose inputs. Unity compute calls two original-source VS functions; independent DXBC vertex-stage comparison and live rasterized lighting remain separate gates."}.ToString());
             Debug.Log("REMIELLE_UI_LIVE_VERTEX_GPU_READBACK "+cases.Count);
         }
