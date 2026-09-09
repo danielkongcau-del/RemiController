@@ -22,7 +22,7 @@
 
 - 云端可复验层已建立（2026-09-09）：SHA-256 全量清单（11 组 + Merkle 根，`20_ReverseEngineering/Manifests/`）+ B1 v1 机器目录（`Analysis/catalogs/`，动画 829 身份已机器验证、主工程动作库 335 motions/456 slots）。资产本体保持本地。
 - 审查建议已落实一批（2026-09-09）：D1 路径审计（100 命中/64 输出写回，三类路径政策+护栏方案）、工作集校验 PASS（22 项 legacy 机器登记+依赖断链零命中）、`Gap_Register`/`Feature_Coverage`/三份绑定级索引骨架、验收双口径固化；**自研代码开始入本仓库**（用户决策，不设私有代码仓）。
-- **D1-b 已完成（2026-09-09）**：61 处纯输出迁移 `90_Builds`，OUTPUT→local-only=0；`RemiellePathPolicy` 落地；GAP-013/014 闭环；残留 D1-c（23 处混合根待拆分）。Unity 首次导入+编译验证后台执行中。
+- **D1-b 已完成（2026-09-09）**：61 处纯输出迁移 `90_Builds`，OUTPUT→local-only=0；`RemiellePathPolicy` 落地；GAP-013/014 闭环；残留 D1-c（23 处混合根待拆分）。**Unity 首次导入+编译验证通过**（退出码 0、零 CS 错误、双程序集全新构建）。
 
 ## 工作区状态
 

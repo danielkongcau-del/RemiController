@@ -16,7 +16,7 @@ GAP-014,StreamingAssets 3 个 JSON 引用原件绝对路径,工程纪律,归类�
 GAP-015,受击方动作/原生数值公式,有意简化,固定伤害/失衡 1、每 2 次普通充能 1 次强化（用户指定）,战斗完整性,Design/Remielle_Combat,用户解除简化前排期,低（有意简化）
 GAP-016,空战条件与空战显隐,功能缺口,原生条件未自动激活（工程内已见 Idle_AirState_* 空中待机动画）,空战,Missing_Content,待 walk→fly 完成后评估,中
 GAP-017,Floater 显隐与挂点,有意跳过,保留源资产,附件,用户指示,用户明示前不动,冻结
-GAP-018,工作副本独立门禁基线,工程纪律,沿用 local-only baseline 不适用副本,验证归属,TODO-D2,副本完成一轮独立验证后建立（不得刷新哈希掩盖差异）,高
+GAP-018,工作副本独立门禁基线,工程纪律,Unity 首次导入+全量编译已通过（2026-09-09，零 CS 错误）；待跑一轮真实门禁后落基线,验证归属,TODO-D2,副本完成一轮独立验证后建立（不得刷新哈希掩盖差异）,高（下一步）
 GAP-019,动画名称口径 827 vs 810,索引精度,简单词干去重 827；文档口径 810 需逻辑片名归一,动画索引,catalogs-summary.md,B1-v2 按 ledger 权威分类归一复核,中
 GAP-020,完整游戏渲染还原,证据边界,延迟渲染/环境后处理/战斗动态 tint 未宣称一致,渲染,各渲染报告,长期边界；不宣称完成,长期
 GAP-021,23 处混合根常量（Folder/Root：同根既读旧证据又写新验证）,工程纪律,已登记清单（path-audit.csv MIXED 行）；值级迁移会断读,codec 审计×2 + RenderingReview UI 审计族×21,path-audit-summary.md,D1-c：读根留 A 类+写根迁 RemiellePathPolicy.BuildOutputFor，逐个真机验证,高（随 D1-c）

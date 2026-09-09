@@ -31,4 +31,4 @@
 4. [x] `AnimCollectionSceneAudit` 悬空路径（GAP-013）：输出改指 `90_Builds\ControllerIntegration\`，脚本恢复可用。
 5. [ ] **D1-c**：23 处混合根拆分（读根 A 类保留 + 写根迁 BuildOutputFor），逐个 Unity 真机验证；完成标准 = MIXED→local-only 归零。
 6. [x] 复跑 `audit_paths.py`：OUTPUT→local-only = 0（完成标准达成）。
-7. [ ] Unity 首次导入 + 编译验证（后台执行中，结果见 `90_Builds/unity-import-compile-check.log`）。
+7. [x] Unity 首次导入+编译验证**通过**（2026-09-09：`-batchmode -quit` 退出码 0，`Assembly-CSharp`/`Assembly-CSharp-Editor` 全新构建，日志零 `error CS`；61 处迁移与 `RemiellePathPolicy` 均编译成功。日志：`90_Builds/unity-import-compile-check.log`）。

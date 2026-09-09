@@ -1,6 +1,6 @@
 {
   "schema": "zcode.asset-manifest-summary.v1",
-  "generatedUtc": "2026-09-09T13:13:28.280802+00:00",
+  "generatedUtc": "2026-09-09T13:28:05.219007+00:00",
   "csvFormat": "sha256,size,path  |  path 相对各组根目录、按字节序排序 | UTF-8 无 BOM LF",
   "merkleAlgorithm": "对排序后每行构造 'sha256 <path>\\n'，按文件顺序拼接后整体 SHA-256 = merkleRoot",
   "groups": [
@@ -97,11 +97,11 @@
     {
       "group": "Remielle_Main",
       "root": "10_Unity/Remielle_Main",
-      "fileCount": 8317,
-      "totalBytes": 6003735633,
+      "fileCount": 8333,
+      "totalBytes": 6004891920,
       "manifestFile": "Remielle_Main.sha256.csv",
-      "manifestSha256": "465c17ab5cb39ec6c8ed2ae594f9f8f0c65937778919c6903634ebd8ec3f79f5",
-      "merkleRoot": "62667829944fac38c2b839e7a8534817157249c90090f022de948d5121522db9"
+      "manifestSha256": "6590b90b246ee94dcd7a0f1b91d4a530e8db908e706e4b8025751b3c7ee0a538",
+      "merkleRoot": "c58add8714b4af3b779cb92480b0296b5ed9c5df8eae1643867616775b19d5bd"
     }
   ]
 }

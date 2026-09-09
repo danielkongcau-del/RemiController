@@ -26,6 +26,7 @@ GROUPS = {
 }
 
 CHUNK = 1 << 20
+SKIP_DIRS = {".git", "Library", "Temp", "obj", "Logs", "UserSettings"}  # 可再生产物不入清单
 
 
 def sha256_file(path):
@@ -57,7 +58,7 @@ def main():
         root = os.path.join(BASE, rel)
         rows = []
         for dirpath, dirnames, filenames in os.walk(root):
-            dirnames[:] = [d for d in dirnames if d != ".git"]
+            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
             for fn in filenames:
                 p = os.path.join(dirpath, fn)
                 rp = os.path.relpath(p, root).replace("\\", "/")
