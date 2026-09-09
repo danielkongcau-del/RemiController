@@ -37,6 +37,8 @@ namespace Remielle.Controller
         public NativeParameterBank Parameters { get; }
         public int CurrentState => current.Index;
         public int? NextState => next?.Index;
+        /// <summary>主层状态索引 → 原生状态名（供宿主策略与审计使用）。</summary>
+        public string StateName(int index) => (string)definition["machines"][0]["states"][index]["name"];
         public bool IsBlending => next!=null;
         public float ActionFrames => IsBlending?layer.NextFrameCount:layer.CurrentFrameCount;
         public string BlockedReason { get; private set; }

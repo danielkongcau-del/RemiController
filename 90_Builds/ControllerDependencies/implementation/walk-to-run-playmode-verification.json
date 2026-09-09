@@ -1,0 +1,76 @@
+{
+  "pass": false,
+  "checks": [
+    "T1 1.5s 无请求（elapsed=1.50）",
+    "T3 由原生边 Walk_Loop→Walk_To_RunLoop_01 进入（非代码直切）",
+    "T4a Walk_To_RunLoop_01→RunLoop_01",
+    "T4b RunLoop_01 长期维持并发生 01→02 变体切换（odds=1 验证）",
+    "T5 停止后进入 Run_End（经 Bool_IsMovingDelay 宽限）",
+    "T5 停止后请求已清除（REPLICA_LIFECYCLE_POLICY）",
+    "T2 WalkToRun 请求恰好一次",
+    "T-threshold 移动起点→请求 = 0.017s（阶段A 起点 0.5s）"
+  ],
+  "failures": [
+    "T6: 进入 RunLoop 但缺 Evade_To_RunLoop_01→RunLoop_01 边"
+  ],
+  "timeline": [
+    {
+      "event": "sessionReady Idle",
+      "t": 0.0,
+      "state": "Idle"
+    },
+    {
+      "event": "phaseA_move1.5s",
+      "t": 0.5,
+      "state": "Idle"
+    },
+    {
+      "event": "phaseB_continueToRun",
+      "t": 0.5,
+      "state": "Walk_Loop"
+    },
+    {
+      "event": "walkToRunRequest",
+      "t": 0.51666669361293316
+    },
+    {
+      "event": "enter Walk_To_RunLoop_01（transition start）",
+      "t": 1.0166666936129332,
+      "state": "Walk_Loop->Walk_To_RunLoop_01"
+    },
+    {
+      "event": "enter RunLoop_01（视觉进入悬浮）",
+      "t": 3.9166668448597193,
+      "state": "RunLoop_01"
+    },
+    {
+      "event": "variantSwitch RunLoop_01→01_To_02",
+      "t": 4.9333335645496845,
+      "state": "RunLoop_01->RunLoop_01_To_02"
+    },
+    {
+      "event": "phaseC_stop",
+      "t": 4.9333335645496845,
+      "state": "RunLoop_01->RunLoop_01_To_02"
+    },
+    {
+      "event": "phaseD_evade",
+      "t": 5.0333335697650909,
+      "state": "RunLoop_01->Run_End"
+    },
+    {
+      "event": "abort",
+      "t": 5.0333335697650909,
+      "state": "RunLoop_01->Run_End"
+    }
+  ],
+  "requestRises": 1,
+  "thresholdSeconds": 2.0,
+  "threeTimes": {
+    "thresholdTime": 0.51666669361293316,
+    "walkToRunTransitionStart": 1.0166666936129332,
+    "runLoopEnter": 3.9166668448597193,
+    "variantSwitch": 4.9333335645496845
+  },
+  "scope": "T1-T7 PlayMode 剧本（固定 1/60 步长）；T8 帧率无关性在批处理段"
+}

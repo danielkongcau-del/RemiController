@@ -63,6 +63,10 @@ namespace Remielle.Controller
         public bool readDevices=true;
         [Min(0)] public float inputBufferSeconds=.2f;
         public SourceInputBuffer InputBuffer { get; private set; }
+        // Locomotion policies (evidence: 60_Experiments/Movement/WalkToFly/FINAL_TRIGGER_REPORT.md)
+        public SourceIsMovingDelay MovingDelay { get; private set; }
+        public SourceWalkToRunPolicy WalkToRun { get; private set; }
+        public SourceChangeRunType ChangeRunType { get; private set; }
         InputActionMap actions;
         InputAction moveAction,evadeAction,attackAction,specialAction;
         bool pendingEvade,pendingAttack,pendingSpecial;
@@ -142,6 +146,9 @@ namespace Remielle.Controller
                 }
                 actions=new InputActionMap("Remielle");
                 InputBuffer=new SourceInputBuffer(Session.Parameters,inputBufferSeconds);
+                MovingDelay=new SourceIsMovingDelay();
+                WalkToRun=new SourceWalkToRunPolicy();
+                ChangeRunType=new SourceChangeRunType();
                 moveAction=actions.AddAction("Move",InputActionType.Value);
                 moveAction.expectedControlType="Vector2";
                 moveAction.AddCompositeBinding("2DVector").With("Up","<Keyboard>/w").With("Down","<Keyboard>/s").With("Left","<Keyboard>/a").With("Right","<Keyboard>/d");
@@ -165,6 +172,8 @@ namespace Remielle.Controller
         }
 
         // The buffer owns input lifetime; recovered conditions own transitions.
+        // runHeld 是历史占位参数（原 Bool_WalkToRun=runHeld 设计已废弃）；保留签名以兼容
+        // 既有审计调用，其值被忽略——Walk→Run 由 SourceWalkToRunPolicy 自动触发。
         public void TickInput(float delta,Vector2 movement,bool evadePressed,bool evadeHeld,bool attackPressed,bool attackHeld,bool runHeld,bool specialPressed=false,bool specialHeld=false)
         {
             if(!Ready)return;
@@ -177,6 +186,13 @@ namespace Remielle.Controller
                 InputBuffer.Advance(delta);
                 var p=Session.Parameters;bool moving=movement.sqrMagnitude>.0001f;
                 p.SetBool(p.Hash("Bool_IsMoving"),moving);
+                // Bool_IsMovingDelay 泵（RUNTIME_OBSERVED 真值表：跟随 IsMoving、停止约 0.1s 后落）。
+                p.SetBool(p.Hash("Bool_IsMovingDelay"),MovingDelay.Tick(delta,moving));
+                // Walk→Run 触发策略：2.0s 上升沿闩锁；reset=IsMovingDelay==false
+                // （REPLICA_POLICY_PENDING_RUNTIME_CONFIRMATION）。参数与 Requested 同步属
+                // REPLICA_LIFECYCLE_POLICY（原作 false 为惰性/事件驱动，未复刻）。
+                WalkToRun.Tick(delta,moving,!MovingDelay.Value);
+                p.SetBool(p.Hash("Bool_WalkToRun"),WalkToRun.Requested);
                 p.SetBool(p.Hash("Bool_HoldEvade"),evadeHeld&&!evadePressed);
                 // Selector 8 checks HoldAttackA before PressAttackA: publishing
                 // both on the initial edge incorrectly enters Attack_Burst_01.
@@ -184,10 +200,14 @@ namespace Remielle.Controller
                 // state still owns its authored 13-frame follow-up threshold.
                 p.SetBool(p.Hash("Bool_HoldAttackA"),attackHeld&&!attackPressed);
                 p.SetBool(p.Hash("Bool_HoldAttackB"),specialHeld&&!specialPressed);
-                p.SetBool(p.Hash("Bool_WalkToRun"),runHeld);
                 if(evadePressed)InputBuffer.Press(p.Hash("Trigger_PressEvade"));
                 if(attackPressed)InputBuffer.Press(p.Hash("Trigger_PressAttackA"));
                 if(specialPressed)InputBuffer.Press(p.Hash("Trigger_PressAttackB"));
+                // RunLoop_01/02 随机换型（STATIC_BYTE：ability 1s/25%），由恢复的桥接 transition 消费。
+                string currentName=Session.StateName(Session.CurrentState);
+                string blendingName=Session.NextState.HasValue?Session.StateName(Session.NextState.Value):null;
+                bool inRunLoop=currentName=="RunLoop_01"||currentName=="RunLoop_02"||blendingName=="RunLoop_01"||blendingName=="RunLoop_02";
+                if(ChangeRunType.Tick(delta,inRunLoop))p.SetTrigger(p.Hash("Trigger_ChangeRunType"));
                 if(moving&&delta>0)
                 {
                     Vector3 forward=viewCamera?viewCamera.transform.forward:Vector3.forward;forward.y=0;

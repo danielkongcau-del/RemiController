@@ -3,7 +3,7 @@ GAP-001,34 个优化 Animator,数据边界,序列化 JSON 保留；通用反优�
 GAP-002,10 个 Timeline 运行时绑定,运行时证据,源序列化值已证 null,时间线演出,GAPS.md + timeline-clip-pptr-final,双轨：工程替代绑定（SetGenericBinding/SetReferenceValue 按引用类型分流）与原作取证分离记录,中
 GAP-003,2 个 WeatherConfig 历史字段,数据解析,原始字节保留；需历史 TypeTree/程序集或运行时对象,环境渲染（影响面待分析）,GAPS.md,先影响分析再定级；禁止盲猜填值,低
 GAP-004,6 网格完整 GPU 几何证据,证据等级,有源/骨骼/材质依据；缺完整 GPU 匹配（HairShadow/Floater 已有归属新证据但≠完整匹配）,Sticker_02_R/HairShadow/Weapon_02_R/03_R/04/Floater_02,GAPS.md,"按""何时实际参与渲染""组织补采；登记动作/状态/时间窗/Draw Pass/证据等级",中
-GAP-005,walk→fly 移动切换,功能缺口,取证全部闭环（RUNTIME_RECONSTRUCTED）：Bool_WalkToRun=IsMoving && 持续移动≥2.0s(authored 60Hz)，停止≥0.413s 重置；单调用点 GameAssembly+0x1761247a；IsMovingDelay=0.1s 停止宽限（运行时真值表）；实现合同就绪,移动,用户需求 + Design/Remielle_Movement,六层定位取证（动画→变体→状态→过渡→参数→打断）→WalkToFly 原型→并入状态机,待用户指令进入实现
+GAP-005,walk→fly 移动切换,功能缺口,已实现并全链验证（IMPLEMENTATION_REPORT）：策略类三件+控制器接线；31/31 审计+PlayMode 主链+回归全绿,移动,用户需求 + Design/Remielle_Movement,六层定位取证（动画→变体→状态→过渡→参数→打断）→WalkToFly 原型→并入状态机,已闭（2026-09-10）
 GAP-006,普通特殊技闪光颜色,显示链,源 Alpha 指数已核对回写；相机未挂最终 LUT、高亮饱和未校准（爆发峰值 1726）,特殊技观感,implementation README + HDR 诊断,链路定位法：固定条件截特效输出→合成 HDR→后处理→LUT→输出转换五段找偏离点；核对 sRGB/Linear 语义,高
 GAP-007,23 项粒子特效未接入,接入,31 项中 8 项已接入（见 VFX_Index 命名清单）,特效,VFX_Index.md,按技能成组接入（普通特殊技完整链路优先）而非按文件数,高
 GAP-008,alpha/dissolve 与完整原生粒子材质,材质对齐,未解决,特效观感,implementation,与 GAP-006 同链路处置,中
@@ -20,3 +20,5 @@ GAP-018,工作副本独立门禁基线,工程纪律,Unity 首次导入+全量编
 GAP-019,动画名称口径 827 vs 810,索引精度,简单词干去重 827；文档口径 810 需逻辑片名归一,动画索引,catalogs-summary.md,B1-v2 按 ledger 权威分类归一复核,中
 GAP-020,完整游戏渲染还原,证据边界,延迟渲染/环境后处理/战斗动态 tint 未宣称一致,渲染,各渲染报告,长期边界；不宣称完成,长期
 GAP-021,23 处混合根常量（Folder/Root：同根既读旧证据又写新验证）,工程纪律,已拆分：读根 A 类保留、WriteRoot 写根迁 90_Builds（21 文件/43 写点/7 派生根/4 手工处）；用法级残留 0；真机实证：审计运行 pass=true 且受保护目录前后哈希一致,codec 审计×2 + RenderingReview UI 审计族×21,path-audit-summary.md,D1-c：读根留 A 类+写根迁 RemiellePathPolicy.BuildOutputFor，逐个真机验证,已闭（2026-09-09，附实证）
+GAP-022,PlayMode 探针 T6 重跑,工程环境,编辑器 SearchDatabase 启动崩溃（Unity 6.0.3）阻塞实机重跑；语义已由 router 级 T6 覆盖,验证通道,walktorun-playmode.log,等待 Unity 修复或换机器重跑；不影响正确性结论,低
+GAP-023,demo Player 重建被相机包哈希护栏拦截,数据时效,游戏本体 GameAssembly 已更新，source-action-camera.json 记录的哈希失配（护栏正确触发）,demo 演示,wtr-demo-build.log,按新 GameAssembly 重新取证相机包后重建；不绕过护栏,中
