@@ -1,0 +1,35 @@
+{
+  "generatedUtc": "2026-09-09T11:49:35.877715+00:00",
+  "catalogs": {
+    "animation": {
+      "files": 3821,
+      "distinctIdentities": 3134,
+      "distinctNames": 1478,
+      "note": "身份=(tier,source,CAB,名称)；对照 RECOVERY_STATUS 声称的 829 身份/810 名称"
+    },
+    "mesh": {
+      "files": 180,
+      "note": "对照 README：178 个原始 Mesh 蒙皮 GLB（头发另有 UV1 派生版本）"
+    },
+    "material_texture": {
+      "files": 152,
+      "note": "对照 README：95 材质包、410 纹理引用"
+    },
+    "controller": {
+      "files": 627
+    },
+    "effects_timeline": {
+      "entries": 23
+    },
+    "project_motion_bank": {
+      "indexFile": "Assets/StreamingAssets/RemielleControllerMotions/index.json",
+      "topLevelKeys": [
+        "schema",
+        "sourceSelection",
+        "profiles",
+        "motions",
+        "slots"
+      ]
+    }
+  }
+}

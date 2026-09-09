@@ -24,4 +24,5 @@ Meaning: 用途说明 / 触发条件 / 已知问题
 
 ## 当前最大欠账
 
-逆向资产库（829 动画源身份、31 项粒子、运镜曲线、材质）**尚未做一次完整查询归纳**——这是所有后续接入工作的前置（TODO-B1）。归纳产出直接写进上述各索引。
+- ~~逆向资产库未做完整查询归纳~~ → **B1 v1 已完成**（2026-09-09）：机器目录层 `../../20_ReverseEngineering/Analysis/catalogs/`（动画/网格/材质/控制器/特效/时间线 CSV + 摘要，829 身份已机器验证）；SHA-256 全量清单 `../../20_ReverseEngineering/Manifests/`（11 组 CSV + summary.json，云端可复验字节一致性，方法见其 VERIFICATION.md）。
+- B1 v2 待办：名称口径归一（827 vs 810）、locomotion/特效/运镜的语义分类、Inventory 人工索引的逐项充实。

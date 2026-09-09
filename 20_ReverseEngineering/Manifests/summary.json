@@ -1,0 +1,107 @@
+{
+  "schema": "zcode.asset-manifest-summary.v1",
+  "generatedUtc": "2026-09-09T11:47:02.027300+00:00",
+  "csvFormat": "sha256,size,path  |  path 相对各组根目录、按字节序排序 | UTF-8 无 BOM LF",
+  "merkleAlgorithm": "对排序后每行构造 'sha256 <path>\\n'，按文件顺序拼接后整体 SHA-256 = merkleRoot",
+  "groups": [
+    {
+      "group": "AssetVault-assets",
+      "root": "20_ReverseEngineering/AssetVault/assets",
+      "fileCount": 209611,
+      "totalBytes": 16857107603,
+      "manifestFile": "AssetVault-assets.sha256.csv",
+      "manifestSha256": "f99cb91d2500e1808c38ae7bb073174295360d790a655dfb9333f632073f9d34",
+      "merkleRoot": "3321cd46f5e11b46c08e9d0702047812118424afff8b8812c333e863270a4091"
+    },
+    {
+      "group": "AssetVault-recovered",
+      "root": "20_ReverseEngineering/AssetVault/recovered",
+      "fileCount": 4396,
+      "totalBytes": 1622755144,
+      "manifestFile": "AssetVault-recovered.sha256.csv",
+      "manifestSha256": "749231662e6ea84ab864df8b372881319f175ca06ce4c9c76227962b1ef2ba75",
+      "merkleRoot": "09ba62de359659fb176604e8efdb8c51255cfd7f9cc0e961d760ad0c04ee76ee"
+    },
+    {
+      "group": "AssetVault-metadata",
+      "root": "20_ReverseEngineering/AssetVault/metadata",
+      "fileCount": 21,
+      "totalBytes": 184189708,
+      "manifestFile": "AssetVault-metadata.sha256.csv",
+      "manifestSha256": "fd4f2aea34b3bbfc616babe9dee579cfba320acf4fc0fa020b831d256703e80d",
+      "merkleRoot": "4758b8edb468fb1219f019683702b8eddeed9e50d4fb98cab9917efd1d437710"
+    },
+    {
+      "group": "AssetVault-tools",
+      "root": "20_ReverseEngineering/AssetVault/tools",
+      "fileCount": 549,
+      "totalBytes": 12063095,
+      "manifestFile": "AssetVault-tools.sha256.csv",
+      "manifestSha256": "4855d3561f218edf8ce8fa822053e157a859e406c14b529399bf0e52d1c116d0",
+      "merkleRoot": "be5a96dbc1fc825c687b6b2252e0b45b08fe06a1c518aab34bf15b7f3c0c0cc0"
+    },
+    {
+      "group": "AssetVault-skinning-verification",
+      "root": "20_ReverseEngineering/AssetVault/skinning-verification",
+      "fileCount": 30,
+      "totalBytes": 7329294,
+      "manifestFile": "AssetVault-skinning-verification.sha256.csv",
+      "manifestSha256": "eab27c1cf01755c058db4f4ec8b308b924727df703f5b286bed845c5a131b9ba",
+      "merkleRoot": "8b90b8ab0b1d2a1ab4f26ede907d68778ada492698dfe9f50d47c1b6e951c9d0"
+    },
+    {
+      "group": "AssetVault-config",
+      "root": "20_ReverseEngineering/AssetVault/config",
+      "fileCount": 3,
+      "totalBytes": 33984,
+      "manifestFile": "AssetVault-config.sha256.csv",
+      "manifestSha256": "9a68caf6011451b572097ba81b8b3db7f62674219c2b29dbf1c2a6dc4b4af5d2",
+      "merkleRoot": "7faf7a53c04b2202dcd513cebf01e5a5006d396521e392e36bfdbf62c94bedf4"
+    },
+    {
+      "group": "RuntimeRepair",
+      "root": "20_ReverseEngineering/RuntimeRepair",
+      "fileCount": 1316,
+      "totalBytes": 1943210779,
+      "manifestFile": "RuntimeRepair.sha256.csv",
+      "manifestSha256": "36a759f32f844f099bde6523116bda4be3286808959b6dcd545ac14067d01f9f",
+      "merkleRoot": "63f0f8683a6b5e69630c794b40ff65d789a787242d27a103781a057946f2933c"
+    },
+    {
+      "group": "DataAcquisition",
+      "root": "20_ReverseEngineering/DataAcquisition",
+      "fileCount": 13494,
+      "totalBytes": 12635387903,
+      "manifestFile": "DataAcquisition.sha256.csv",
+      "manifestSha256": "5b690f225d80bb69fb9074fe6f2b79f8b91d2e452cf32374b8bef8c7f11d9f0a",
+      "merkleRoot": "615467b0f7379e7ea9c968fc020d1a978dd6bac79e40fa9607fbd803808860aa"
+    },
+    {
+      "group": "RenderingReview",
+      "root": "20_ReverseEngineering/RenderingReview",
+      "fileCount": 16639,
+      "totalBytes": 15563948169,
+      "manifestFile": "RenderingReview.sha256.csv",
+      "manifestSha256": "fa70c12a9c8a01f67b5a6d1fcd291bb1a03d6ebdd776305545382599a9a205bd",
+      "merkleRoot": "0f6b6977875bd9dda52f231b1388fbf5f2a22990c31fd9fc558b6588c6c330cf"
+    },
+    {
+      "group": "Evidence",
+      "root": "20_ReverseEngineering/Evidence",
+      "fileCount": 47141,
+      "totalBytes": 2227693949,
+      "manifestFile": "Evidence.sha256.csv",
+      "manifestSha256": "bfe6a2c9ed1b89f1a64a69bdcfc903f6ca0912ffeee3b4764c5ddad7be869380",
+      "merkleRoot": "896f454e1825a7a99807e08cdc42e28a05575bcb90fce39be1a6e12d088460a0"
+    },
+    {
+      "group": "Remielle_Main",
+      "root": "10_Unity/Remielle_Main",
+      "fileCount": 8316,
+      "totalBytes": 6003734877,
+      "manifestFile": "Remielle_Main.sha256.csv",
+      "manifestSha256": "b372d58e25a1cad984d316feb945e21741381aed51e56bf30c71e7defa174f50",
+      "merkleRoot": "074190a440c08de1a1b0ba0147806190dfb16ed30dd0c7c6a9d5b951a9896622"
+    }
+  ]
+}

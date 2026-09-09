@@ -13,7 +13,15 @@
 ## 工程侧
 
 - `10_Unity/Remielle_Main/Assets/V3/Animations`：15 个 .anim——**渲染/光照验收示例集，非全集**。
+- 主工程动作库：`Assets/StreamingAssets/RemielleControllerMotions/index.json`——**335 motions / 456 slots**（注意：其 profiles.path 指向 local-only 原件绝对路径，属 TODO-D1 隐患）。
 - 已接动作（经验证）：闪避、Dash_Start/Loop/Evade/Loop_02/End、冲刺攻击、四段普攻、特殊技/强化特殊技、移动族。
+
+## 机器目录（2026-09-09 B1 v1，云端可查）
+
+- `../../20_ReverseEngineering/Analysis/catalogs/animation-catalog.csv`：全量文件级枚举（3,821 文件）。
+- `../../20_ReverseEngineering/Analysis/catalogs/animation-names.csv`：名称视图（简单词干去重 827 个名称）。
+- **已机器验证**：829 身份 = highest-quality 664 .npz + standalone 9 .npz + 156 .anim，与 RECOVERY_STATUS 声称一致。
+- v2 待办：按 ledger 逻辑片名归一复核 810 名称口径；locomotion 族语义分类（服务 walk→fly）。
 
 ## 归纳任务
 
